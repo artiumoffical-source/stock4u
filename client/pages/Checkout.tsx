@@ -951,15 +951,15 @@ export default function Checkout() {
                 width: "191.83px",
                 height: "57.924px",
                 padding: "14px 17px",
-                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-                gap: "10px",
+                gap: "11px",
                 borderRadius: "9.654px",
                 border: "2.413px solid #DBE3F3",
                 background: "#FFF",
                 cursor: "pointer",
                 transition: "all 0.3s ease",
+                direction: "rtl",
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-2px)";
