@@ -801,18 +801,6 @@ export default function Checkout() {
           </form>
         </div>
 
-        {/* Divider Line */}
-        <div
-          style={{
-            width: "100%",
-            maxWidth: "1256px",
-            height: "1px",
-            background: "#4C7EFB",
-            opacity: 0.2,
-            transform: "rotate(90deg)",
-            margin: "40px 0",
-          }}
-        />
 
         {/* Alternative Payment Options */}
         <div
