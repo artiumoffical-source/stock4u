@@ -43,11 +43,8 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Blue Bridge - covers white gap between hero and video */}
-      <div className="w-full h-[300px] bg-stock4u-light-blue -mt-10"></div>
-
-      {/* Video Section with Blue Extension */}
-      <section className="bg-stock4u-light-blue pt-8 pb-8">
+      {/* Video Section with Blue Extension - directly connected to hero */}
+      <section className="bg-stock4u-light-blue pt-8 pb-8 -mt-1">
         <div className="max-w-[800px] mx-auto px-4">
           <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[400px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
