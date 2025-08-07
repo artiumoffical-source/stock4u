@@ -44,9 +44,9 @@ export default function Index() {
       </section>
 
       {/* Continuous Blue Background Section with Video */}
-      <section className="bg-stock4u-light-blue pt-0 pb-[200px]">
+      <section className="bg-stock4u-light-blue pt-0 pb-[50px]">
         {/* Video Container */}
-        <div className="max-w-[900px] mx-auto px-4 pt-8">
+        <div className="max-w-[900px] mx-auto px-4 pt-2">
           <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[400px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
@@ -92,7 +92,7 @@ export default function Index() {
         {/* Use the exact Figma design as background image */}
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/d2a8fbb0bc7d24e0fc8879295b276f6758c8be62?width=3840"
-          alt="How It Works - זה ��ללו פשוט!"
+          alt="How It Works - זה כללו פשוט!"
           className="w-full h-full object-cover object-center"
         />
       </section>
