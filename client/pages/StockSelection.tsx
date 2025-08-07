@@ -45,9 +45,10 @@ export default function StockSelection() {
       company: "NVIDIA Corporation",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <rect width="24" height="24" rx="4" fill="#76B900" />
-          <path d="M12 4L20 12L12 20L4 12Z" fill="#FFF" />
-          <path d="M12 8L16 12L12 16L8 12Z" fill="#76B900" />
+          <rect width="24" height="24" rx="3" fill="#76B900" />
+          <path d="M4 6h16v2H4V6zm0 4h16v2H4v-2zm0 4h16v2H4v-2z" fill="#FFF" />
+          <path d="M6 8l8 4-8 4V8z" fill="#FFF" />
+          <text x="12" y="20" textAnchor="middle" fontSize="6" fill="#FFF" fontWeight="bold">NVIDIA</text>
         </svg>
       ),
       description:
