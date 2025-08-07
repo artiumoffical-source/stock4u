@@ -399,7 +399,7 @@ export default function Footer() {
               style={{
                 alignSelf: "stretch",
                 color: "#4C7EFB",
-                textAlign: "right",
+                textAlign: "center",
                 fontFamily:
                   "Greycliff Hebrew CF, -apple-system, Roboto, Helvetica, sans-serif",
                 fontSize: "24px",
@@ -574,7 +574,7 @@ export default function Footer() {
                 lineHeight: "normal",
               }}
             >
-              מידע משפטי
+              מידע משפ��י
             </div>
             <div
               style={{
