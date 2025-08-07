@@ -255,7 +255,7 @@ export default function Footer() {
                 height: "105px",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                alignItems: "flex-end",
+                alignItems: "center",
                 alignSelf: "stretch",
               }}
             >
@@ -574,7 +574,7 @@ export default function Footer() {
                 lineHeight: "normal",
               }}
             >
-              מידע משפ��י
+              מידע משפטי
             </div>
             <div
               style={{
