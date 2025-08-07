@@ -44,7 +44,7 @@ export default function Index() {
       </section>
 
       {/* Blue Bridge - covers white gap between hero and video */}
-      <div className="w-full h-[120px] bg-stock4u-light-blue -mt-1"></div>
+      <div className="w-full h-[200px] bg-stock4u-light-blue -mt-4"></div>
 
       {/* Video Section with Blue Extension */}
       <section className="bg-stock4u-light-blue pt-8 pb-8">
