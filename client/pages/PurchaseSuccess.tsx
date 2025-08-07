@@ -48,86 +48,18 @@ export default function PurchaseSuccess() {
     <div style={{ direction: "rtl", minHeight: "100vh", background: "#FFF" }}>
       <Header />
       
-      {/* Hero Section with Success Message */}
-      <div 
-        style={{
-          width: "100%",
-          height: "559px",
-          background: "linear-gradient(135deg, #E8F1FF 0%, #D1E3FF 50%, #B8D4FF 100%)",
-          position: "relative",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          overflow: "hidden"
-        }}
-      >
-        {/* Success Icon and Message */}
-        <div style={{ textAlign: "center", zIndex: 2 }}>
-          <div style={{
-            width: "120px",
-            height: "120px",
-            background: "#4C7EFB",
-            borderRadius: "50%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0 auto 24px",
-            boxShadow: "10px 10px 0 0 rgba(0, 0, 0, 0.10)"
-          }}>
-            <svg width="60" height="60" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          
-          <h1 style={{
-            fontSize: "48px",
-            fontWeight: "700",
-            color: "#486284",
-            margin: "0 0 16px",
-            fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif"
-          }}>
-            הרכישה בוצעה בהצלחה!
-          </h1>
-          
-          <p style={{
-            fontSize: "24px",
-            color: "#8CA2C0",
-            margin: "0",
-            fontFamily: "Poppins, -apple-system, Roboto, Helvetica, sans-serif"
-          }}>
-            תודה שבחרתם בנו להענקת המתנה המושלמת
-          </p>
-        </div>
-
-        {/* Decorative Elements */}
-        <div style={{
-          position: "absolute",
-          top: "20px",
-          right: "50px",
-          fontSize: "40px",
-          opacity: "0.3"
-        }}>💎</div>
-        <div style={{
-          position: "absolute",
-          bottom: "40px",
-          left: "80px",
-          fontSize: "30px",
-          opacity: "0.3"
-        }}>✨</div>
-        <div style={{
-          position: "absolute",
-          top: "60px",
-          left: "120px",
-          fontSize: "35px",
-          opacity: "0.3"
-        }}>🎁</div>
-        <div style={{
-          position: "absolute",
-          bottom: "80px",
-          right: "100px",
-          fontSize: "45px",
-          opacity: "0.3"
-        }}>💰</div>
+      {/* Hero Section - Original Figma Design */}
+      <div style={{ position: "relative", width: "100%", height: "559px", overflow: "hidden" }}>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F8c9a393b58e7435185a9ad4e46455777?format=webp&width=800"
+          alt="הרכישה בוצעה בהצלחה!"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center"
+          }}
+        />
       </div>
 
       {/* Gift Details Section */}
