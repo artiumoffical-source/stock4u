@@ -51,13 +51,14 @@ export default function PurchaseSuccess() {
       {/* Hero Section - Original Figma Design */}
       <div style={{ position: "relative", width: "100%", height: "559px", overflow: "hidden" }}>
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F8c9a393b58e7435185a9ad4e46455777?format=webp&width=800"
+          src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F8c9a393b58e7435185a9ad4e46455777?format=webp&width=1920"
           alt="הרכישה בוצעה בהצלחה!"
           style={{
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "center"
+            objectPosition: "center",
+            imageRendering: "crisp-edges"
           }}
         />
       </div>
