@@ -207,17 +207,20 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Content Sections - positioned to match Figma design */}
+      {/* Content Sections - Centered and responsive layout */}
       <div
         style={{
           position: "absolute",
-          left: "550px",
+          left: "50%",
           top: "76px",
-          width: "1228px",
+          transform: "translateX(-50%)",
+          width: "auto",
+          maxWidth: "1200px",
           height: "152px",
-          display: "inline-flex",
+          display: "flex",
           alignItems: "center",
-          gap: "3px",
+          justifyContent: "center",
+          gap: "40px",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
