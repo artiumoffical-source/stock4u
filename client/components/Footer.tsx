@@ -223,7 +223,7 @@ export default function Footer() {
           gap: "40px",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "60px", justifyContent: "center" }}>
           {/* אנחנו ברשתות */}
           <div
             style={{
