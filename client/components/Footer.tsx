@@ -120,13 +120,14 @@ export default function Footer() {
           height: "338px",
         }}
       >
-        {/* Stock4U Text */}
+        {/* STOCK4U Logo - Centered below dancing mascot */}
         <div
           style={{
             position: "absolute",
-            left: "0px",
-            top: "282px",
-            width: "207px",
+            left: "50%",
+            top: "280px",
+            transform: "translateX(-50%)",
+            width: "auto",
             height: "56px",
             color: "#4C7EFB",
             fontFamily:
@@ -135,9 +136,11 @@ export default function Footer() {
             fontWeight: "400",
             lineHeight: "normal",
             textTransform: "uppercase",
+            textAlign: "center",
+            whiteSpace: "nowrap",
           }}
         >
-          Stock4U
+          STOCK4U
         </div>
 
         {/* Logo Complex 3D Element with Kalinka Dance Animation */}
