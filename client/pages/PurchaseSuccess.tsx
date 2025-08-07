@@ -99,92 +99,6 @@ export default function PurchaseSuccess() {
             </p>
           </div>
 
-          {/* Gift Details Grid */}
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "24px",
-            marginBottom: "30px"
-          }}>
-            <div style={{
-              background: "rgba(239, 242, 246, 0.6)",
-              borderRadius: "16px",
-              padding: "24px",
-              textAlign: "center"
-            }}>
-              <h3 style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                color: "#4C7EFB",
-                margin: "0 0 12px",
-                fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif"
-              }}>
-                מניות נבחרות
-              </h3>
-              <p style={{
-                fontSize: "16px",
-                color: "#486284",
-                margin: "0",
-                fontFamily: "Poppins, -apple-system, Roboto, Helvetica, sans-serif"
-              }}>
-                {stocksList}
-              </p>
-            </div>
-
-            <div style={{
-              background: "rgba(239, 242, 246, 0.6)",
-              borderRadius: "16px",
-              padding: "24px",
-              textAlign: "center"
-            }}>
-              <h3 style={{
-                fontSize: "20px",
-                fontWeight: "700",
-                color: "#4C7EFB",
-                margin: "0 0 12px",
-                fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif"
-              }}>
-                שיטת שליחה
-              </h3>
-              <p style={{
-                fontSize: "16px",
-                color: "#486284",
-                margin: "0",
-                fontFamily: "Poppins, -apple-system, Roboto, Helvetica, sans-serif"
-              }}>
-                {giftData.sendingMethod === "immediately" ? "שליחה מיידית" : "שליחה מתוזמנת"}
-              </p>
-            </div>
-
-            {giftData.greetingMessage && (
-              <div style={{
-                background: "rgba(239, 242, 246, 0.6)",
-                borderRadius: "16px",
-                padding: "24px",
-                textAlign: "center",
-                gridColumn: "1 / -1"
-              }}>
-                <h3 style={{
-                  fontSize: "20px",
-                  fontWeight: "700",
-                  color: "#4C7EFB",
-                  margin: "0 0 12px",
-                  fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif"
-                }}>
-                  הודעת ברכה
-                </h3>
-                <p style={{
-                  fontSize: "16px",
-                  color: "#486284",
-                  margin: "0",
-                  fontFamily: "Poppins, -apple-system, Roboto, Helvetica, sans-serif",
-                  fontStyle: "italic"
-                }}>
-                  "{giftData.greetingMessage}"
-                </p>
-              </div>
-            )}
-          </div>
 
           {/* Receipt Confirmation */}
           <div style={{
@@ -388,7 +302,7 @@ export default function PurchaseSuccess() {
             fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif"
           }}
         >
-          שלח מתנה ��וספת
+          שלח מתנה נוספת
         </Link>
       </div>
 
