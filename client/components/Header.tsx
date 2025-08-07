@@ -116,16 +116,6 @@ export default function Header() {
           <span
             style={{
               color: "#4C7EFB",
-              opacity: 0.3,
-              fontSize: "18px",
-              letterSpacing: "-2.34px",
-            }}
-          >
-            ________________
-          </span>
-          <span
-            style={{
-              color: "#4C7EFB",
               fontFamily:
                 "Greycliff Hebrew CF, -apple-system, Roboto, Helvetica, sans-serif",
               fontSize: "20px",
