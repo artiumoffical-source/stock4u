@@ -173,34 +173,6 @@ export default function Footer() {
                 filter: "drop-shadow(7.945px 6.179px 0 rgba(0, 0, 0, 0.15))",
               }}
             >
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/ce260fd9ede1e926cc1f66f1ad0c990ef4064702?width=315"
-                style={{
-                  position: "absolute",
-                  left: "2px",
-                  top: "129px",
-                  width: "158px",
-                  height: "123px",
-                  fill: "#FFF",
-                  strokeWidth: "7.263px",
-                  stroke: "#FFF",
-                }}
-                alt="Vector"
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/78aebfd0d90189bdc28ee3d9c1322717866a52a3?width=255"
-                style={{
-                  position: "absolute",
-                  left: "8px",
-                  top: "0px",
-                  width: "127px",
-                  height: "178px",
-                  fill: "#FFF",
-                  strokeWidth: "18.289px",
-                  stroke: "#FFF",
-                }}
-                alt="Union"
-              />
 
 
               <img
