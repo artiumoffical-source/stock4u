@@ -48,7 +48,7 @@ export default function PurchaseSuccess() {
     <div style={{ direction: "rtl", minHeight: "100vh", background: "#FFF" }}>
       <Header />
       
-      {/* Hero Section - Original Figma Design */}
+      {/* Hero Section - Original Figma Design with Positioned Elements */}
       <div style={{ position: "relative", width: "100%", height: "559px", overflow: "hidden" }}>
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/5cafa848e255474fc771e474fc37970f0e1c731b?width=3840"
@@ -60,6 +60,124 @@ export default function PurchaseSuccess() {
             objectPosition: "center"
           }}
         />
+
+        {/* Decorative Elements positioned correctly */}
+
+        {/* Euro Symbol - Top Left */}
+        <div style={{
+          position: "absolute",
+          left: "3%",
+          top: "15%",
+          fontSize: "40px",
+          color: "#4CAF50",
+          fontWeight: "bold",
+          opacity: "0.8",
+          animation: "float 3s ease-in-out infinite"
+        }}>€</div>
+
+        {/* Shekel Symbol - Top Center-Left */}
+        <div style={{
+          position: "absolute",
+          left: "20%",
+          top: "8%",
+          fontSize: "32px",
+          color: "#4CAF50",
+          fontWeight: "bold",
+          opacity: "0.7",
+          animation: "float 2.5s ease-in-out infinite 0.5s"
+        }}>₪</div>
+
+        {/* Star - Top Center */}
+        <div style={{
+          position: "absolute",
+          left: "45%",
+          top: "5%",
+          fontSize: "28px",
+          color: "#FFA726",
+          opacity: "0.8",
+          animation: "float 2.8s ease-in-out infinite 1s"
+        }}>⭐</div>
+
+        {/* Dollar Symbol - Top Right */}
+        <div style={{
+          position: "absolute",
+          right: "15%",
+          top: "12%",
+          fontSize: "36px",
+          color: "#4CAF50",
+          fontWeight: "bold",
+          opacity: "0.8",
+          animation: "float 3.2s ease-in-out infinite 1.5s"
+        }}>$</div>
+
+        {/* Euro Symbol - Far Right */}
+        <div style={{
+          position: "absolute",
+          right: "5%",
+          top: "25%",
+          fontSize: "38px",
+          color: "#4CAF50",
+          fontWeight: "bold",
+          opacity: "0.7",
+          animation: "float 2.7s ease-in-out infinite 0.8s"
+        }}>€</div>
+
+        {/* Star - Bottom Left */}
+        <div style={{
+          position: "absolute",
+          left: "8%",
+          bottom: "25%",
+          fontSize: "24px",
+          color: "#FF7043",
+          opacity: "0.8",
+          animation: "float 3.1s ease-in-out infinite 2s"
+        }}>✦</div>
+
+        {/* Yen Symbol - Bottom Left */}
+        <div style={{
+          position: "absolute",
+          left: "15%",
+          bottom: "15%",
+          fontSize: "34px",
+          color: "#4CAF50",
+          fontWeight: "bold",
+          opacity: "0.7",
+          animation: "float 2.9s ease-in-out infinite 0.3s"
+        }}>¥</div>
+
+        {/* Star - Bottom Right */}
+        <div style={{
+          position: "absolute",
+          right: "8%",
+          bottom: "20%",
+          fontSize: "26px",
+          color: "#FFA726",
+          opacity: "0.8",
+          animation: "float 3.3s ease-in-out infinite 1.2s"
+        }}>✨</div>
+
+        {/* Euro Symbol - Bottom Right */}
+        <div style={{
+          position: "absolute",
+          right: "18%",
+          bottom: "10%",
+          fontSize: "32px",
+          color: "#4CAF50",
+          fontWeight: "bold",
+          opacity: "0.6",
+          animation: "float 2.4s ease-in-out infinite 0.9s"
+        }}>€</div>
+
+        {/* Star - Top Right Corner */}
+        <div style={{
+          position: "absolute",
+          right: "3%",
+          top: "8%",
+          fontSize: "22px",
+          color: "#FFA726",
+          opacity: "0.7",
+          animation: "float 3.4s ease-in-out infinite 1.3s"
+        }}>⭐</div>
       </div>
 
       {/* Gift Details Section */}
@@ -130,7 +248,7 @@ export default function PurchaseSuccess() {
                 margin: "0 0 12px",
                 fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif"
               }}>
-                מניות נבחרות
+                מניו�� נבחרות
               </h3>
               <p style={{
                 fontSize: "16px",
