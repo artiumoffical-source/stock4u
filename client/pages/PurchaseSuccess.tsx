@@ -48,256 +48,96 @@ export default function PurchaseSuccess() {
     <div style={{ direction: "rtl", minHeight: "100vh", background: "#FFF" }}>
       <Header />
       
-      {/* Hero Section - Exact Figma Design Recreation */}
+      {/* Hero Section - Original Figma Image with Enhanced Decoratives */}
       <div style={{
         position: "relative",
         width: "100%",
         height: "559px",
-        background: "linear-gradient(180deg, #E8F1FF 0%, #D1E3FF 30%, #B8D4FF 70%, #A5C8FF 100%)",
-        overflow: "hidden",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
+        overflow: "hidden"
       }}>
-        {/* Main Shopping Cart Character */}
-        <div style={{
-          position: "relative",
-          zIndex: 10,
-          textAlign: "center"
-        }}>
-          {/* Shopping Cart */}
-          <div style={{
-            width: "120px",
-            height: "100px",
-            background: "#E96036",
-            borderRadius: "12px 12px 8px 8px",
-            position: "relative",
-            margin: "0 auto 20px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
-          }}>
-            {/* Cart Handle */}
-            <div style={{
-              position: "absolute",
-              right: "-20px",
-              top: "10px",
-              width: "40px",
-              height: "4px",
-              background: "#4C7EFB",
-              borderRadius: "2px",
-              transform: "rotate(-15deg)"
-            }}></div>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F8c9a393b58e7435185a9ad4e46455777?format=webp&width=1920"
+          alt="הרכישה בוצעה בהצלחה!"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center"
+          }}
+        />
 
-            {/* Cart Contents - Gift boxes */}
-            <div style={{
-              display: "flex",
-              gap: "8px",
-              marginTop: "-10px"
-            }}>
-              <div style={{
-                width: "25px",
-                height: "25px",
-                background: "#FFD700",
-                borderRadius: "4px",
-                border: "2px solid #FF6B35"
-              }}></div>
-              <div style={{
-                width: "25px",
-                height: "25px",
-                background: "#4C7EFB",
-                borderRadius: "4px",
-                border: "2px solid #2A5BE7"
-              }}></div>
-            </div>
-
-            {/* Cart Face */}
-            <div style={{
-              position: "absolute",
-              bottom: "15px",
-              left: "50%",
-              transform: "translateX(-50%)",
-              display: "flex",
-              alignItems: "center",
-              gap: "8px"
-            }}>
-              {/* Eyes */}
-              <div style={{
-                width: "12px",
-                height: "12px",
-                background: "#FFF",
-                borderRadius: "50%",
-                border: "3px solid #4C7EFB"
-              }}></div>
-              <div style={{
-                width: "12px",
-                height: "12px",
-                background: "#FFF",
-                borderRadius: "50%",
-                border: "3px solid #4C7EFB"
-              }}></div>
-            </div>
-          </div>
-
-          {/* Wheels */}
-          <div style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "100px",
-            margin: "0 auto 30px",
-            position: "relative",
-            top: "-10px"
-          }}>
-            <div style={{
-              width: "20px",
-              height: "20px",
-              background: "#486284",
-              borderRadius: "50%",
-              border: "3px solid #FFF"
-            }}></div>
-            <div style={{
-              width: "20px",
-              height: "20px",
-              background: "#486284",
-              borderRadius: "50%",
-              border: "3px solid #FFF"
-            }}></div>
-          </div>
-
-          {/* Success Text */}
-          <div style={{
-            background: "#FFF",
-            borderRadius: "20px",
-            padding: "16px 32px",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
-            display: "inline-block"
-          }}>
-            <h1 style={{
-              fontSize: "32px",
-              fontWeight: "700",
-              color: "#E96036",
-              margin: "0",
-              fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif",
-              textAlign: "center",
-              lineHeight: "1.2"
-            }}>
-              הרכישה בוצעה<br />בהצלחה!
-            </h1>
-          </div>
-        </div>
-
-        {/* Floating Decorative Elements - Top Left */}
+        {/* Enhanced Decorative Elements matching Figma exactly */}
         <div style={{
           position: "absolute",
           top: "80px",
-          left: "10%",
-          fontSize: "40px",
-          opacity: "0.7",
+          left: "5%",
+          fontSize: "32px",
+          opacity: "0.8",
           animation: "float 3s ease-in-out infinite"
         }}>€</div>
 
         <div style={{
           position: "absolute",
-          top: "120px",
-          left: "8%",
-          fontSize: "28px",
-          opacity: "0.6",
+          top: "40px",
+          left: "15%",
+          fontSize: "24px",
+          opacity: "0.7",
           animation: "float 2.5s ease-in-out infinite 0.5s"
         }}>✨</div>
 
-        {/* Floating Decorative Elements - Top Right */}
         <div style={{
           position: "absolute",
-          top: "60px",
+          top: "30px",
+          right: "8%",
+          fontSize: "28px",
+          opacity: "0.8",
+          animation: "float 2.8s ease-in-out infinite 1s"
+        }}>⭐</div>
+
+        <div style={{
+          position: "absolute",
+          top: "90px",
           right: "15%",
           fontSize: "35px",
           opacity: "0.7",
-          animation: "float 2.8s ease-in-out infinite 1s"
+          animation: "float 3.2s ease-in-out infinite 1.5s"
         }}>💎</div>
 
         <div style={{
           position: "absolute",
-          top: "100px",
-          right: "12%",
-          fontSize: "25px",
-          opacity: "0.6",
-          animation: "float 3.2s ease-in-out infinite 1.5s"
-        }}>⭐</div>
-
-        {/* Floating Decorative Elements - Bottom Left */}
-        <div style={{
-          position: "absolute",
           bottom: "120px",
-          left: "12%",
-          fontSize: "45px",
+          left: "8%",
+          fontSize: "36px",
           opacity: "0.8",
           animation: "float 2.7s ease-in-out infinite 0.8s"
         }}>$</div>
 
         <div style={{
           position: "absolute",
-          bottom: "160px",
-          left: "8%",
-          fontSize: "30px",
+          bottom: "80px",
+          left: "20%",
+          fontSize: "26px",
           opacity: "0.6",
           animation: "float 3.1s ease-in-out infinite 2s"
         }}>💰</div>
 
-        {/* Floating Decorative Elements - Bottom Right */}
         <div style={{
           position: "absolute",
-          bottom: "140px",
-          right: "10%",
-          fontSize: "38px",
+          bottom: "100px",
+          right: "12%",
+          fontSize: "30px",
           opacity: "0.7",
           animation: "float 2.9s ease-in-out infinite 0.3s"
         }}>€</div>
 
         <div style={{
           position: "absolute",
-          bottom: "180px",
-          right: "14%",
-          fontSize: "26px",
+          bottom: "50px",
+          right: "5%",
+          fontSize: "24px",
           opacity: "0.6",
           animation: "float 3.3s ease-in-out infinite 1.2s"
         }}>✨</div>
-
-        {/* Extra decorative elements for fullness */}
-        <div style={{
-          position: "absolute",
-          top: "200px",
-          left: "20%",
-          fontSize: "32px",
-          opacity: "0.5",
-          animation: "float 3.5s ease-in-out infinite 0.7s"
-        }}>💸</div>
-
-        <div style={{
-          position: "absolute",
-          top: "220px",
-          right: "25%",
-          fontSize: "28px",
-          opacity: "0.5",
-          animation: "float 2.6s ease-in-out infinite 1.8s"
-        }}>🌟</div>
-
-        <div style={{
-          position: "absolute",
-          bottom: "250px",
-          left: "25%",
-          fontSize: "24px",
-          opacity: "0.4",
-          animation: "float 3.4s ease-in-out infinite 1.3s"
-        }}>💳</div>
-
-        <div style={{
-          position: "absolute",
-          bottom: "280px",
-          right: "20%",
-          fontSize: "30px",
-          opacity: "0.5",
-          animation: "float 2.4s ease-in-out infinite 0.9s"
-        }}>🎁</div>
       </div>
 
       {/* Gift Details Section */}
