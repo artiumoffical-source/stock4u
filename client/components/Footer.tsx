@@ -202,37 +202,6 @@ export default function Footer() {
                 alt="Union"
               />
 
-              {/* White accent elements */}
-              <div
-                style={{
-                  position: "absolute",
-                  left: "62px",
-                  top: "173px",
-                  width: "24px",
-                  height: "10px",
-                  background: "#FFF",
-                }}
-              ></div>
-              <div
-                style={{
-                  position: "absolute",
-                  left: "113px",
-                  top: "77px",
-                  width: "24px",
-                  height: "22px",
-                  background: "#FFF",
-                }}
-              ></div>
-              <div
-                style={{
-                  position: "absolute",
-                  left: "0px",
-                  top: "73px",
-                  width: "24px",
-                  height: "18px",
-                  background: "#FFF",
-                }}
-              ></div>
 
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/f969c07e858b8f0f5fa3c353bca4357f94d553ca?width=315"
