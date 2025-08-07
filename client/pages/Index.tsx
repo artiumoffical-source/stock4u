@@ -28,12 +28,12 @@ export default function Index() {
           </svg>
         </div>
 
-        {/* Character Images Background - fills the entire hero */}
-        <div className="absolute inset-[-20%] overflow-hidden">
+        {/* Character Images Background */}
+        <div className="absolute inset-0 overflow-hidden">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
             alt="Stock4U Characters with Main Title"
-            className="w-full h-full object-cover object-center scale-75"
+            className="w-full h-full object-cover object-center"
           />
         </div>
 
@@ -43,13 +43,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Blue Rectangle Background - connected directly to hero */}
-      <div className="w-full h-[450px] bg-stock4u-light-blue -mt-2"></div>
-
-      {/* Video Section - positioned to overlap with blue background */}
-      <section className="relative -mt-[300px] z-30">
-        <div className="max-w-[1342px] mx-auto px-4">
-          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[684px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+      {/* Video Section with Blue Extension */}
+      <section className="bg-stock4u-light-blue pt-8 pb-8">
+        <div className="max-w-[800px] mx-auto px-4">
+          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[400px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
                 onClick={() =>
@@ -58,10 +55,10 @@ export default function Index() {
                     "_blank",
                   )
                 }
-                className="w-[178px] h-[178px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[15px] border-white"
+                className="w-[120px] h-[120px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[8px] border-white"
               >
                 <svg
-                  className="w-12 h-12 text-white ml-2"
+                  className="w-8 h-8 text-white ml-1"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -72,9 +69,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      {/* Spacer for content below */}
-      <div className="h-[200px]"></div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
