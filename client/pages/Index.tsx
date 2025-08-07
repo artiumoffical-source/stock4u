@@ -43,11 +43,13 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Continuous Blue Background Section with Video */}
-      <section className="bg-stock4u-light-blue pt-0 pb-[50px]">
-        {/* Video Container */}
-        <div className="max-w-[900px] mx-auto px-4 pt-2">
-          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[400px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+      {/* Blue Rectangle Background */}
+      <div className="w-full h-[395px] bg-stock4u-light-blue"></div>
+
+      {/* Video Section - positioned to overlap with blue background */}
+      <section className="relative -mt-[300px] z-30">
+        <div className="max-w-[1342px] mx-auto px-4">
+          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[684px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
                 onClick={() =>
@@ -56,10 +58,10 @@ export default function Index() {
                     "_blank",
                   )
                 }
-                className="w-[120px] h-[120px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform"
+                className="w-[178px] h-[178px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[15px] border-white"
               >
                 <svg
-                  className="w-8 h-8 text-white ml-1"
+                  className="w-12 h-12 text-white ml-2"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -70,6 +72,9 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      {/* Spacer for content below */}
+      <div className="h-[200px]"></div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
