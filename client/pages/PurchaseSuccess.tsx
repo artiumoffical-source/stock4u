@@ -77,17 +77,6 @@ export default function PurchaseSuccess() {
           padding: "40px",
           boxShadow: "0 10px 30px rgba(0, 0, 0, 0.1)"
         }}>
-          <h2 style={{
-            fontSize: "32px",
-            fontWeight: "700",
-            color: "#486284",
-            textAlign: "center",
-            margin: "0 0 40px",
-            fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif"
-          }}>
-            פרטי המתנה
-          </h2>
-
           {/* Main Gift Info */}
           <div style={{
             background: "linear-gradient(135deg, #F5F7FC 0%, #E8F1FF 100%)",
@@ -399,7 +388,7 @@ export default function PurchaseSuccess() {
             fontFamily: "'Greycliff Hebrew CF', -apple-system, Roboto, Helvetica, sans-serif"
           }}
         >
-          שלח מתנה נוספת
+          שלח מתנה ��וספת
         </Link>
       </div>
 
