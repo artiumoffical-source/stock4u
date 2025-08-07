@@ -58,10 +58,11 @@ export default function StockSelection() {
       company: "Microsoft Corporation",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <rect x="2" y="2" width="9" height="9" fill="#F25022" />
-          <rect x="13" y="2" width="9" height="9" fill="#7FBA00" />
-          <rect x="2" y="13" width="9" height="9" fill="#00A4EF" />
-          <rect x="13" y="13" width="9" height="9" fill="#FFB900" />
+          <circle cx="12" cy="12" r="12" fill="#FFF" />
+          <rect x="6" y="6" width="5" height="5" rx="0.5" fill="#F25022" />
+          <rect x="13" y="6" width="5" height="5" rx="0.5" fill="#7FBA00" />
+          <rect x="6" y="13" width="5" height="5" rx="0.5" fill="#00A4EF" />
+          <rect x="13" y="13" width="5" height="5" rx="0.5" fill="#FFB900" />
         </svg>
       ),
       description:
@@ -81,7 +82,7 @@ export default function StockSelection() {
         </svg>
       ),
       description:
-        "אלפבית היא החברה האם של גוגל, המובילה בתחום החיפוש, פרסום דיג��טלי וטכנולוגיות חדשניות. החברה מפתחת מוצרים כמו Android, YouTube, Google Cloud ומשקיעה בטכנולוגיות עתיד כמו רכב אוטונומי.",
+        "אלפבית היא החברה האם של גוגל, המובילה בתחום החיפוש, פרסום דיג��טלי וטכנולוגיות ��דשניות. החברה מפתחת מוצרים כמו Android, YouTube, Google Cloud ומשקיעה בטכנולוגיות עתיד כמו רכב אוטונומי.",
     },
     {
       symbol: "AMZN",
