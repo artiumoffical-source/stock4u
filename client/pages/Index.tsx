@@ -43,11 +43,11 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Extended Blue Background */}
-      <div className="bg-stock4u-light-blue h-[300px]"></div>
+      {/* Extended Blue Background - covers full area */}
+      <div className="bg-stock4u-light-blue h-[450px]"></div>
 
       {/* Video Section - positioned to overlap with blue background */}
-      <section className="relative -mt-[150px] z-30">
+      <section className="relative -mt-[400px] z-30">
         <div className="max-w-[1000px] mx-auto px-4">
           <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[500px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
@@ -74,7 +74,7 @@ export default function Index() {
       </section>
 
       {/* Spacer for content below */}
-      <div className="h-[200px]"></div>
+      <div className="h-[100px]"></div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
