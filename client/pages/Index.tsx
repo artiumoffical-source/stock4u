@@ -29,7 +29,7 @@ export default function Index() {
         </div>
 
         {/* Character Images Background - fills the entire hero */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-[-10%] overflow-hidden">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
             alt="Stock4U Characters with Main Title"
