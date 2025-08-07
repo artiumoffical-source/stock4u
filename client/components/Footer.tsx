@@ -41,8 +41,9 @@ export default function Footer() {
           Stock4U
         </div>
 
-        {/* Logo Complex 3D Element */}
+        {/* Logo Complex 3D Element with Kalinka Dance Animation */}
         <div
+          className="kalinka-dancer"
           style={{
             position: "absolute",
             left: "24px",
