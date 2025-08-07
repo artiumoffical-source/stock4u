@@ -81,17 +81,17 @@ export default function StockSelection() {
         </svg>
       ),
       description:
-        "אלפבית היא החברה האם של גוגל, המובילה בתחום החיפוש, פרסום דיגיטלי וטכנולוגיות חדשניות. החברה מפתחת מוצרים כמו Android, YouTube, Google Cloud ומשקיעה בטכנולוגיות עתיד כמו רכב אוטונומי.",
+        "אלפבית היא החברה האם של גוגל, המובילה בתחום החיפוש, פרסום דיג��טלי וטכנולוגיות חדשניות. החברה מפתחת מוצרים כמו Android, YouTube, Google Cloud ומשקיעה בטכנולוגיות עתיד כמו רכב אוטונומי.",
     },
     {
       symbol: "AMZN",
       company: "Amazon.com Inc.",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <rect width="24" height="24" rx="3" fill="#232F3E" />
-          <text x="12" y="11" textAnchor="middle" fontSize="4.5" fill="#FFF" fontWeight="bold" fontFamily="Arial">amazon</text>
-          <path d="M6 17c3-1 9-1 12 0" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" />
-          <path d="M17.5 16.5l1 1" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" />
+          <circle cx="12" cy="12" r="12" fill="#FFF" />
+          <text x="12" y="11" textAnchor="middle" fontSize="6" fill="#232F3E" fontWeight="bold" fontFamily="Arial">a</text>
+          <path d="M6 16c3-1 9-1 12 0" stroke="#FF9900" strokeWidth="2" strokeLinecap="round" />
+          <path d="M17.5 15.5l1 1" stroke="#FF9900" strokeWidth="2" strokeLinecap="round" />
         </svg>
       ),
       description:
