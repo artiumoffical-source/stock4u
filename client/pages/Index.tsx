@@ -8,9 +8,27 @@ export default function Index() {
     <div className="min-h-screen bg-white hebrew-font" dir="rtl">
       <Header />
 
-      {/* Hero Section - Responsive Design */}
-      <section className="relative bg-stock4u-light-blue min-h-[400px] md:min-h-[500px] lg:h-[566px] flex items-center justify-center">
-        {/* Hero Image */}
+      {/* Hero Section - Responsive Design with proper background */}
+      <section className="relative bg-stock4u-light-blue min-h-[400px] md:min-h-[500px] lg:h-[566px] flex items-center justify-center overflow-hidden">
+        {/* Background Stock Chart for depth */}
+        <div className="absolute inset-0 opacity-15">
+          <svg
+            className="w-full h-full object-cover"
+            viewBox="0 0 1921 614"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <path
+              d="M0.433594 595.989L219.59 456.719L260.449 513.919L364.455 441.797L409.029 498.998L650.471 307.501L706.189 484.076L895.628 374.649L1070.21 309.719L1315.37 175.423L1460.23 406.711L2020.32 17.3564"
+              stroke="#689EDA"
+              strokeWidth="42"
+              fill="none"
+            />
+          </svg>
+        </div>
+
+        {/* Hero Image with zoom out effect */}
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
           alt="Stock4U Characters with Main Title"
