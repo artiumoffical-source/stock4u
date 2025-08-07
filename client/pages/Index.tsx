@@ -9,7 +9,7 @@ export default function Index() {
       <Header />
 
       {/* Hero Section with Video Overlay */}
-      <section className="relative bg-stock4u-light-blue overflow-hidden h-[700px]">
+      <section className="relative bg-stock4u-light-blue overflow-hidden h-[600px]">
         {/* Background Stock Chart */}
         <div className="absolute inset-0 opacity-20">
           <svg
@@ -28,12 +28,12 @@ export default function Index() {
           </svg>
         </div>
 
-        {/* Character Images Background - with zoom out effect */}
+        {/* Character Images Background - with more zoom out effect */}
         <div className="absolute inset-0 overflow-hidden">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
             alt="Stock4U Characters with Main Title"
-            className="w-full h-full object-cover object-center scale-110"
+            className="w-full h-full object-cover object-center scale-75"
           />
         </div>
 
@@ -41,10 +41,12 @@ export default function Index() {
         <div className="relative z-20 text-center py-20">
           {/* Content is handled by background image */}
         </div>
+      </section>
 
-        {/* Video Section Overlapping Hero */}
-        <div className="absolute bottom-[-150px] left-1/2 transform -translate-x-1/2 z-30 max-w-[1342px] w-full px-4">
-          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[400px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+      {/* Video Section - positioned below hero */}
+      <section className="relative -mt-24 z-30">
+        <div className="max-w-[1000px] mx-auto px-4">
+          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[500px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
                 onClick={() =>
@@ -53,10 +55,10 @@ export default function Index() {
                     "_blank",
                   )
                 }
-                className="w-[120px] h-[120px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform"
+                className="w-[140px] h-[140px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform"
               >
                 <svg
-                  className="w-8 h-8 text-white ml-1"
+                  className="w-10 h-10 text-white ml-1"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -68,8 +70,8 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Spacer for overlapping video */}
-      <div className="h-[180px]"></div>
+      {/* Spacer */}
+      <div className="h-[60px]"></div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
