@@ -44,7 +44,7 @@ export default function Index() {
       </section>
 
       {/* Extended Blue Background */}
-      <div className="bg-stock4u-light-blue h-[200px]"></div>
+      <div className="bg-stock4u-light-blue h-[300px]"></div>
 
       {/* Video Section - positioned to overlap with blue background */}
       <section className="relative -mt-[150px] z-30">
