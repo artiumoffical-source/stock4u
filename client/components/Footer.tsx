@@ -262,15 +262,16 @@ export default function Footer() {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "flex-end",
+                  justifyContent: "center",
                   alignItems: "center",
                   alignSelf: "stretch",
+                  gap: "8px",
                 }}
               >
                 <div
                   style={{
                     color: "#4C7EFB",
-                    textAlign: "right",
+                    textAlign: "center",
                     fontFamily:
                       "Poppins, -apple-system, Roboto, Helvetica, sans-serif",
                     fontSize: "18px",
