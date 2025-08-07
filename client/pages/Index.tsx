@@ -28,11 +28,11 @@ export default function Index() {
           </svg>
         </div>
 
-        {/* Hero Image with zoom out effect */}
+        {/* Hero Image - full coverage responsive */}
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
           alt="Stock4U Characters with Main Title"
-          className="w-full h-full object-cover object-center absolute inset-0 transform scale-90 sm:scale-85 md:scale-80"
+          className="w-full h-full object-cover object-center absolute inset-0"
         />
       </section>
 
