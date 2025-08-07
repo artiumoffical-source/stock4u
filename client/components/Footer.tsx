@@ -151,23 +151,6 @@ export default function Footer() {
             height: "253px",
           }}
         >
-          {/* Background white shape */}
-          <svg
-            style={{
-              position: "absolute",
-              left: "2px",
-              top: "29px",
-              width: "139px",
-              height: "152px",
-              fill: "white",
-            }}
-            viewBox="0 0 140 153"
-          >
-            <path
-              d="M0.377141 116.586L0.377148 50.984L84.1864 0.309326L139.409 47.0859L129.093 126.049L70.6894 152.26L0.377141 116.586Z"
-              fill="white"
-            />
-          </svg>
 
           {/* Main logo structure with drop shadows */}
           <div
