@@ -89,10 +89,26 @@ export default function StockSelection() {
       company: "Amazon.com Inc.",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <circle cx="12" cy="12" r="12" fill="#FFF" />
-          <text x="12" y="11" textAnchor="middle" fontSize="6" fill="#232F3E" fontWeight="bold" fontFamily="Arial">a</text>
-          <path d="M6 16c3-1 9-1 12 0" stroke="#FF9900" strokeWidth="2" strokeLinecap="round" />
-          <path d="M17.5 15.5l1 1" stroke="#FF9900" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="12" cy="12" r="12" fill="#232F3E" />
+          <text
+            x="12"
+            y="14"
+            textAnchor="middle"
+            fontSize="8"
+            fill="#FFFFFF"
+            fontWeight="bold"
+            fontFamily="Arial"
+            dominantBaseline="middle"
+          >
+            amazon
+          </text>
+          <path
+            d="M5 16.5C8 15.2 16 15.2 19 16.5"
+            stroke="#FF9900"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <circle cx="18.5" cy="16.2" r="0.8" fill="#FF9900" />
         </svg>
       ),
       description:
@@ -146,7 +162,7 @@ export default function StockSelection() {
         </svg>
       ),
       description:
-        'תעודת סל העוקבת אחרי מדד נאסד"ק 100, המתמקדת בחברות הטכנולוגיה הג��ולות והחדשניות ביותר. כוללת את המובילות כמו אפל, מיקרוסופט, גוגל ואמזון. ��תאימה למשקיעים המעוניינים בחשיפה לסקט��ר הטכנולוגיה.',
+        'תעודת סל העוקבת אחרי מדד נאסד"ק 100, המתמקדת בחברות הטכנולוגיה הג��ולות והחדשניות ביותר. כוללת את ��מובילות כמו אפל, מיקרוסופט, גוגל ואמזון. ��תאימה למשקיעים המעוניינים בחשיפה לסקט��ר הטכנולוגיה.',
     },
   ];
 
