@@ -43,8 +43,8 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Blue Rectangle Background */}
-      <div className="w-full h-[395px] bg-stock4u-light-blue"></div>
+      {/* Blue Rectangle Background - connected directly to hero */}
+      <div className="w-full h-[395px] bg-stock4u-light-blue -mt-1"></div>
 
       {/* Video Section - positioned to overlap with blue background */}
       <section className="relative -mt-[300px] z-30">
