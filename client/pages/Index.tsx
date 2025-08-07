@@ -8,43 +8,18 @@ export default function Index() {
     <div className="min-h-screen bg-white hebrew-font" dir="rtl">
       <Header />
 
-      {/* Hero Section with Video Overlay */}
-      <section className="relative bg-stock4u-light-blue overflow-hidden h-[566px]">
-        {/* Background Stock Chart */}
-        <div className="absolute inset-0 opacity-20">
-          <svg
-            className="w-full h-full object-cover"
-            viewBox="0 0 1921 614"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <path
-              d="M0.433594 595.989L219.59 456.719L260.449 513.919L364.455 441.797L409.029 498.998L650.471 307.501L706.189 484.076L895.628 374.649L1070.21 309.719L1315.37 175.423L1460.23 406.711L2020.32 17.3564"
-              stroke="#689EDA"
-              strokeWidth="42"
-              fill="none"
-            />
-          </svg>
-        </div>
-
-        {/* Character Images Background */}
-        <div className="absolute inset-0 overflow-hidden">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
-            alt="Stock4U Characters with Main Title"
-            className="w-full h-full object-cover object-center scale-90"
-          />
-        </div>
-
-        {/* Hero Content - Empty to let background image handle all visual elements */}
-        <div className="relative z-20 text-center py-20">
-          {/* Content is handled by background image */}
-        </div>
+      {/* Hero Section - Responsive Design */}
+      <section className="relative bg-stock4u-light-blue min-h-[400px] md:min-h-[500px] lg:h-[566px] flex items-center justify-center">
+        {/* Hero Image */}
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
+          alt="Stock4U Characters with Main Title"
+          className="w-full h-full object-cover object-center absolute inset-0"
+        />
       </section>
 
-      {/* Video Section with Blue Extension - directly connected to hero */}
-      <section className="bg-stock4u-light-blue pt-8 pb-8 -ml-px">
+      {/* Video Section with Blue Extension */}
+      <section className="bg-stock4u-light-blue py-4 md:py-8">
         <div className="max-w-[800px] mx-auto px-4">
           <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[400px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
