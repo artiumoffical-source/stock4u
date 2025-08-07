@@ -9,7 +9,7 @@ export default function Index() {
       <Header />
 
       {/* Hero Section with Video Overlay */}
-      <section className="relative bg-stock4u-light-blue overflow-hidden h-[600px]">
+      <section className="relative bg-stock4u-light-blue overflow-hidden h-[566px]">
         {/* Background Stock Chart */}
         <div className="absolute inset-0 opacity-20">
           <svg
@@ -28,12 +28,12 @@ export default function Index() {
           </svg>
         </div>
 
-        {/* Character Images Background - with more zoom out effect */}
+        {/* Character Images Background - fills the entire hero */}
         <div className="absolute inset-0 overflow-hidden">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
             alt="Stock4U Characters with Main Title"
-            className="w-full h-full object-cover object-center scale-75"
+            className="w-full h-full object-cover object-center"
           />
         </div>
 
