@@ -228,10 +228,11 @@ export default function Footer() {
           <div
             style={{
               display: "flex",
-              width: "281px",
+              width: "250px",
               flexDirection: "column",
-              alignItems: "flex-end",
+              alignItems: "center",
               gap: "20px",
+              textAlign: "center",
             }}
           >
             <div
