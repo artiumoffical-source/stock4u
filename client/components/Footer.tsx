@@ -2,6 +2,89 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
+    <>
+      <style>
+        {`
+          @keyframes kalinka-dance {
+            0%, 20% {
+              transform: translateY(0px) scaleY(1);
+            }
+            5% {
+              transform: translateY(-8px) scaleY(1.02);
+            }
+            10% {
+              transform: translateY(-12px) scaleY(1.04);
+            }
+            15% {
+              transform: translateY(-6px) scaleY(1.01);
+            }
+            25%, 45% {
+              transform: translateY(-2px) scaleY(1.005);
+            }
+            30% {
+              transform: translateY(-10px) scaleY(1.03);
+            }
+            35% {
+              transform: translateY(-15px) scaleY(1.05);
+            }
+            40% {
+              transform: translateY(-8px) scaleY(1.02);
+            }
+            50%, 70% {
+              transform: translateY(-1px) scaleY(1.002);
+            }
+            55% {
+              transform: translateY(-12px) scaleY(1.04);
+            }
+            60% {
+              transform: translateY(-18px) scaleY(1.06);
+            }
+            65% {
+              transform: translateY(-10px) scaleY(1.03);
+            }
+            75%, 100% {
+              transform: translateY(0px) scaleY(1);
+            }
+            80% {
+              transform: translateY(-6px) scaleY(1.01);
+            }
+            85% {
+              transform: translateY(-3px) scaleY(1.005);
+            }
+            90% {
+              transform: translateY(-1px) scaleY(1.002);
+            }
+          }
+
+          @keyframes kalinka-wiggle {
+            0%, 100% {
+              transform: rotate(0deg);
+            }
+            25% {
+              transform: rotate(-2deg);
+            }
+            75% {
+              transform: rotate(2deg);
+            }
+          }
+
+          .kalinka-dancer {
+            animation: kalinka-dance 2.5s ease-in-out infinite, kalinka-wiggle 1.2s ease-in-out infinite;
+            transform-origin: center bottom;
+          }
+
+          .kalinka-dancer:hover {
+            animation-duration: 1.2s, 0.8s;
+            animation-timing-function: ease-out, ease-in-out;
+          }
+
+          .kalinka-dancer img:last-child {
+            animation: kalinka-dance 2.5s ease-in-out infinite;
+            animation-delay: 0.1s;
+            transform-origin: center bottom;
+          }
+        `}
+      </style>
     <footer
       style={{
         width: "100%",
@@ -701,5 +784,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
