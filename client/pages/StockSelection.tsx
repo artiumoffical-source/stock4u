@@ -87,26 +87,10 @@ export default function StockSelection() {
       company: "Amazon.com Inc.",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <rect x="2" y="2" width="20" height="20" rx="3" fill="#232F3E" />
-          <path
-            d="M5 16c4 2 10 2 14 0"
-            stroke="#FF9900"
-            strokeWidth="2"
-            fill="none"
-            strokeLinecap="round"
-          />
-          <circle cx="18" cy="15" r="1" fill="#FF9900" />
-          <text
-            x="12"
-            y="10"
-            textAnchor="middle"
-            fontSize="4"
-            fill="#FFF"
-            fontWeight="bold"
-            fontFamily="sans-serif"
-          >
-            amazon
-          </text>
+          <rect width="24" height="24" rx="3" fill="#232F3E" />
+          <text x="12" y="11" textAnchor="middle" fontSize="4.5" fill="#FFF" fontWeight="bold" fontFamily="Arial">amazon</text>
+          <path d="M6 17c3-1 9-1 12 0" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" />
+          <path d="M17.5 16.5l1 1" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       ),
       description:
