@@ -44,7 +44,7 @@ export default function Index() {
       </section>
 
       {/* Video Section with Blue Extension - directly connected to hero */}
-      <section className="bg-stock4u-light-blue pt-8 pb-8 -mt-1">
+      <section className="bg-stock4u-light-blue pt-16 pb-8 -mt-4">
         <div className="max-w-[800px] mx-auto px-4">
           <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[400px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
