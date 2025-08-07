@@ -83,6 +83,22 @@ export default function Footer() {
             animation-delay: 0.1s;
             transform-origin: center bottom;
           }
+
+          /* Sync the white background with the dance */
+          .kalinka-dancer svg {
+            animation: kalinka-dance 2.5s ease-in-out infinite, kalinka-wiggle 1.2s ease-in-out infinite;
+            transform-origin: center bottom;
+          }
+
+          .kalinka-dancer > div {
+            animation: kalinka-dance 2.5s ease-in-out infinite, kalinka-wiggle 1.2s ease-in-out infinite;
+            transform-origin: center bottom;
+          }
+
+          /* Make sure all nested elements dance together */
+          .kalinka-dancer * {
+            animation-fill-mode: both;
+          }
         `}
       </style>
     <footer
