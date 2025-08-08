@@ -33,15 +33,32 @@ export default function Index() {
                       "_blank",
                     )
                   }
-                  className="w-[178px] h-[178px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[15px] border-white"
+                  className="hover:scale-105 transition-transform"
                 >
                   <svg
-                    className="w-12 h-12 text-white ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
+                    width="178"
+                    height="178"
+                    viewBox="0 0 120 129"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                     style={{ transform: 'rotate(90deg)' }}
+                    className="drop-shadow-[10px_10px_0_rgba(0,0,0,0.1)]"
                   >
-                    <path d="M8 5v14l11-7z" />
+                    <defs>
+                      <filter id="filter0_d_314_18722" x="0.613281" y="0.743896" width="118.801" height="127.971" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="10" dy="10"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_314_18722"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_314_18722" result="shape"/>
+                      </filter>
+                    </defs>
+                    <g filter="url(#filter0_d_314_18722)">
+                      <path d="M96.9141 38.0789C113.581 47.7014 113.581 71.7576 96.9141 81.3801L38.1137 115.329C21.4471 124.951 0.613748 112.923 0.613749 93.6779L0.613752 25.7811C0.613753 6.53608 21.4471 -5.49202 38.1138 4.13049L96.9141 38.0789Z" fill="#4C7EFB"/>
+                      <path d="M93.1641 44.5742C104.831 51.31 104.831 68.149 93.1641 74.8848L34.3633 108.833C22.6967 115.569 8.11328 107.149 8.11328 93.6777L8.11328 25.7812C8.11328 12.3098 22.6966 3.89045 34.3633 10.626L93.1641 44.5742Z" stroke="white" strokeWidth="15"/>
+                    </g>
                   </svg>
                 </button>
               </div>
