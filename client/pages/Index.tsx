@@ -23,7 +23,7 @@ export default function Index() {
         <div className="w-full h-[395px] bg-stock4u-light-blue relative mt-[200px]">
 
           {/* Video Section - positioned to overlap both hero and blue background */}
-          <div className="absolute -top-[50px] left-1/2 transform -translate-x-1/2">
+          <div className="absolute -top-[30px] left-1/2 transform -translate-x-1/2">
             <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
               <div className="w-full h-full flex items-center justify-center">
                 <button
