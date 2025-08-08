@@ -114,7 +114,7 @@ export default function Footer() {
       <div
         style={{
           position: "absolute",
-          left: "78px",
+          left: "40px",
           top: "-92px",
           width: "207px",
           height: "338px",
@@ -525,7 +525,7 @@ export default function Footer() {
                     lineHeight: "normal",
                   }}
                 >
-                  כניסת בתי עסק - שותפים
+                  כניסת בתי עסק - ��ותפים
                 </div>
                 <svg
                   style={{
