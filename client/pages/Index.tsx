@@ -17,11 +17,10 @@ export default function Index() {
         />
       </section>
 
-      {/* Blue Extension Background */}
-      <div className="w-full h-[395px] bg-stock4u-light-blue relative">
-        {/* Video Section positioned absolutely to match Figma */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 -top-[150px] z-30">
-          <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+      {/* Video Section positioned correctly */}
+      <section className="relative -mt-6">
+        <div className="max-w-[1000px] mx-auto px-4">
+          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[450px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
                 onClick={() =>
@@ -30,10 +29,10 @@ export default function Index() {
                     "_blank",
                   )
                 }
-                className="w-[178px] h-[178px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[15px] border-white transform rotate-90"
+                className="w-[140px] h-[140px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[10px] border-white"
               >
                 <svg
-                  className="w-12 h-12 text-white ml-2"
+                  className="w-10 h-10 text-white ml-1"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -43,10 +42,10 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Spacer to accommodate the overlapping video */}
-      <div className="h-[300px]"></div>
+      {/* Blue Extension Background */}
+      <div className="w-full h-[200px] bg-stock4u-light-blue -mt-[250px] -z-10"></div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
