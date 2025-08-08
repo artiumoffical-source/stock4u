@@ -20,7 +20,7 @@ export default function Index() {
       {/* Blue Extension Background - positioned exactly as in Figma */}
       <div className="w-full h-[395px] bg-stock4u-light-blue relative">
         {/* Video Section - positioned absolutely to overlap */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 -top-[150px] z-30">
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-[80px] z-30">
           <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
