@@ -8,7 +8,7 @@ export default function Index() {
     <div className="min-h-screen bg-white hebrew-font" dir="rtl">
       <Header />
 
-      {/* Hero Section - Figma Design Match */}
+      {/* Hero Section - Exact Figma Match */}
       <section className="relative h-[566px] bg-stock4u-light-blue overflow-hidden">
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
@@ -17,10 +17,11 @@ export default function Index() {
         />
       </section>
 
-      {/* Video Section positioned correctly */}
-      <section className="relative -mt-6">
-        <div className="max-w-[1000px] mx-auto px-4">
-          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[450px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+      {/* Blue Extension Background - positioned exactly as in Figma */}
+      <div className="w-full h-[395px] bg-stock4u-light-blue relative">
+        {/* Video Section - positioned absolutely to overlap */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-[150px] z-30">
+          <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
                 onClick={() =>
@@ -29,12 +30,13 @@ export default function Index() {
                     "_blank",
                   )
                 }
-                className="w-[140px] h-[140px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[10px] border-white"
+                className="w-[178px] h-[178px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[15px] border-white"
               >
                 <svg
-                  className="w-10 h-10 text-white ml-1"
+                  className="w-12 h-12 text-white ml-2"
                   fill="currentColor"
                   viewBox="0 0 24 24"
+                  style={{ transform: 'rotate(90deg)' }}
                 >
                   <path d="M8 5v14l11-7z" />
                 </svg>
@@ -42,10 +44,10 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Blue Extension Background */}
-      <div className="w-full h-[200px] bg-stock4u-light-blue -mt-[250px] -z-10"></div>
+      {/* Spacer for overlapping video */}
+      <div className="h-[300px]"></div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
