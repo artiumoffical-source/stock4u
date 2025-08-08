@@ -8,48 +8,54 @@ export default function Index() {
     <div className="min-h-screen bg-white hebrew-font" dir="rtl">
       <Header />
 
-      {/* Hero Section - Exact Figma Match */}
+      {/* Hero Section - Exact Figma Match: 566px height */}
       <section className="relative h-[566px] bg-stock4u-light-blue overflow-hidden">
         <img
-          src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
+          src="https://api.builder.io/api/v1/image/assets/TEMP/c861279ab775a02162db7807d6d5056d3eb1252d?width=3840"
           alt="Stock4U Characters with Main Title"
           className="w-full h-full object-cover object-center"
         />
       </section>
 
-      {/* Blue Extension Background - positioned exactly as in Figma */}
-      <div className="w-full h-[395px] bg-stock4u-light-blue"></div>
+      {/* Figma Layout: Gap of 112px, then blue background of 395px, video starts at 740px from top */}
+      <div className="relative">
+        {/* Gap between hero and blue background: 112px */}
+        <div className="h-[112px] bg-white"></div>
 
-      {/* Video Section - positioned as in Figma */}
-      <section className="relative -mt-[333px] z-30">
-        <div className="max-w-[1342px] mx-auto px-4">
-          <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
-            <div className="w-full h-full flex items-center justify-center">
-              <button
-                onClick={() =>
-                  window.open(
-                    "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                    "_blank",
-                  )
-                }
-                className="w-[178px] h-[178px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[15px] border-white"
-              >
-                <svg
-                  className="w-12 h-12 text-white ml-2"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  style={{ transform: 'rotate(90deg)' }}
+        {/* Blue Extension Background - exactly as in Figma: 395px height */}
+        <div className="w-full h-[395px] bg-stock4u-light-blue relative">
+
+          {/* Video Section - positioned exactly as in Figma */}
+          {/* Figma position: top 740px from page start = 566px (hero) + 112px (gap) + 62px from blue start */}
+          <div className="absolute top-[62px] left-1/2 transform -translate-x-1/2">
+            <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+              <div className="w-full h-full flex items-center justify-center">
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                      "_blank",
+                    )
+                  }
+                  className="w-[178px] h-[178px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[15px] border-white"
                 >
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </button>
+                  <svg
+                    className="w-12 h-12 text-white ml-2"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    style={{ transform: 'rotate(90deg)' }}
+                  >
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Spacer for overlapping video */}
-      <div className="h-[351px]"></div>
+        {/* Space below blue background to accommodate the video overflow */}
+        <div className="h-[351px] bg-white"></div>
+      </div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
