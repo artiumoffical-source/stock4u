@@ -18,9 +18,11 @@ export default function Index() {
       </section>
 
       {/* Blue Extension Background - positioned exactly as in Figma */}
-      <div className="w-full h-[395px] bg-stock4u-light-blue relative">
-        {/* Video Section - positioned absolutely to overlap */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 -top-[80px] z-30">
+      <div className="w-full h-[395px] bg-stock4u-light-blue"></div>
+
+      {/* Video Section - positioned as in Figma */}
+      <section className="relative -mt-[333px] z-30">
+        <div className="max-w-[1342px] mx-auto px-4">
           <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
@@ -44,10 +46,10 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Spacer for overlapping video */}
-      <div className="h-[300px]"></div>
+      <div className="h-[351px]"></div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
