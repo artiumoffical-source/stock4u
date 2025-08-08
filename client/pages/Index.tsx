@@ -8,38 +8,20 @@ export default function Index() {
     <div className="min-h-screen bg-white hebrew-font" dir="rtl">
       <Header />
 
-      {/* Hero Section - Responsive Design with proper background */}
-      <section className="relative bg-stock4u-light-blue min-h-[400px] md:min-h-[500px] lg:h-[566px] flex items-center justify-center overflow-hidden">
-        {/* Background Stock Chart for depth */}
-        <div className="absolute inset-0 opacity-15">
-          <svg
-            className="w-full h-full object-cover"
-            viewBox="0 0 1921 614"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <path
-              d="M0.433594 595.989L219.59 456.719L260.449 513.919L364.455 441.797L409.029 498.998L650.471 307.501L706.189 484.076L895.628 374.649L1070.21 309.719L1315.37 175.423L1460.23 406.711L2020.32 17.3564"
-              stroke="#689EDA"
-              strokeWidth="42"
-              fill="none"
-            />
-          </svg>
-        </div>
-
-        {/* Hero Image - full coverage responsive */}
+      {/* Hero Section - Figma Design Match */}
+      <section className="relative h-[566px] bg-stock4u-light-blue overflow-hidden">
         <img
           src="https://cdn.builder.io/api/v1/image/assets%2Fbd35a0518e78474da4e3ec381caabfa5%2F1c4a1455277d46fd898e404fd012d0c2?format=webp&width=1920&quality=90"
           alt="Stock4U Characters with Main Title"
-          className="w-full h-full object-cover object-center absolute inset-0"
+          className="w-full h-full object-cover object-center"
         />
       </section>
 
-      {/* Video Section with Blue Extension */}
-      <section className="bg-stock4u-light-blue py-4 md:py-8">
-        <div className="max-w-[800px] mx-auto px-4">
-          <div className="bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden w-full h-[400px] shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
+      {/* Blue Extension Background */}
+      <div className="w-full h-[395px] bg-stock4u-light-blue relative">
+        {/* Video Section positioned absolutely to match Figma */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 -top-[150px] z-30">
+          <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
             <div className="w-full h-full flex items-center justify-center">
               <button
                 onClick={() =>
@@ -48,10 +30,10 @@ export default function Index() {
                     "_blank",
                   )
                 }
-                className="w-[120px] h-[120px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[8px] border-white"
+                className="w-[178px] h-[178px] bg-stock4u-happy-blue rounded-full flex items-center justify-center shadow-[10px_10px_0_rgba(0,0,0,0.1)] hover:scale-105 transition-transform border-[15px] border-white transform rotate-90"
               >
                 <svg
-                  className="w-8 h-8 text-white ml-1"
+                  className="w-12 h-12 text-white ml-2"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -61,7 +43,10 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Spacer to accommodate the overlapping video */}
+      <div className="h-[300px]"></div>
 
       {/* Gift Packages Carousel */}
       <section className="w-full py-6 mb-6">
@@ -129,7 +114,7 @@ export default function Index() {
       {/* Company Logos Ticker */}
       <section className="py-6 overflow-hidden">
         <p className="text-center text-stock4u-dark-grey mb-6">
-          חברות פופולאריות להשקעה
+          חברו�� פופולאריות להשקעה
         </p>
         <div className="flex items-center gap-12 opacity-30 animate-pulse">
           {/* Placeholder for company logos */}
