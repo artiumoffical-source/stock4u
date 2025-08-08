@@ -110,36 +110,31 @@ export default function Footer() {
         direction: "rtl",
       }}
     >
-      {/* Logo Section - positioned on left as per Figma design */}
+      {/* Logo Section - positioned exactly as in Figma */}
       <div
         style={{
           position: "absolute",
-          left: "40px",
+          left: "78px",
           top: "-92px",
           width: "207px",
           height: "338px",
         }}
       >
-        {/* Stock4U Logo - Centered below dancing mascot */}
+        {/* Stock4U Logo - Positioned exactly as in Figma */}
         <div
           style={{
             position: "absolute",
-            left: "50%",
-            top: "280px",
-            transform: "translateX(-50%)",
-            width: "auto",
+            left: "0px",
+            top: "282px",
+            width: "207px",
             height: "56px",
             color: "#4C7EFB",
             fontFamily:
               "Holtwood One SC, -apple-system, Roboto, Helvetica, sans-serif",
             fontSize: "33px",
-            fontWeight: "900",
+            fontWeight: "400",
             lineHeight: "normal",
             textTransform: "uppercase",
-            textAlign: "center",
-            whiteSpace: "nowrap",
-            textShadow: "2px 2px 4px rgba(76, 126, 251, 0.3)",
-            letterSpacing: "1px",
           }}
         >
           Stock4U
@@ -156,7 +151,6 @@ export default function Footer() {
             height: "253px",
           }}
         >
-
           {/* Main logo structure with drop shadows */}
           <div
             style={{
@@ -178,8 +172,6 @@ export default function Footer() {
                 filter: "drop-shadow(7.945px 6.179px 0 rgba(0, 0, 0, 0.15))",
               }}
             >
-
-
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/f969c07e858b8f0f5fa3c353bca4357f94d553ca?width=315"
                 style={{
@@ -207,20 +199,17 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Content Sections - Centered and responsive layout */}
+      {/* Content Sections - positioned exactly as in Figma */}
       <div
         style={{
           position: "absolute",
-          left: "50%",
+          left: "550px",
           top: "76px",
-          transform: "translateX(-50%)",
-          width: "auto",
-          maxWidth: "1200px",
+          width: "1228px",
           height: "152px",
-          display: "flex",
+          display: "inline-flex",
           alignItems: "center",
-          justifyContent: "center",
-          gap: "40px",
+          gap: "3px",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "60px", justifyContent: "center" }}>
@@ -525,7 +514,7 @@ export default function Footer() {
                     lineHeight: "normal",
                   }}
                 >
-                  כניסת בתי עסק - ��ותפים
+                  כניסת בתי עסק - שותפים
                 </div>
                 <svg
                   style={{
