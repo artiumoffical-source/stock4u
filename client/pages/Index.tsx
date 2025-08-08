@@ -17,17 +17,13 @@ export default function Index() {
         />
       </section>
 
-      {/* Figma Layout: Gap of 112px, then blue background of 395px, video starts at 740px from top */}
-      <div className="relative">
-        {/* Gap between hero and blue background: 112px */}
-        <div className="h-[112px] bg-white"></div>
+      {/* Video and Blue Background Section - positioned to overlap hero as in Figma */}
+      <div className="relative -mt-[200px] z-30">
+        {/* Blue Extension Background - 395px height, positioned to overlap hero */}
+        <div className="w-full h-[395px] bg-stock4u-light-blue relative mt-[200px]">
 
-        {/* Blue Extension Background - exactly as in Figma: 395px height */}
-        <div className="w-full h-[395px] bg-stock4u-light-blue relative">
-
-          {/* Video Section - positioned exactly as in Figma */}
-          {/* Figma position: top 740px from page start = 566px (hero) + 112px (gap) + 62px from blue start */}
-          <div className="absolute top-[62px] left-1/2 transform -translate-x-1/2">
+          {/* Video Section - positioned to overlap both hero and blue background */}
+          <div className="absolute -top-[138px] left-1/2 transform -translate-x-1/2">
             <div className="w-[1342px] h-[684px] bg-black rounded-[25px] border-[19px] border-stock4u-light-blue relative overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.3)]">
               <div className="w-full h-full flex items-center justify-center">
                 <button
