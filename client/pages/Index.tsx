@@ -118,10 +118,42 @@ export default function Index() {
       {/* Company Logos Ticker */}
       <section className="py-6 overflow-hidden">
         <p className="text-center text-stock4u-dark-grey mb-6">
-          חברו�� פופולאריות להשקעה
+          חברות פופולאריות להשקעה
         </p>
-        <div className="flex items-center gap-12 opacity-30 animate-pulse">
-          {/* Placeholder for company logos */}
+        <div className="relative overflow-hidden">
+          <div className="flex items-center gap-12 opacity-30 animate-marquee">
+            <div className="flex items-center gap-12 shrink-0">
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">GOOG</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">AMZN</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">NASDAQ</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">AAPL</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">AAN</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">NVDA</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">MSFT</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">META</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">SONY</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">CRM</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">ORCL</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">JNJ</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">TSLA</span>
+            </div>
+            {/* Duplicate for seamless scroll */}
+            <div className="flex items-center gap-12 shrink-0">
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">GOOG</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">AMZN</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">NASDAQ</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">AAPL</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">AAN</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">NVDA</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">MSFT</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">META</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">SONY</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">CRM</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">ORCL</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">JNJ</span>
+              <span className="text-4xl font-bold text-stock4u-dark-grey english-font">TSLA</span>
+            </div>
+          </div>
         </div>
       </section>
 
