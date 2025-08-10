@@ -15,6 +15,7 @@ import PurchaseSuccess from "./pages/PurchaseSuccess";
 import PurchaseError from "./pages/PurchaseError";
 import About from "./pages/About";
 import Careers from "./pages/Careers";
+import EmailEditor from "./pages/EmailEditor";
 import NotFound from "./pages/NotFound";
 
 /**
