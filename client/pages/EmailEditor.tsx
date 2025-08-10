@@ -13,6 +13,53 @@ export default function EmailEditor() {
       .replace(/{{giftAmount}}/g, giftAmount || 'הסכום');
   };
 
+  const saveTemplate = () => {
+    const templateData = {
+      senderName,
+      recipientName,
+      giftAmount,
+      showLogo,
+      timestamp: new Date().toISOString()
+    };
+    localStorage.setItem('emailTemplate', JSON.stringify(templateData));
+    alert('התבנית נשמרה בהצלחה!');
+  };
+
+  const exportHTML = () => {
+    const emailHTML = `
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מייל מתנה מ-${senderName}</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Heebo', Arial, sans-serif; margin: 0; padding: 0; }
+        .email-container { width: 100%; max-width: 600px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        ${document.querySelector('.email-template')?.innerHTML || ''}
+    </div>
+</body>
+</html>`;
+
+    const blob = new Blob([emailHTML], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `email-template-${senderName}-${Date.now()}.html`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const sendTestEmail = () => {
+    // כאן יתווסף קוד לשליחת מייל ניסוי
+    alert('פונקציה זו תתווסף בהמשך - שליחת מייל ניסוי');
+  };
+
   const EmailTemplate = () => (
     <div
       className="relative w-full bg-stock4u-pop-yellow overflow-hidden hebrew-font"
@@ -172,7 +219,7 @@ export default function EmailEditor() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
               <label className="block text-sm font-medium text-stock4u-dark-grey mb-2">
-                שם השולח
+                שם השו��ח
               </label>
               <input
                 type="text"
