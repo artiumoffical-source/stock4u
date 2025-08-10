@@ -312,10 +312,12 @@ export default function EmailEditor() {
   const [previewMode, setPreviewMode] = useState(false);
   const [variables, setVariables] = useState<Record<string, string>>({
     recipientName: "יוסי כהן",
-    senderName: "דינה לוי",
+    senderName: "United",
+    senderLogo: "https://api.builder.io/api/v1/image/assets/TEMP/378ddfe0d1afad1c8baf4e915e3a1587e200b3b8?width=1105",
     amount: "500",
     personalMessage: "מזל טוב על ההתחלה! רציתי לתת לך משהו מיוחד לתחילת הדרך שלך בעולם ההשקעות.",
     claimLink: "https://stock4u.co.il/claim/abc123",
+    giftDetails: "מניות United Airlines - 5 מניות בשווי 500 ש\"ח",
     buyerName: "דינה לוי",
     orderNumber: "ST4U-2024-001234",
     totalAmount: "500"
