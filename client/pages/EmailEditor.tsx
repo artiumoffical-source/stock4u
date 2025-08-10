@@ -41,7 +41,7 @@ const defaultTemplates: EmailTemplate[] = [
 
           <div style="background: #DBE3F3; padding: 25px; border-radius: 15px; margin: 30px 0;">
             <div style="color: #486284; font-size: 16px; line-height: 1.6;">
-              <strong>הודעה אישית:</strong><br>
+              <strong>הו��עה אישית:</strong><br>
               "{{personalMessage}}"
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function EmailEditor() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-2 text-stock4u-dark-grey">
             <Link to="/" className="hover:text-stock4u-happy-blue">דף הבית</Link>
-            <span className="mx-2">></span>
+            <span className="mx-2">&gt;</span>
             <span className="font-bold">עורך מיילים</span>
           </div>
         </div>
