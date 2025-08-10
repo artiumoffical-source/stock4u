@@ -295,6 +295,12 @@ export default function EmailEditor() {
               שמור תבנית
             </button>
             <button
+              onClick={loadTemplate}
+              className="bg-stock4u-nostalgic-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-500 transition-colors shadow-sm"
+            >
+              טען תבנית
+            </button>
+            <button
               onClick={exportHTML}
               className="bg-stock4u-pop-yellow text-stock4u-dark-grey px-6 py-3 rounded-lg font-medium hover:bg-yellow-400 transition-colors shadow-sm"
             >
