@@ -27,6 +27,8 @@ export default function EmailEditor() {
         <div className="absolute top-48 left-48 w-14 h-14 bg-stock4u-happy-blue rounded-full flex items-center justify-center text-white text-xl font-bold transform rotate-45 shadow-lg">€</div>
         <div className="absolute bottom-32 right-48 w-18 h-18 bg-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold transform -rotate-12 shadow-lg">£</div>
         <div className="absolute top-64 right-64 w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center text-white text-lg font-bold transform rotate-24 shadow-lg">¥</div>
+        <div className="absolute top-80 left-96 w-14 h-14 bg-orange-500 rounded-full flex items-center justify-center text-white text-xl font-bold transform -rotate-15 shadow-lg">₿</div>
+        <div className="absolute bottom-48 left-32 w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center text-white text-2xl font-bold transform rotate-30 shadow-lg">₽</div>
 
         {/* Star decorations */}
         <div className="absolute top-20 right-80">
@@ -41,10 +43,29 @@ export default function EmailEditor() {
           </svg>
         </div>
 
-        <div className="absolute top-52 left-80">
+        <div className="absolute top-16 right-40">
           <svg width="64" height="66" viewBox="0 0 101 104" fill="none" className="text-stock4u-pop-yellow drop-shadow-lg">
             <path d="M43.8715 12.3215C43.7246 11.8442 43.0344 11.8735 42.9463 12.3655C41.8008 18.438 38.2175 36.9125 37.1968 36.9125C35.9779 36.9125 9.92567 45.8634 12.3708 46.2746C14.816 46.6784 37.1968 50.3425 37.1968 50.3425C37.1968 50.3425 45.7439 79.6476 44.9288 78.4287L51.4419 51.9726L75.6071 44.3214C76.055 44.1745 76.0403 43.5357 75.585 43.4035L51.8457 36.0975L43.8715 12.3215Z" fill="currentColor" stroke="white" strokeWidth="11.689"/>
           </svg>
+        </div>
+
+        <div className="absolute bottom-40 right-20">
+          <svg width="110" height="135" viewBox="0 0 175 206" fill="none" className="text-stock4u-pop-red drop-shadow-lg">
+            <path d="M71.9742 80.8029L87.6182 31.6572L100.411 77.15L138.828 64.3169L110.31 99.8963L136.669 131.891L100.411 122.643L84.8072 166.737L70.5483 121.217L39.2873 135.435L61.3682 104.16L28.6406 63.6651L71.9742 80.8029Z" fill="currentColor" stroke="white" strokeWidth="9"/>
+          </svg>
+        </div>
+
+        {/* Gift boxes */}
+        <div className="absolute top-24 right-1/4 w-16 h-20 bg-orange-400 rounded-lg shadow-lg transform rotate-12 relative">
+          <div className="absolute top-0 left-1/2 w-2 h-20 bg-stock4u-pop-red transform -translate-x-1/2"></div>
+          <div className="absolute top-4 left-0 w-16 h-2 bg-stock4u-pop-red"></div>
+          <div className="absolute top-2 left-2 w-3 h-3 bg-stock4u-pop-yellow rounded-full"></div>
+          <div className="absolute bottom-2 right-2 w-3 h-3 bg-stock4u-pop-yellow rounded-full"></div>
+        </div>
+
+        <div className="absolute bottom-24 right-32 w-12 h-16 bg-pink-400 rounded-lg shadow-lg transform -rotate-18 relative">
+          <div className="absolute top-0 left-1/2 w-1 h-16 bg-purple-600 transform -translate-x-1/2"></div>
+          <div className="absolute top-3 left-0 w-12 h-1 bg-purple-600"></div>
         </div>
 
         {/* Stock4U Mascot */}
@@ -60,6 +81,11 @@ export default function EmailEditor() {
             <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-stock4u-happy-blue font-bold text-xs">STOCK4U</div>
           </div>
         </div>
+
+        {/* Additional decorative elements */}
+        <div className="absolute top-40 left-32 w-8 h-8 bg-white rounded-full shadow-lg transform rotate-45"></div>
+        <div className="absolute top-72 right-96 w-6 h-6 bg-white rounded-full shadow-lg transform -rotate-12"></div>
+        <div className="absolute bottom-64 left-64 w-10 h-10 bg-white rounded-full shadow-lg transform rotate-60"></div>
       </div>
 
       {/* Main Content Card */}
