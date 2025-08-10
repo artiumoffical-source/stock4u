@@ -1159,127 +1159,6 @@ export default function GiftDesign() {
               alt="Background Pattern"
             />
 
-            {/* Decorative Elements - Dollar Signs */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/322137aed798f9f74d9cba85b27071b0a236f7d0?width=42"
-              style={{
-                width: "21px",
-                height: "34px",
-                transform: "rotate(19.423deg)",
-                flexShrink: 0,
-                filter: "drop-shadow(3.081px 3.081px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "344px",
-                top: "14px",
-              }}
-              alt="Dollar Sign"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f75cd35a5095a03cb1fa8a9e84fbbcf1d0ef8843?width=42"
-              style={{
-                width: "21px",
-                height: "34px",
-                transform: "rotate(-0.058deg)",
-                flexShrink: 0,
-                filter: "drop-shadow(3.081px 3.081px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "70px",
-                top: "147px",
-              }}
-              alt="Dollar Sign"
-            />
-
-            {/* Currency Symbols */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f0dc58bff506bf85a93d8b5476c4f4c8106df9c6?width=57"
-              style={{
-                width: "28px",
-                height: "25px",
-                transform: "rotate(12.955deg)",
-                flexShrink: 0,
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "23px",
-                top: "13px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/9bcf082230cc4e172d70ed93108b2b835f261b67?width=58"
-              style={{
-                width: "29px",
-                height: "32px",
-                transform: "rotate(21.992deg)",
-                flexShrink: 0,
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "267px",
-                top: "24px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/16498605232f149e60c60f3a44614c4dff59bf02?width=58"
-              style={{
-                width: "29px",
-                height: "32px",
-                transform: "rotate(48.846deg)",
-                flexShrink: 0,
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "430px",
-                top: "7px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/14da2baef3177151b18dd969ed516d42cebcca08?width=58"
-              style={{
-                width: "29px",
-                height: "30px",
-                transform: "rotate(-13.296deg)",
-                flexShrink: 0,
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "7px",
-                top: "87px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b0f18e7efaab981c6e1d566a2ac0851eb5c1778f?width=58"
-              style={{
-                width: "29px",
-                height: "30px",
-                transform: "rotate(-13.296deg)",
-                flexShrink: 0,
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "423px",
-                top: "134px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/377822d9d4fb8049e2bd88b7b485631497aca97a?width=58"
-              style={{
-                width: "29px",
-                height: "36px",
-                transform: "rotate(-33.253deg)",
-                flexShrink: 0,
-                filter: "drop-shadow(2.878px 2.878px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "397px",
-                top: "64px",
-              }}
-              alt="Currency Symbol"
-            />
 
             {/* Star SVGs */}
             <svg
@@ -2576,7 +2455,7 @@ export default function GiftDesign() {
                 "Greycliff Hebrew CF, -apple-system, Roboto, Helvetica, sans-serif",
             }}
           >
-            כרטיסי ברכה מעוצבים במיוחד שיישלחו יחד עם המתנה הדיגיטלית
+            כרטיסי ברכה מעוצבים במיוחד שיישלחו יחד עם המתנה הדיגיט��ית
           </p>
 
           {/* Cards Grid - Exactly 3 cards */}
