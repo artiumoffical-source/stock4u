@@ -140,7 +140,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <Link to="/email-editor" style={{ textDecoration: "none" }}>
+        <Link to="/EmailEditor" style={{ textDecoration: "none" }}>
           <span
             style={{
               color: "#4C7EFB",
