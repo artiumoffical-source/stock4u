@@ -46,28 +46,11 @@ const defaultTemplates: EmailTemplate[] = [
             </div>
           </div>
 
-          <!-- Stock Details -->
-          <div style="border: 2px solid #DBE3F3; border-radius: 15px; padding: 25px; margin: 30px 0;">
-            <div style="color: #4C7EFB; font-size: 20px; font-weight: 700; margin-bottom: 15px;">
-              פרטי המניות שקיבלת:
-            </div>
-            <div style="color: #486284; font-size: 16px; line-height: 1.8;">
-              • <strong>חברה:</strong> {{companyName}} ({{stockSymbol}})<br>
-              • <strong>כמות מניות:</strong> {{stockQuantity}}<br>
-              • <strong>ערך:</strong> {{amount}} ש"ח<br>
-              • <strong>תאריך:</strong> {{giftDate}}
-            </div>
-          </div>
-
           <!-- CTA Button -->
           <div style="text-align: center; margin: 40px 0;">
             <a href="{{claimLink}}" style="display: inline-block; background: #4C7EFB; color: white; padding: 15px 40px; border-radius: 50px; font-size: 18px; font-weight: 700; text-decoration: none; box-shadow: 0 10px 20px rgba(76, 126, 251, 0.3);">
               קבל את המתנה שלך 🎁
             </a>
-          </div>
-
-          <div style="color: #8CA2C0; font-size: 14px; text-align: center; margin-top: 30px;">
-            המתנה בתוקף עד: <strong>{{expiryDate}}</strong>
           </div>
         </div>
 
@@ -82,7 +65,7 @@ const defaultTemplates: EmailTemplate[] = [
         </div>
       </div>
     `,
-    variables: ["recipientName", "senderName", "amount", "personalMessage", "companyName", "stockSymbol", "stockQuantity", "giftDate", "claimLink", "expiryDate"]
+    variables: ["recipientName", "senderName", "amount", "personalMessage", "claimLink"]
   },
   {
     id: "purchase-confirmation",
@@ -117,17 +100,8 @@ const defaultTemplates: EmailTemplate[] = [
             </div>
             <div style="color: #486284; font-size: 16px; line-height: 1.8;">
               • <strong>מספר הזמנה:</strong> {{orderNumber}}<br>
-              • <strong>תאריך הזמנה:</strong> {{orderDate}}<br>
               • <strong>סכום:</strong> {{totalAmount}} ש"ח<br>
-              • <strong>מקבל המתנה:</strong> {{recipientName}}<br>
-              • <strong>חברה:</strong> {{companyName}} ({{stockSymbol}})
-            </div>
-          </div>
-
-          <div style="background: #DBE3F3; padding: 25px; border-radius: 15px; margin: 30px 0;">
-            <div style="color: #486284; font-size: 16px; line-height: 1.6; text-align: center;">
-              <strong>המתנה תישלח ל{{recipientName}} תוך 24 שעות</strong><br>
-              תקבל הודעה כאשר המתנה תתקבל
+              • <strong>מקבל המתנה:</strong> {{recipientName}}
             </div>
           </div>
         </div>
@@ -143,28 +117,21 @@ const defaultTemplates: EmailTemplate[] = [
         </div>
       </div>
     `,
-    variables: ["buyerName", "orderNumber", "orderDate", "totalAmount", "recipientName", "companyName", "stockSymbol"]
+    variables: ["buyerName", "orderNumber", "totalAmount", "recipientName"]
   }
 ];
 
 export default function EmailEditor() {
   const [selectedTemplate, setSelectedTemplate] = useState<EmailTemplate>(defaultTemplates[0]);
   const [previewMode, setPreviewMode] = useState(false);
-  const [copied, setCopied] = useState(false);
   const [variables, setVariables] = useState<Record<string, string>>({
     recipientName: "יוסי כהן",
     senderName: "דינה לוי",
     amount: "500",
-    personalMessage: "מזל טוב על התמחיל! רצית�� לתת לך משהו מיוחד לתחילת הדרך שלך בעולם ההשקעות.",
-    companyName: "Apple Inc.",
-    stockSymbol: "AAPL",
-    stockQuantity: "3",
-    giftDate: "15/12/2024",
+    personalMessage: "מזל טוב על ההתחלה! רציתי לתת לך משהו מיוחד לתחילת הדרך שלך בעולם ההשקעות.",
     claimLink: "https://stock4u.co.il/claim/abc123",
-    expiryDate: "15/01/2025",
     buyerName: "דינה לוי",
     orderNumber: "ST4U-2024-001234",
-    orderDate: "15/12/2024",
     totalAmount: "500"
   });
 
@@ -184,16 +151,6 @@ export default function EmailEditor() {
     return processed;
   };
 
-  const copyToClipboard = async () => {
-    try {
-      await navigator.clipboard.writeText(processTemplate(selectedTemplate.content));
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error('Failed to copy to clipboard', err);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-white hebrew-font" dir="rtl">
       <Header />
@@ -203,7 +160,7 @@ export default function EmailEditor() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-2 text-stock4u-dark-grey">
             <Link to="/" className="hover:text-stock4u-happy-blue">דף הבית</Link>
-            <ChevronRight className="w-4 h-4" />
+            <span className="mx-2">></span>
             <span className="font-bold">עורך מיילים</span>
           </div>
         </div>
@@ -272,21 +229,13 @@ export default function EmailEditor() {
                 <div className="flex gap-3">
                   <button
                     onClick={() => setPreviewMode(!previewMode)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
+                    className={`px-4 py-2 rounded-lg font-medium transition-all ${
                       previewMode 
                         ? 'bg-stock4u-happy-blue text-white' 
                         : 'bg-stock4u-light-blue text-stock4u-dark-grey hover:bg-stock4u-happy-blue hover:text-white'
                     }`}
                   >
-                    <Eye className="w-4 h-4" />
                     {previewMode ? 'חזור לעריכה' : 'תצוגה מוקדמת'}
-                  </button>
-                  <button
-                    onClick={copyToClipboard}
-                    className="flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all"
-                  >
-                    {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                    {copied ? 'הועתק!' : 'העתק HTML'}
                   </button>
                 </div>
               </div>
@@ -342,8 +291,7 @@ export default function EmailEditor() {
                     </div>
 
                     <div className="flex gap-4">
-                      <button className="flex items-center gap-2 px-6 py-3 bg-stock4u-happy-blue text-white rounded-lg hover:bg-blue-600 transition-all font-bold">
-                        <Send className="w-5 h-5" />
+                      <button className="px-6 py-3 bg-stock4u-happy-blue text-white rounded-lg hover:bg-blue-600 transition-all font-bold">
                         שלח מייל בדוגמה
                       </button>
                       <button className="px-6 py-3 border border-stock4u-happy-blue text-stock4u-happy-blue rounded-lg hover:bg-stock4u-happy-blue hover:text-white transition-all font-bold">
