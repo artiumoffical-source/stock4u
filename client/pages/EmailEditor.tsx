@@ -125,66 +125,91 @@ export default function EmailEditor() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50" dir="rtl">
-      {/* Editor Controls */}
-      <div className="bg-white border-b border-gray-200 p-6">
+    <div className="min-h-screen bg-gray-50 hebrew-font" dir="rtl">
+      {/* Header */}
+      <div className="bg-white border-b border-stock4u-light-blue p-6 shadow-sm">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">עורך מיילים</h1>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+          <div className="flex items-center justify-between">
+            <h1 className="text-3xl font-bold text-stock4u-dark-grey">עורך מיילים</h1>
+            <div className="text-sm text-stock4u-grey">
+              עמוד מוסתר לעריכת תבניות מיילים
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Editor Controls */}
+      <div className="bg-white border-b border-gray-100 p-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-xl font-semibold text-stock4u-dark-grey mb-4">הגדרות התבנית</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-stock4u-dark-grey mb-2">
                 שם השולח
               </label>
               <input
                 type="text"
                 value={senderName}
                 onChange={(e) => setSenderName(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-3 border border-stock4u-light-blue rounded-lg focus:ring-2 focus:ring-stock4u-happy-blue focus:border-stock4u-happy-blue transition-colors"
                 placeholder="United"
               />
             </div>
-            
+
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-stock4u-dark-grey mb-2">
                 שם הנמען
               </label>
               <input
                 type="text"
                 value={recipientName}
                 onChange={(e) => setRecipientName(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-3 border border-stock4u-light-blue rounded-lg focus:ring-2 focus:ring-stock4u-happy-blue focus:border-stock4u-happy-blue transition-colors"
                 placeholder="שם הלקוח"
               />
             </div>
-            
+
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-stock4u-dark-grey mb-2">
                 סכום המתנה
               </label>
               <input
                 type="text"
                 value={giftAmount}
                 onChange={(e) => setGiftAmount(e.target.value)}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full p-3 border border-stock4u-light-blue rounded-lg focus:ring-2 focus:ring-stock4u-happy-blue focus:border-stock4u-happy-blue transition-colors"
                 placeholder="₪100"
               />
             </div>
-            
+
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-stock4u-dark-grey mb-2">
                 הצגת לוגו
               </label>
-              <label className="flex items-center">
+              <label className="flex items-center mt-3">
                 <input
                   type="checkbox"
                   checked={showLogo}
                   onChange={(e) => setShowLogo(e.target.checked)}
-                  className="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                  className="w-5 h-5 text-stock4u-happy-blue border-stock4u-light-blue rounded focus:ring-stock4u-happy-blue"
                 />
-                <span className="mr-2">הצג לוגו החברה</span>
+                <span className="mr-3 text-stock4u-dark-grey">הצג לוגו החברה</span>
               </label>
             </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="flex gap-4 mt-6">
+            <button className="bg-stock4u-happy-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors shadow-sm">
+              שמור תבנית
+            </button>
+            <button className="bg-stock4u-pop-yellow text-stock4u-dark-grey px-6 py-3 rounded-lg font-medium hover:bg-yellow-400 transition-colors shadow-sm">
+              ייצא HTML
+            </button>
+            <button className="bg-gray-100 text-stock4u-dark-grey px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors">
+              שלח מייל ניסוי
+            </button>
           </div>
         </div>
       </div>
@@ -192,14 +217,13 @@ export default function EmailEditor() {
       {/* Email Preview */}
       <div className="p-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">תצוגה מקדימה:</h2>
-          <div className="border border-gray-300 rounded-lg overflow-hidden shadow-lg">
-            <div dangerouslySetInnerHTML={{ 
-              __html: processTemplate(document.querySelector('.email-template')?.outerHTML || '') 
-            }} />
-            <div className="email-template" style={{ display: 'none' }}>
-              <EmailTemplate />
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xl font-semibold text-stock4u-dark-grey">תצוגה מקדימה</h2>
+            <div className="text-sm text-stock4u-grey">
+              כך המייל יראה ללקוחות
             </div>
+          </div>
+          <div className="border border-stock4u-light-blue rounded-xl overflow-hidden shadow-lg bg-white">
             <EmailTemplate />
           </div>
         </div>
