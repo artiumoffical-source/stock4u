@@ -60,6 +60,20 @@ export default function EmailEditor() {
     alert('פונקציה זו תתווסף בהמשך - שליחת מייל ניסוי');
   };
 
+  const loadTemplate = () => {
+    const savedTemplate = localStorage.getItem('emailTemplate');
+    if (savedTemplate) {
+      const templateData = JSON.parse(savedTemplate);
+      setSenderName(templateData.senderName || 'United');
+      setRecipientName(templateData.recipientName || '');
+      setGiftAmount(templateData.giftAmount || '');
+      setShowLogo(templateData.showLogo !== undefined ? templateData.showLogo : true);
+      alert('התבנית נטענה בהצלחה!');
+    } else {
+      alert('לא נמצאה תבנית שמורה');
+    }
+  };
+
   const EmailTemplate = () => (
     <div
       className="email-template relative w-full bg-stock4u-pop-yellow overflow-hidden hebrew-font"
@@ -214,7 +228,7 @@ export default function EmailEditor() {
       {/* Editor Controls */}
       <div className="bg-white border-b border-gray-100 p-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-xl font-semibold text-stock4u-dark-grey mb-4">הגד��ות התבנית</h2>
+          <h2 className="text-xl font-semibold text-stock4u-dark-grey mb-4">הגדרות התבנית</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
