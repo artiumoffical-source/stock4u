@@ -1689,7 +1689,7 @@ export default function GiftDesign() {
           </div>
         </div>
 
-        {/* Bottom Left Section - Same style as red card but with turquoise theme */}
+        {/* Bottom Left Section - Clean turquoise theme */}
         <div
           style={{
             width: "230px",
@@ -1700,65 +1700,9 @@ export default function GiftDesign() {
             overflow: "hidden",
           }}
         >
-          {/* Decorative elements for left section */}
-          <div
-            style={{
-              position: "absolute",
-              left: "10px",
-              top: "10px",
-              color: "#FFF",
-              fontSize: "16px",
-            }}
-          >
-            ₪
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              left: "30px",
-              top: "25px",
-              color: "#FFC547",
-              fontSize: "14px",
-            }}
-          >
-            ★
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              left: "50px",
-              top: "40px",
-              color: "#FFF",
-              fontSize: "18px",
-            }}
-          >
-            $
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              right: "10px",
-              top: "15px",
-              color: "#FFC547",
-              fontSize: "12px",
-            }}
-          >
-            ✦
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              right: "30px",
-              bottom: "15px",
-              color: "#FFF",
-              fontSize: "14px",
-            }}
-          >
-            ★
-          </div>
         </div>
 
-        {/* Bottom Right Section - Light Coral/Pink */}
+        {/* Bottom Right Section - Clean design */}
         <div
           style={{
             width: "230px",
@@ -1772,58 +1716,6 @@ export default function GiftDesign() {
             gap: "10px",
           }}
         >
-          {/* Three coins in the center */}
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              background: "#FFC547",
-              border: "2px solid #FFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#E96036",
-            }}
-          >
-            ₪
-          </div>
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              background: "#FFC547",
-              border: "2px solid #FFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#E96036",
-            }}
-          >
-            ₪
-          </div>
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              background: "#FFC547",
-              border: "2px solid #FFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#E96036",
-            }}
-          >
-            ₪
-          </div>
         </div>
       </div>
 
