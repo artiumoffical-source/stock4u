@@ -140,6 +140,20 @@ export default function Header() {
           </span>
         </Link>
 
+        <Link to="/email-editor" style={{ textDecoration: "none" }}>
+          <span
+            style={{
+              color: "#4C7EFB",
+              fontFamily:
+                "Greycliff Hebrew CF, -apple-system, Roboto, Helvetica, sans-serif",
+              fontSize: "20px",
+              fontWeight: "400",
+            }}
+          >
+            עורך מיילים
+          </span>
+        </Link>
+
         <Link
           to="/stock-selection?continue=true"
           style={{ textDecoration: "none" }}
