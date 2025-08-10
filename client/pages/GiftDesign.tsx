@@ -1534,47 +1534,6 @@ export default function GiftDesign() {
               </g>
             </svg>
 
-            {/* Additional Coin Images */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/1be2e3867d6fb46450fc86b7896af58c2354745f?width=80"
-              style={{
-                width: "40px",
-                height: "40px",
-                transform: "rotate(21.656deg)",
-                flexShrink: 0,
-                position: "absolute",
-                left: "325px",
-                top: "68px",
-              }}
-              alt="Coin"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/22dddd11cc9d3b24eebf151f9a8ae34d9e6362ee?width=81"
-              style={{
-                width: "41px",
-                height: "40px",
-                transform: "rotate(-176.855deg)",
-                flexShrink: 0,
-                position: "absolute",
-                left: "123px",
-                top: "95px",
-              }}
-              alt="Coin"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f131832b0454c049c758f6576cfcd51494813b79?width=82"
-              style={{
-                width: "41px",
-                height: "41px",
-                flexShrink: 0,
-                position: "absolute",
-                left: "88px",
-                top: "22px",
-              }}
-              alt="Coin"
-            />
 
             {/* Central Robot Character */}
             <div
@@ -2455,7 +2414,7 @@ export default function GiftDesign() {
                 "Greycliff Hebrew CF, -apple-system, Roboto, Helvetica, sans-serif",
             }}
           >
-            כרטיסי ברכה מעוצבים במיוחד שיישלחו יחד עם המתנה הדיגיט��ית
+            כרטיסי ברכה מעוצבים במיוחד שיישלחו יחד עם המתנה הדיגיטלית
           </p>
 
           {/* Cards Grid - Exactly 3 cards */}
