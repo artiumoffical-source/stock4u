@@ -40,7 +40,7 @@ export default function EmailEditor() {
             </div>
             <span className="hover:opacity-75 cursor-pointer">קריירה</span>
             <span className="hover:opacity-75 cursor-pointer">רשימת מתנות</span>
-            <span className="hover:opacity-75 cursor-pointer">אודות</span>
+            <span className="hover:opacity-75 cursor-pointer">או��ות</span>
             <span className="hover:opacity-75 cursor-pointer">בית</span>
           </nav>
         </div>
@@ -59,56 +59,74 @@ export default function EmailEditor() {
 
         {/* Decorative Currency Icons - Positioned exactly like Figma */}
         <div className="absolute inset-0">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/d9447e75e5d16d7acc5746e890a7a72b4bd81d99?width=237" 
-            alt="Currency" 
+          {/* Currency Icons בדיוק לפי הפיגמה */}
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/d9447e75e5d16d7acc5746e890a7a72b4bd81d99?width=237"
+            alt="Currency"
             className="absolute left-24 top-12 w-28 h-24 transform rotate-12 drop-shadow-lg"
           />
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/2efe6eb9b70a58fa7373e5a9fb7b68f2d1d1d874?width=242" 
-            alt="Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/2efe6eb9b70a58fa7373e5a9fb7b68f2d1d1d874?width=242"
+            alt="Currency"
             className="absolute right-1/4 top-24 w-28 h-32 transform rotate-22 drop-shadow-lg"
           />
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/ffca60c468d25941ee9b92bce5e31209e962f31a?width=242" 
-            alt="Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/ffca60c468d25941ee9b92bce5e31209e962f31a?width=242"
+            alt="Currency"
             className="absolute right-12 top-8 w-28 h-32 transform rotate-45 drop-shadow-lg"
           />
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/c836a7e3297767a1a2a077583f0ba0aabec15ba7?width=241" 
-            alt="Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/c836a7e3297767a1a2a077583f0ba0aabec15ba7?width=241"
+            alt="Currency"
             className="absolute left-8 bottom-40 w-28 h-28 transform -rotate-12 drop-shadow-lg"
           />
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/8f94da977ef118a23bf574ec64cc893002c31558?width=241" 
-            alt="Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/8f94da977ef118a23bf574ec64cc893002c31558?width=241"
+            alt="Currency"
             className="absolute right-12 bottom-24 w-28 h-28 transform -rotate-12 drop-shadow-lg"
           />
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/a70d9027dcb8137595aae5c3f6f8bb37597cbfdd?width=175" 
-            alt="Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/a70d9027dcb8137595aae5c3f6f8bb37597cbfdd?width=175"
+            alt="Currency"
             className="absolute left-72 bottom-16 w-20 h-32 drop-shadow-lg"
           />
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/dc30876d4e45ff347666118bde718b5cf5c9ffb0?width=175" 
-            alt="Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/dc30876d4e45ff347666118bde718b5cf5c9ffb0?width=175"
+            alt="Currency"
             className="absolute right-1/3 top-16 w-20 h-32 transform rotate-19 drop-shadow-lg"
           />
-          
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/4449bd5e283a9206d15ddfce91fa026cc5b793b6?width=243"
+            alt="Currency"
+            className="absolute right-80 top-64 w-28 h-36 transform -rotate-33 drop-shadow-lg"
+          />
+
+          {/* כוכבים דקורטיביים */}
+          <div className="absolute right-96 top-20 w-12 h-14 bg-stock4u-pop-red rounded-full opacity-80 drop-shadow-lg"></div>
+          <div className="absolute left-32 bottom-52 w-12 h-14 bg-stock4u-pop-red rounded-full opacity-80 drop-shadow-lg"></div>
+          <div className="absolute right-48 bottom-40 w-20 h-24 bg-stock4u-pop-red rounded-full opacity-80 drop-shadow-lg"></div>
+          <div className="absolute right-2/3 bottom-64 w-16 h-16 bg-stock4u-pop-yellow rounded-full opacity-80 drop-shadow-lg"></div>
+          <div className="absolute left-64 top-80 w-32 h-32 bg-stock4u-pop-yellow rounded-full opacity-80 drop-shadow-lg"></div>
+
+          {/* אלמנטים גיאומטריים */}
+          <div className="absolute right-24 top-96 w-8 h-8 bg-white rounded-full opacity-90 drop-shadow-lg"></div>
+          <div className="absolute left-96 bottom-80 w-6 h-6 bg-white rounded-full opacity-90 drop-shadow-lg"></div>
+          <div className="absolute right-1/2 top-32 w-10 h-10 bg-white rounded-full opacity-90 drop-shadow-lg"></div>
+
           {/* 3D Currency Symbols */}
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/a7304a2766381e931e35d83124bab474727fa9f3?width=335" 
-            alt="3D Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/a7304a2766381e931e35d83124bab474727fa9f3?width=335"
+            alt="3D Currency"
             className="absolute right-64 top-64 w-40 h-40 transform rotate-21 drop-shadow-lg"
           />
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/650efdca367c7620a9484f97f351d434be96470b?width=340" 
-            alt="3D Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/650efdca367c7620a9484f97f351d434be96470b?width=340"
+            alt="3D Currency"
             className="absolute left-1/3 bottom-32 w-40 h-40 transform -rotate-12 drop-shadow-lg"
           />
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/637edfefd1c11e22f05f22ca05071c44e431aa66?width=341" 
-            alt="3D Currency" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/637edfefd1c11e22f05f22ca05071c44e431aa66?width=341"
+            alt="3D Currency"
             className="absolute left-96 top-20 w-40 h-40 drop-shadow-lg"
           />
         </div>
