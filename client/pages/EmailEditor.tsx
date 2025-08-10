@@ -146,7 +146,6 @@ const defaultTemplates: EmailTemplate[] = [
               border-radius: 15px;
               margin: 30px 0;
               text-align: right;
-              display: {{giftDetails}} ? 'block' : 'none';
             ">
               <h3 style="color: #4C7EFB; margin: 0 0 10px 0; font-size: 18px;">פרטי המתנה:</h3>
               <div style="color: #486284; line-height: 1.6;">
@@ -201,7 +200,7 @@ const defaultTemplates: EmailTemplate[] = [
   {
     id: "gift-notification",
     name: "הודעת מתנה",
-    subject: "ק��בלת מתנת מניות מ{{senderName}}! 🎁",
+    subject: "קיבלת מתנת מניות מ{{senderName}}! 🎁",
     content: `
       <div style="font-family: 'Greycliff Hebrew CF', Arial, sans-serif; direction: rtl; text-align: right; max-width: 600px; margin: 0 auto; background: white;">
         <!-- Header -->
@@ -281,7 +280,7 @@ const defaultTemplates: EmailTemplate[] = [
           <!-- Order Details -->
           <div style="border: 2px solid #DBE3F3; border-radius: 15px; padding: 25px; margin: 30px 0;">
             <div style="color: #4C7EFB; font-size: 20px; font-weight: 700; margin-bottom: 15px;">
-              פרט�� ההזמנה:
+              פרטי ההזמנה:
             </div>
             <div style="color: #486284; font-size: 16px; line-height: 1.8;">
               • <strong>מספר הזמנה:</strong> {{orderNumber}}<br>
@@ -314,7 +313,7 @@ export default function EmailEditor() {
     senderName: "United",
     senderLogo: "https://api.builder.io/api/v1/image/assets/TEMP/378ddfe0d1afad1c8baf4e915e3a1587e200b3b8?width=1105",
     amount: "500",
-    personalMessage: "מזל טוב על ההתחלה! רציתי לתת לך משהו מיוחד לתחילת הדרך שלך בעולם ה��שקעות.",
+    personalMessage: "מזל טוב על ההתחלה! רציתי לתת לך משהו מיוחד לתחילת הדרך שלך בעולם ההשקעות.",
     claimLink: "https://stock4u.co.il/claim/abc123",
     giftDetails: "מניות United Airlines - 5 מניות בשווי 500 ש\"ח",
     buyerName: "דינה לוי",
