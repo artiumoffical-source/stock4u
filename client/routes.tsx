@@ -60,6 +60,7 @@ export default function AppRoutes() {
 
       {/* Admin Tools */}
       <Route path="/email-editor" element={<EmailEditor />} />
+      <Route path="/EmailEditor" element={<EmailEditor />} />
       
       {/* Catch-all route - MUST be last */}
       <Route path="*" element={<NotFound />} />
