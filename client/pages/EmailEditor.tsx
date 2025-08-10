@@ -14,6 +14,192 @@ interface EmailTemplate {
 
 const defaultTemplates: EmailTemplate[] = [
   {
+    id: "gift-notification-figma",
+    name: "הודעת מתנה (עיצוב חדש)",
+    subject: "איזה כיף! קיבלת מתנה מ{{senderName}}! 🎉",
+    content: `
+      <!DOCTYPE html>
+      <html dir="rtl" lang="he">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>קיבלת מתנה!</title>
+      </head>
+      <body style="margin: 0; padding: 0; font-family: 'Greycliff Hebrew CF', Arial, sans-serif; direction: rtl;">
+        <!-- Background with decorative elements -->
+        <div style="
+          background: #FFC547;
+          background-image:
+            radial-gradient(circle at 15% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
+            radial-gradient(circle at 85% 30%, rgba(255,255,255,0.15) 0%, transparent 40%),
+            radial-gradient(circle at 45% 60%, rgba(255,255,255,0.1) 0%, transparent 30%),
+            radial-gradient(circle at 75% 80%, rgba(255,255,255,0.1) 0%, transparent 35%);
+          padding: 60px 20px;
+          min-height: 100vh;
+          position: relative;
+          overflow: hidden;
+        ">
+
+          <!-- Decorative icons scattered around -->
+          <div style="position: absolute; top: 80px; left: 100px; width: 60px; height: 60px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(0,0,0,0.1); transform: rotate(15deg);">
+            <span style="font-size: 24px; color: #4C7EFB;">₪</span>
+          </div>
+
+          <div style="position: absolute; top: 150px; right: 120px; width: 50px; height: 50px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(0,0,0,0.1); transform: rotate(-20deg);">
+            <span style="font-size: 20px; color: #E96036;">$</span>
+          </div>
+
+          <div style="position: absolute; bottom: 200px; left: 80px; width: 55px; height: 55px; background: rgba(255,255,255,0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(0,0,0,0.1); transform: rotate(25deg);">
+            <span style="font-size: 22px; color: #4C7EFB;">€</span>
+          </div>
+
+          <div style="position: absolute; top: 120px; right: 200px; width: 45px; height: 45px; background: rgba(255,255,255,0.9); border-radius: 20%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(0,0,0,0.1); transform: rotate(-15deg);">
+            <span style="font-size: 18px; color: #E96036;">✦</span>
+          </div>
+
+          <!-- Header with Stock4U branding -->
+          <div style="text-align: center; margin-bottom: 40px;">
+            <div style="background: white; border: 1px solid #DDD; padding: 15px 0; margin-bottom: 30px;">
+              <div style="color: #4C7EFB; font-size: 32px; font-weight: bold; font-family: 'Holtwood One SC', Arial, sans-serif;">
+                STOCK4U
+              </div>
+            </div>
+          </div>
+
+          <!-- Main content card -->
+          <div style="
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 34px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 39px rgba(0,0,0,0.25);
+            text-align: center;
+            position: relative;
+          ">
+
+            <!-- Excitement text -->
+            <div style="margin-bottom: 15px;">
+              <h1 style="
+                color: #E96036;
+                font-size: 34px;
+                font-weight: 800;
+                margin: 0 0 10px 0;
+                font-family: 'Greycliff Hebrew CF', Arial, sans-serif;
+              ">איזה כיף!</h1>
+
+              <h2 style="
+                color: #E96036;
+                font-size: 54px;
+                font-weight: 800;
+                margin: 0;
+                font-family: 'Greycliff Hebrew CF', Arial, sans-serif;
+                line-height: 1.1;
+              ">קיבלת מתנה!</h2>
+            </div>
+
+            <!-- Sender info -->
+            <div style="margin: 30px 0;">
+              <p style="
+                color: #4C7EFB;
+                font-size: 24px;
+                font-weight: 400;
+                margin: 0;
+                font-family: 'Poppins', Arial, sans-serif;
+              ">ממי המתנה? {{senderName}} כמובן!</p>
+            </div>
+
+            <!-- Company logo (conditional) -->
+            <div style="margin: 30px 0;">
+              <img src="{{senderLogo}}" alt="{{senderName}} Logo" style="
+                max-width: 400px;
+                max-height: 120px;
+                height: auto;
+                border-radius: 15px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+                display: {{senderLogo}} ? 'block' : 'none';
+              ">
+            </div>
+
+            <!-- CTA Button -->
+            <div style="margin: 40px 0;">
+              <a href="{{claimLink}}" style="
+                display: inline-block;
+                background: #4C7EFB;
+                color: white;
+                padding: 14px 30px;
+                border-radius: 56px;
+                font-size: 18px;
+                font-weight: 700;
+                text-decoration: none;
+                box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+                font-family: 'Greycliff Hebrew CF', Arial, sans-serif;
+                transition: transform 0.2s;
+              ">
+                לצפייה במתנה
+              </a>
+            </div>
+
+            <!-- Gift details -->
+            <div style="
+              background: #DBE3F3;
+              padding: 20px;
+              border-radius: 15px;
+              margin: 30px 0;
+              text-align: right;
+              display: {{giftDetails}} ? 'block' : 'none';
+            ">
+              <h3 style="color: #4C7EFB; margin: 0 0 10px 0; font-size: 18px;">פרטי המתנה:</h3>
+              <div style="color: #486284; line-height: 1.6;">
+                {{giftDetails}}
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Statistics section -->
+          <div style="margin-top: 60px; text-align: center;">
+            <div style="display: inline-flex; gap: 30px; flex-wrap: wrap; justify-content: center;">
+              <div style="background: rgba(239,242,246,0.4); padding: 20px; border-radius: 24px; min-width: 160px;">
+                <div style="color: #486284; font-size: 48px; font-weight: 700; margin-bottom: 8px;">24+</div>
+                <div style="color: #8CA2C0; font-size: 16px;">מדינות שבהם אנו עובדים</div>
+              </div>
+
+              <div style="background: rgba(239,242,246,0.4); padding: 20px; border-radius: 24px; min-width: 160px;">
+                <div style="color: #486284; font-size: 48px; font-weight: 700; margin-bottom: 8px;">17M</div>
+                <div style="color: #8CA2C0; font-size: 16px;">אנשים שהאמינו בנו</div>
+              </div>
+
+              <div style="background: rgba(239,242,246,0.4); padding: 20px; border-radius: 24px; min-width: 160px;">
+                <div style="color: #486284; font-size: 48px; font-weight: 700; margin-bottom: 8px;">+95%</div>
+                <div style="color: #8CA2C0; font-size: 16px;">לקוחות מרוצים</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div style="
+            margin-top: 80px;
+            background: #DBE3F3;
+            padding: 40px 20px;
+            border-radius: 20px;
+            text-align: center;
+          ">
+            <div style="color: #4C7EFB; font-size: 18px; font-weight: 700; margin-bottom: 10px;">
+              Stock4U - המקום שלך להשקעות חכמות
+            </div>
+            <div style="color: #8CA2C0; font-size: 14px;">
+              support@stock4u.co.il | 03-12345678
+            </div>
+          </div>
+
+        </div>
+      </body>
+      </html>
+    `,
+    variables: ["senderName", "senderLogo", "claimLink", "giftDetails"]
+  },
+  {
     id: "gift-notification",
     name: "הודעת מתנה",
     subject: "קיבלת מתנת מניות מ{{senderName}}! 🎁",
