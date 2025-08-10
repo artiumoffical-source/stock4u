@@ -199,7 +199,7 @@ const defaultTemplates: EmailTemplate[] = [
   },
   {
     id: "gift-notification",
-    name: "הודעת מתנה",
+    name: "הוד��ת מתנה",
     subject: "קיבלת מתנת מניות מ{{senderName}}! 🎁",
     content: `
       <div style="font-family: 'Greycliff Hebrew CF', Arial, sans-serif; direction: rtl; text-align: right; max-width: 600px; margin: 0 auto; background: white;">
@@ -330,10 +330,23 @@ export default function EmailEditor() {
 
   const processTemplate = (content: string): string => {
     let processed = content;
+
+    // Replace variables
     Object.entries(variables).forEach(([key, value]) => {
       const regex = new RegExp(`{{${key}}}`, 'g');
-      processed = processed.replace(regex, value);
+      processed = processed.replace(regex, value || '');
     });
+
+    // Handle conditional display for senderLogo
+    const logoCondition = variables.senderLogo && variables.senderLogo.trim() !== '';
+    processed = processed.replace(/display: {{senderLogo}} \? 'block' : 'none';/g,
+      `display: ${logoCondition ? 'block' : 'none'};`);
+
+    // Handle conditional display for giftDetails
+    const giftDetailsCondition = variables.giftDetails && variables.giftDetails.trim() !== '';
+    processed = processed.replace(/display: {{giftDetails}} \? 'block' : 'none';/g,
+      `display: ${giftDetailsCondition ? 'block' : 'none'};`);
+
     return processed;
   };
 
