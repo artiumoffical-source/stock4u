@@ -494,6 +494,29 @@ export default function EmailEditor() {
         </div>
       </div>
 
+      {/* Instructions Section */}
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="bg-stock4u-light-blue/20 rounded-xl p-6">
+          <h3 className="text-xl font-bold text-stock4u-dark-grey mb-4">
+            הוראות לשימוש בטמפלט החדש:
+          </h3>
+          <div className="space-y-3 text-stock4u-dark-grey">
+            <div>
+              <strong>senderName:</strong> שם השולח שיופיע ב"ממי המתנה"
+            </div>
+            <div>
+              <strong>senderLogo:</strong> URL של לוגו השולח (אם אין לוגו - השאר ריק והלוגו לא יופיע)
+            </div>
+            <div>
+              <strong>claimLink:</strong> קישור לקבלת המתנה
+            </div>
+            <div>
+              <strong>giftDetails:</strong> פרטי המתנה (אם ריק - הסעיף לא יופיע)
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
