@@ -19,12 +19,12 @@ export default function EmailEditor() {
       {/* Main container matching Figma exactly */}
       <div className="relative" style={{ width: '800px', height: '800px', background: '#FFF' }}>
         
-        {/* Yellow background section */}
+        {/* Updated Yellow background section with new Figma design */}
         <div className="absolute" style={{ width: '800px', height: '327px', background: '#FFC547', left: '0px', top: '42px' }}>
           
           {/* Background pattern image - scaled to fit 800px width */}
           <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/7a0ce1897b9a92990f9d99cb40666973ee6b2c50?width=4258" 
+            src="https://api.builder.io/api/v1/image/assets/TEMP/8748bb1fb3ec0f322beee2fda95614b39ec269b6?width=4258" 
             className="absolute"
             style={{
               width: '888px',
@@ -35,7 +35,7 @@ export default function EmailEditor() {
             alt="Background Pattern"
           />
 
-          {/* All decorative elements positioned exactly from Figma coordinates scaled to 800px */}
+          {/* All decorative elements positioned exactly from new Figma coordinates scaled to 800px */}
           
           {/* Group 108307 - top right */}
           <img 
@@ -67,9 +67,9 @@ export default function EmailEditor() {
             alt="Group 108376"
           />
 
-          {/* Group 108295 - top left */}
+          {/* Group 108295 - top left - NEW IMAGE */}
           <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/d9447e75e5d16d7acc5746e890a7a72b4bd81d99?width=237" 
+            src="https://api.builder.io/api/v1/image/assets/TEMP/f8e00e5489949b9b6936a99f3e99aa70259fb8b9?width=237" 
             className="absolute"
             style={{
               width: '50px',
@@ -82,9 +82,9 @@ export default function EmailEditor() {
             alt="Group 108295"
           />
 
-          {/* Group 108298 - middle right */}
+          {/* Group 108298 - middle right - NEW IMAGE */}
           <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/2efe6eb9b70a58fa7373e5a9fb7b68f2d1d1d874?width=242" 
+            src="https://api.builder.io/api/v1/image/assets/TEMP/562a03679a5ae07e6ad6e65ac156624a0ca48b84?width=242" 
             className="absolute"
             style={{
               width: '50px',
@@ -157,7 +157,7 @@ export default function EmailEditor() {
             alt="Group 108292"
           />
 
-          {/* Star SVGs - exact positions from Figma */}
+          {/* Star SVGs - exact positions from new Figma */}
           <svg 
             className="absolute"
             style={{
@@ -280,9 +280,9 @@ export default function EmailEditor() {
             </svg>
           </div>
 
-          {/* Additional decorative elements exactly as positioned in Figma */}
+          {/* Additional decorative elements exactly as positioned in new Figma */}
           <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/a7304a2766381e931e35d83124bab474727fa9f3?width=335" 
+            src="https://api.builder.io/api/v1/image/assets/TEMP/71e1c1aed0987438115514fea6c33f5bb68c2f19?width=335" 
             className="absolute"
             style={{
               width: '70px',
@@ -308,7 +308,7 @@ export default function EmailEditor() {
           />
 
           <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/637edfefd1c11e22f05f22ca05071c44e431aa66?width=341" 
+            src="https://api.builder.io/api/v1/image/assets/TEMP/c53e4ab5bcbea30c2f4242d53e1fa2ad6a0afbaa?width=341" 
             className="absolute"
             style={{
               width: '71px',
@@ -318,9 +318,47 @@ export default function EmailEditor() {
             }}
             alt="Group 108408"
           />
+
+          {/* Robot/Character complex element with exact positioning */}
+          <div className="absolute" style={{ width: '92px', height: '145px', left: '353px', top: '44px' }}>
+            <svg className="absolute" style={{ width: '80px', height: '87px', fill: '#FFF', left: '1px', top: '16px' }} width="192" height="210" viewBox="0 0 192 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.0119779 160.888L0.0119874 70.5633L115.406 0.791016L191.44 65.1961L177.237 173.918L96.8226 210.007L0.0119779 160.888Z" fill="white"/>
+            </svg>
+            <div className="absolute" style={{ width: '92px', height: '145px', filter: 'drop-shadow(2.1px 2.1px 0 rgba(0, 0, 0, 0.10))', left: '0px', top: '0px' }}>
+              <div className="absolute" style={{ width: '92px', height: '145px', filter: 'drop-shadow(4.6px 3.6px 0 rgba(0, 0, 0, 0.15))', left: '0px', top: '0px' }}>
+                <img 
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/1e0545a47a34fcc8241c785c8ca54af1ef8130e1?width=434" 
+                  className="absolute"
+                  style={{ width: '91px', height: '71px', fill: '#FFF', strokeWidth: '4.2px', stroke: '#FFF', left: '1px', top: '74px' }}
+                  alt="Vector"
+                />
+                <img 
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/002e2322226877e26227f3e73e8b0a4ba5083efb?width=351" 
+                  className="absolute"
+                  style={{ width: '73px', height: '103px', fill: '#FFF', strokeWidth: '10.5px', stroke: '#FFF', left: '5px', top: '0px' }}
+                  alt="Union"
+                />
+                <div className="absolute" style={{ width: '14px', height: '5px', background: '#FFF', left: '36px', top: '99px' }}></div>
+                <div className="absolute" style={{ width: '14px', height: '13px', background: '#FFF', left: '65px', top: '44px' }}></div>
+                <div className="absolute" style={{ width: '14px', height: '10px', background: '#FFF', left: '0px', top: '42px' }}></div>
+                <img 
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/988f9f10d61d5bc113bb788429b166aa50308073?width=434" 
+                  className="absolute"
+                  style={{ width: '91px', height: '71px', left: '1px', top: '74px' }}
+                  alt="Group 108277"
+                />
+              </div>
+              <img 
+                src="https://api.builder.io/api/v1/image/assets/TEMP/bc95305a408a0a10cdd090884c0f2965277b826e?width=340" 
+                className="absolute"
+                style={{ width: '71px', height: '99px', left: '5px', top: '0px' }}
+                alt="Group 108355"
+              />
+            </div>
+          </div>
         </div>
 
-        {/* Main Gift Card Container - positioned exactly like Figma */}
+        {/* KEEP EXISTING WHITE GIFT CARD CONTENT EXACTLY AS IS */}
         <div 
           className="absolute flex justify-center items-center"
           style={{
