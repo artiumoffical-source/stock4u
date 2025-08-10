@@ -110,14 +110,13 @@ const defaultTemplates: EmailTemplate[] = [
             </div>
 
             <!-- Company logo (conditional) -->
-            <div style="margin: 30px 0;">
+            <div style="margin: 30px 0; display: {{senderLogo}} ? 'block' : 'none';">
               <img src="{{senderLogo}}" alt="{{senderName}} Logo" style="
                 max-width: 400px;
                 max-height: 120px;
                 height: auto;
                 border-radius: 15px;
                 box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-                display: {{senderLogo}} ? 'block' : 'none';
               ">
             </div>
 
@@ -202,7 +201,7 @@ const defaultTemplates: EmailTemplate[] = [
   {
     id: "gift-notification",
     name: "הודעת מתנה",
-    subject: "קיבלת מתנת מניות מ{{senderName}}! 🎁",
+    subject: "ק��בלת מתנת מניות מ{{senderName}}! 🎁",
     content: `
       <div style="font-family: 'Greycliff Hebrew CF', Arial, sans-serif; direction: rtl; text-align: right; max-width: 600px; margin: 0 auto; background: white;">
         <!-- Header -->
@@ -282,7 +281,7 @@ const defaultTemplates: EmailTemplate[] = [
           <!-- Order Details -->
           <div style="border: 2px solid #DBE3F3; border-radius: 15px; padding: 25px; margin: 30px 0;">
             <div style="color: #4C7EFB; font-size: 20px; font-weight: 700; margin-bottom: 15px;">
-              פרטי ההזמנה:
+              פרט�� ההזמנה:
             </div>
             <div style="color: #486284; font-size: 16px; line-height: 1.8;">
               • <strong>מספר הזמנה:</strong> {{orderNumber}}<br>
@@ -315,7 +314,7 @@ export default function EmailEditor() {
     senderName: "United",
     senderLogo: "https://api.builder.io/api/v1/image/assets/TEMP/378ddfe0d1afad1c8baf4e915e3a1587e200b3b8?width=1105",
     amount: "500",
-    personalMessage: "מזל טוב על ההתחלה! רציתי לתת לך משהו מיוחד לתחילת הדרך שלך בעולם ההשקעות.",
+    personalMessage: "מזל טוב על ההתחלה! רציתי לתת לך משהו מיוחד לתחילת הדרך שלך בעולם ה��שקעות.",
     claimLink: "https://stock4u.co.il/claim/abc123",
     giftDetails: "מניות United Airlines - 5 מניות בשווי 500 ש\"ח",
     buyerName: "דינה לוי",
