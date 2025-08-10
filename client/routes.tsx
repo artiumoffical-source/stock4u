@@ -57,6 +57,9 @@ export default function AppRoutes() {
       {/* Static Pages */}
       <Route path="/about" element={<About />} />
       <Route path="/careers" element={<Careers />} />
+
+      {/* Admin Tools */}
+      <Route path="/email-editor" element={<EmailEditor />} />
       
       {/* Catch-all route - MUST be last */}
       <Route path="*" element={<NotFound />} />
