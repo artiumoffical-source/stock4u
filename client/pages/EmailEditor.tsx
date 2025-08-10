@@ -186,7 +186,7 @@ export default function EmailEditor() {
           </div>
           <div className="text-center bg-gray-100 bg-opacity-60 rounded-3xl p-8">
             <div className="text-stock4u-dark-grey text-5xl font-bold mb-2">17M</div>
-            <div className="text-stock4u-grey text-lg english-font">אנשים שהאמינו בנו</div>
+            <div className="text-stock4u-grey text-lg english-font">��נשים שהאמינו בנו</div>
           </div>
           <div className="text-center bg-gray-100 bg-opacity-60 rounded-3xl p-8">
             <div className="text-stock4u-dark-grey text-5xl font-bold mb-2">+95%</div>
@@ -219,7 +219,7 @@ export default function EmailEditor() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
               <label className="block text-sm font-medium text-stock4u-dark-grey mb-2">
-                שם השו��ח
+                שם השולח
               </label>
               <input
                 type="text"
@@ -274,13 +274,22 @@ export default function EmailEditor() {
 
           {/* Action Buttons */}
           <div className="flex gap-4 mt-6">
-            <button className="bg-stock4u-happy-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors shadow-sm">
+            <button
+              onClick={saveTemplate}
+              className="bg-stock4u-happy-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition-colors shadow-sm"
+            >
               שמור תבנית
             </button>
-            <button className="bg-stock4u-pop-yellow text-stock4u-dark-grey px-6 py-3 rounded-lg font-medium hover:bg-yellow-400 transition-colors shadow-sm">
+            <button
+              onClick={exportHTML}
+              className="bg-stock4u-pop-yellow text-stock4u-dark-grey px-6 py-3 rounded-lg font-medium hover:bg-yellow-400 transition-colors shadow-sm"
+            >
               ייצא HTML
             </button>
-            <button className="bg-gray-100 text-stock4u-dark-grey px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors">
+            <button
+              onClick={sendTestEmail}
+              className="bg-gray-100 text-stock4u-dark-grey px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors"
+            >
               שלח מייל ניסוי
             </button>
           </div>
