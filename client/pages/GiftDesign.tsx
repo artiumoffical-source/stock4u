@@ -20,7 +20,7 @@ export default function GiftDesign() {
     }
   }, [giftData.selectedCard]);
 
-  // Red Card Component - Exact Figma Design Implementation
+  // Red Card Component - Different color scheme
   const RedCard = () => (
     <div
       onClick={() => setSelectedCard("red")}
@@ -55,7 +55,7 @@ export default function GiftDesign() {
         }
       }}
     >
-      {/* Main Card Container - Exact Figma Structure */}
+      {/* Main Card Container */}
       <div
         style={{
           display: "flex",
@@ -67,7 +67,7 @@ export default function GiftDesign() {
           position: "relative",
         }}
       >
-        {/* Top Orange Section with Decorative Elements */}
+        {/* Top Section with Red Background */}
         <div
           style={{
             display: "flex",
@@ -76,798 +76,19 @@ export default function GiftDesign() {
             justifyContent: "center",
             alignItems: "center",
             border: "3px solid #FFF",
-            background: "#FFF",
-            position: "relative",
-          }}
-        >
-          {/* Orange Background with All Decorative Elements */}
-          <div
-            style={{
-              width: "460px",
-              height: "188px",
-              flexShrink: 0,
-              background: "#E96036",
-              position: "absolute",
-              left: "0px",
-              top: "0px",
-            }}
-          >
-            {/* Background Pattern Image */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/1328bf78fc6e7aba44c208538b784491b4fdf711?width=1020"
-              style={{
-                width: "510px",
-                height: "322px",
-                position: "absolute",
-                left: "-28px",
-                top: "-63px",
-              }}
-              alt="Background Pattern"
-            />
-
-            {/* Decorative Elements - Dollar Signs */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/322137aed798f9f74d9cba85b27071b0a236f7d0?width=42"
-              style={{
-                width: "21px",
-                height: "34px",
-                transform: "rotate(19.423deg)",
-                filter: "drop-shadow(3.081px 3.081px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "344px",
-                top: "14px",
-              }}
-              alt="Dollar Sign"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f75cd35a5095a03cb1fa8a9e84fbbcf1d0ef8843?width=42"
-              style={{
-                width: "21px",
-                height: "34px",
-                transform: "rotate(-0.058deg)",
-                filter: "drop-shadow(3.081px 3.081px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "70px",
-                top: "147px",
-              }}
-              alt="Dollar Sign"
-            />
-
-            {/* Currency Symbols */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/9f7b625a5c623b28fb9f089ea28896c0eb9e5550?width=57"
-              style={{
-                width: "28px",
-                height: "25px",
-                transform: "rotate(12.955deg)",
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "23px",
-                top: "13px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/9bcf082230cc4e172d70ed93108b2b835f261b67?width=58"
-              style={{
-                width: "29px",
-                height: "32px",
-                transform: "rotate(21.992deg)",
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "267px",
-                top: "24px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/16498605232f149e60c60f3a44614c4dff59bf02?width=58"
-              style={{
-                width: "29px",
-                height: "32px",
-                transform: "rotate(48.846deg)",
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "430px",
-                top: "7px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/14da2baef3177151b18dd969ed516d42cebcca08?width=58"
-              style={{
-                width: "29px",
-                height: "30px",
-                transform: "rotate(-13.296deg)",
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "7px",
-                top: "87px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b0f18e7efaab981c6e1d566a2ac0851eb5c1778f?width=58"
-              style={{
-                width: "29px",
-                height: "30px",
-                transform: "rotate(-13.296deg)",
-                filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "423px",
-                top: "134px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/377822d9d4fb8049e2bd88b7b485631497aca97a?width=58"
-              style={{
-                width: "29px",
-                height: "36px",
-                transform: "rotate(-33.253deg)",
-                filter: "drop-shadow(2.878px 2.878px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "397px",
-                top: "64px",
-              }}
-              alt="Currency Symbol"
-            />
-
-            {/* Star SVGs */}
-            <svg
-              style={{
-                width: "11px",
-                height: "13px",
-                fill: "#E96036",
-                strokeWidth: "2.156px",
-                stroke: "#FFF",
-                filter: "drop-shadow(2.395px 2.395px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "393px",
-                top: "26px",
-              }}
-              width="28"
-              height="32"
-              viewBox="0 0 28 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_d_red1)">
-                <path
-                  d="M12.0792 13.255L13.6392 8.354L14.9149 12.8907L18.746 11.6109L15.9021 15.159L18.5307 18.3496L14.9149 17.4273L13.3589 21.8245L11.937 17.2851L8.81953 18.703L11.0215 15.5842L7.75781 11.5459L12.0792 13.255Z"
-                  fill="#E96036"
-                />
-                <path
-                  d="M14.6768 8.06201L15.6455 11.5093L18.4043 10.5884L21.877 9.4292L19.5869 12.2847L17.291 15.1489L19.3623 17.6646L21.459 20.2085L18.2646 19.394L15.6016 18.7144L14.375 22.1841L13.2969 25.2319L12.3301 22.147L11.2725 18.771L9.26562 19.6841L5.64453 21.3315L7.93848 18.0815L9.6709 15.6274L6.91992 12.2231L4.34375 9.03662L8.1543 10.5435L11.4014 11.8276L12.6123 8.02686L13.7031 4.59912L14.6768 8.06201Z"
-                  stroke="white"
-                  strokeWidth="2.15585"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_red1"
-                  x="0.929688"
-                  y="0.844727"
-                  width="26.4735"
-                  height="30.1896"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="2.39539" dy="2.39539" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_red1"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_red1"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-
-            <svg
-              style={{
-                width: "11px",
-                height: "13px",
-                fill: "#E96036",
-                strokeWidth: "2.156px",
-                stroke: "#FFF",
-                filter: "drop-shadow(2.395px 2.395px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "24px",
-                top: "147px",
-              }}
-              width="27"
-              height="31"
-              viewBox="0 0 27 31"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_d_red2)">
-                <path
-                  d="M11.378 12.4017L12.9381 7.50073L14.2137 12.0374L18.0448 10.7576L15.201 14.3057L17.8295 17.4963L14.2137 16.5741L12.6577 20.9712L11.2358 16.4319L8.11836 17.8497L10.3203 14.731L7.05664 10.6926L11.378 12.4017Z"
-                  fill="#E96036"
-                />
-                <path
-                  d="M13.9756 7.20874L14.9443 10.656L17.7031 9.73511L21.1758 8.57593L18.8857 11.4314L16.5898 14.2957L18.6611 16.8113L20.7578 19.3552L17.5635 18.5408L14.9004 17.8611L13.6738 21.3308L12.5957 24.3787L11.6289 21.2937L10.5713 17.9177L8.56445 18.8308L4.94336 20.4783L7.2373 17.2283L8.96973 14.7742L6.21875 11.3699L3.64258 8.18335L7.45312 9.69019L10.7002 10.9744L11.9111 7.17358L13.002 3.74585L13.9756 7.20874Z"
-                  stroke="white"
-                  strokeWidth="2.15585"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_red2"
-                  x="0.228516"
-                  y="-0.00854492"
-                  width="26.4735"
-                  height="30.1896"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="2.39539" dy="2.39539" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_red2"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_red2"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-
-            <svg
-              style={{
-                width: "26px",
-                height: "32px",
-                fill: "#E96036",
-                strokeWidth: "2.156px",
-                stroke: "#FFF",
-                filter: "drop-shadow(2.395px 2.395px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "357px",
-                top: "144px",
-              }}
-              width="43"
-              height="50"
-              viewBox="0 0 43 50"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_d_red3)">
-                <path
-                  d="M17.8097 19.274L21.5571 7.50171L24.6213 18.399L33.8238 15.325L26.9927 23.8476L33.3066 31.5115L24.6213 29.2962L20.8837 39.8585L17.4682 28.9547L9.97997 32.3605L15.2692 24.869L7.42969 15.1688L17.8097 19.274Z"
-                  fill="#E96036"
-                />
-                <path
-                  d="M22.5947 7.20972L25.3525 17.0183L33.4824 14.3025L36.9541 13.1423L34.665 15.9988L28.3809 23.8386L34.1387 30.8259L36.2354 33.3708L33.04 32.5564L25.3086 30.5837L21.9004 40.2185L20.8213 43.2654L19.8555 40.1804L16.8037 30.4402L10.4258 33.3416L6.80469 34.989L9.09961 31.739L13.918 24.9128L6.5918 15.8464L4.01562 12.6599L7.82617 14.1667L17.1318 17.8464L20.5303 7.17456L21.6211 3.74683L22.5947 7.20972Z"
-                  stroke="white"
-                  strokeWidth="2.15585"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_red3"
-                  x="0.601562"
-                  y="-0.00756836"
-                  width="41.8778"
-                  height="49.0758"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="2.39539" dy="2.39539" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_red3"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_red3"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-
-            {/* Yellow Star SVGs */}
-            <svg
-              style={{
-                width: "15px",
-                height: "16px",
-                fill: "#FFC547",
-                strokeWidth: "2.8px",
-                stroke: "#FFF",
-                filter: "drop-shadow(3.111px 3.111px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "394px",
-                top: "126px",
-              }}
-              width="25"
-              height="26"
-              viewBox="0 0 25 26"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_d_yellow1)">
-                <path
-                  d="M10.7992 3.69544C10.764 3.58111 10.5987 3.58815 10.5776 3.70599C10.3032 5.16059 9.44488 9.58594 9.2004 9.58594C8.90842 9.58594 2.6679 11.73 3.25361 11.8285C3.83932 11.9253 9.2004 12.8029 9.2004 12.8029C9.2004 12.8029 11.2477 19.8227 11.0525 19.5307L12.6126 13.1934L18.4011 11.3607C18.5084 11.3255 18.5049 11.1725 18.3958 11.1408L12.7094 9.39071L10.7992 3.69544Z"
-                  fill="#FFC547"
-                />
-                <path
-                  d="M9.20215 3.44653C9.50965 1.79155 11.6705 1.88406 12.125 3.25122L12.127 3.25024L13.8086 8.26392L18.7852 9.79614H18.7861C18.7884 9.7968 18.7907 9.79743 18.793 9.7981L18.8076 9.80298H18.8066C20.1793 10.221 20.2842 12.2162 18.8369 12.6907L18.8301 12.6936L18.8232 12.6956L13.7832 14.2913L12.4561 19.6848C12.4449 19.783 12.4206 19.9118 12.3672 20.0481C12.3111 20.1911 12.1283 20.5886 11.6514 20.8098C11.1128 21.0594 10.6302 20.896 10.4033 20.7756C10.1929 20.6639 10.0636 20.5253 10.0156 20.4719C9.95497 20.4044 9.91225 20.3441 9.88867 20.3088L9.5459 19.7952L9.62305 19.4778C9.59033 19.3456 9.54884 19.172 9.49316 18.9631C9.3317 18.3574 9.09592 17.5165 8.85254 16.6584C8.60973 15.8024 8.3604 14.9367 8.17188 14.2844C8.14739 14.1997 8.12385 14.1183 8.10156 14.0413C7.59268 13.9579 6.91552 13.8474 6.2207 13.7336C4.80801 13.5023 3.31946 13.2588 3.02539 13.2102L3.02148 13.2092C2.96506 13.1997 2.46687 13.1308 2.11035 12.6692C1.88616 12.3787 1.7889 12.0207 1.82129 11.6721C1.84977 11.3663 1.96941 11.1443 2.04395 11.0286C2.18458 10.8104 2.35332 10.6792 2.40723 10.6379C2.48584 10.5778 2.56196 10.5309 2.61719 10.4983C2.82046 10.3782 3.094 10.2556 3.34863 10.1477C3.89242 9.91737 4.65605 9.62914 5.42383 9.35278C6.19705 9.07447 6.99862 8.79897 7.62891 8.59204C7.81604 8.53061 7.9913 8.47602 8.14746 8.427C8.25258 8.0314 8.37985 7.49366 8.50977 6.89478C8.78511 5.62549 9.06563 4.17028 9.20215 3.44653ZM18.0059 12.4856L17.9951 12.4817L17.9902 12.4797L18.0059 12.4856Z"
-                  stroke="white"
-                  strokeWidth="2.80004"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_yellow1"
-                  x="0.414062"
-                  y="0.816162"
-                  width="23.9783"
-                  height="24.6361"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="3.11115" dy="3.11115" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_yellow1"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_yellow1"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-
-            <svg
-              style={{
-                width: "34px",
-                height: "35px",
-                fill: "#FFC547",
-                strokeWidth: "2.8px",
-                stroke: "#FFF",
-                filter: "drop-shadow(3.111px 3.111px 0 rgba(0, 0, 0, 0.10))",
-                position: "absolute",
-                left: "65px",
-                top: "83px",
-              }}
-              width="43"
-              height="45"
-              viewBox="0 0 43 45"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_d_yellow2)">
-                <path
-                  d="M19.9918 3.38116C19.9146 3.12995 19.5512 3.1454 19.5049 3.40435C18.9019 6.60064 17.0159 16.3248 16.4786 16.3248C15.8371 16.3248 2.12434 21.0361 3.41136 21.2525C4.69837 21.4651 16.4786 23.3937 16.4786 23.3937C16.4786 23.3937 20.9774 38.8186 20.5484 38.177L23.9766 24.2517L36.696 20.2245C36.9318 20.1472 36.924 19.8109 36.6844 19.7414L24.1891 15.8958L19.9918 3.38116Z"
-                  fill="#FFC547"
-                />
-                <path
-                  d="M18.1289 3.14551C18.4613 1.34867 20.8206 1.43302 21.3174 2.93652L21.3193 2.93555L25.2881 14.7686L37.0742 18.3965C37.0766 18.3972 37.0797 18.3977 37.082 18.3984L37.0967 18.4033H37.0957C38.5985 18.8594 38.7075 21.0381 37.1318 21.5547L37.125 21.5566L37.1182 21.5596L25.1475 25.3496L21.9727 38.248C21.9669 38.3522 21.9489 38.5212 21.8779 38.7021C21.8212 38.8466 21.637 39.2442 21.1592 39.4658C20.6197 39.7159 20.1363 39.5527 19.9082 39.4316C19.6964 39.3191 19.5649 39.1799 19.5156 39.125C19.4535 39.0559 19.4102 38.9931 19.3848 38.9551L19.041 38.4424L19.1357 38.0557C19.1343 38.0494 19.1333 38.0427 19.1318 38.0361C19.056 37.7028 18.9205 37.1741 18.7402 36.498C18.3818 35.1536 17.8623 33.2948 17.3271 31.4082C16.7925 29.5233 16.2448 27.6175 15.8301 26.1826C15.6518 25.5658 15.498 25.0362 15.3809 24.6328C15.1038 24.5874 14.7696 24.5326 14.3916 24.4707C13.2671 24.2866 11.7542 24.0385 10.2012 23.7842C7.09666 23.2757 3.82916 22.7404 3.18359 22.6338L3.17871 22.6328C3.09868 22.6194 2.58774 22.5442 2.22559 22.0752C1.99812 21.7805 1.89965 21.4174 1.93262 21.0635C1.96161 20.7525 2.08351 20.5253 2.16211 20.4033C2.31095 20.1723 2.49562 20.0266 2.57129 19.9688C2.67148 19.8921 2.7747 19.8264 2.86426 19.7734C3.20537 19.5718 3.71511 19.339 4.27344 19.1025C5.42458 18.6149 7.06822 17.9953 8.74805 17.3906C10.4333 16.784 12.1798 16.1838 13.5488 15.7344C14.2322 15.51 14.8288 15.32 15.2803 15.1855C15.3659 15.16 15.4487 15.1385 15.5264 15.1162C15.588 14.9252 15.6619 14.6828 15.7422 14.3877C15.9941 13.4625 16.2929 12.1761 16.5986 10.7666C17.2086 7.95492 17.8281 4.73912 18.1289 3.14453V3.14551Z"
-                  stroke="white"
-                  strokeWidth="2.80004"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_d_yellow2"
-                  x="0.525391"
-                  y="0.404053"
-                  width="42.2557"
-                  height="43.7051"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dx="3.11115" dy="3.11115" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_yellow2"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_yellow2"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-
-            {/* Lightning Bolt */}
-            <svg
-              style={{
-                width: "25px",
-                height: "30px",
-                transform: "rotate(-8.311deg)",
-                position: "absolute",
-                left: "154px",
-                top: "23px",
-              }}
-              width="29"
-              height="34"
-              viewBox="0 0 29 34"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.2"
-                d="M26.1531 12.8031C25.5457 11.4728 24.4629 10.5996 22.8682 10.1704C23.2824 8.2987 22.9936 7.23803 22.612 6.44239C22.014 5.19153 20.8905 4.3243 19.5353 4.06545C18.2533 3.81895 16.37 4.0041 15.0168 4.20178C8.62593 5.13539 7.13744 7.26557 6.5711 8.79035C6.56278 8.81233 5.74529 11.066 5.08043 13.4957C4.7271 14.7887 4.28857 16.3986 4.26847 17.9036C4.22682 20.9668 5.97398 22.1236 7.02011 22.5407C7.55676 22.7553 8.25159 22.963 9.72483 22.9554C8.88561 27.3188 8.80046 29.5946 10.3175 31.2765C11.2451 32.3039 12.614 32.7984 13.983 32.5984C14.4958 32.5235 14.9902 32.3543 15.4557 32.0972C16.0426 31.7715 17.5983 30.9074 22.1857 23.7561C23.3526 21.936 24.3893 20.1879 25.1005 18.8334C26.2122 16.7145 27.0608 14.8 26.1534 12.8053L26.1531 12.8031Z"
-                fill="#1B1919"
-              />
-              <path
-                d="M23.9363 11.1541C23.3289 9.82387 22.2462 8.9507 20.6514 8.52148C21.0656 6.64978 20.7768 5.58907 20.3952 4.79343C19.7972 3.54258 18.6737 2.67535 17.3185 2.41649C16.0365 2.17 14.1532 2.35517 12.8 2.55285C6.40913 3.48647 4.92064 5.61662 4.3543 7.14139C4.34598 7.16338 3.52849 9.41704 2.86363 11.8468C2.5103 13.1397 2.07177 14.7497 2.05167 16.2546C2.01002 19.3179 3.75718 20.4747 4.80331 20.8917C5.33996 21.1064 6.03479 21.314 7.50803 21.3065C6.6688 25.6698 6.58366 27.9457 8.10066 29.6276C9.02829 30.6549 10.3972 31.1494 11.7662 30.9494C12.279 30.8745 12.7734 30.7054 13.2389 30.4482C13.8258 30.1225 15.3815 29.2584 19.9689 22.1072C21.1358 20.287 22.1725 18.5389 22.8837 17.1845C23.9954 15.0655 24.844 13.1511 23.9366 11.1564L23.9363 11.1541Z"
-                fill="white"
-              />
-              <path
-                d="M8.0215 8.49059C7.85119 8.95154 5.08606 16.7941 6.2502 17.2609C7.41433 17.7276 12.4978 16.8627 12.4978 16.8627C12.4978 16.8627 9.68772 27.9512 11.3437 27.031C12.9975 26.1111 20.9149 13.9419 20.382 12.7738C19.8491 11.6057 14.8896 12.3718 14.8896 12.3718C14.8896 12.3718 17.9898 6.52215 16.5818 6.25022C15.1716 5.97863 8.6288 6.85138 8.0215 8.49059Z"
-                fill="#FFC547"
-              />
-              <g style={{ mixBlendMode: "overlay" }} opacity="0.5">
-                <path
-                  d="M9.19809 9.84144C8.72688 11.0224 8.25598 12.2056 7.78478 13.3865C7.31869 14.5552 9.14577 15.2481 9.61378 14.0769C10.085 12.8959 10.5559 11.7127 11.0271 10.5318C11.4932 9.36312 9.6661 8.6702 9.19809 9.84144Z"
-                  fill="white"
-                />
-              </g>
-            </svg>
-
-            {/* Additional Coin Images */}
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/1be2e3867d6fb46450fc86b7896af58c2354745f?width=80"
-              style={{
-                width: "40px",
-                height: "40px",
-                transform: "rotate(21.656deg)",
-                position: "absolute",
-                left: "325px",
-                top: "68px",
-              }}
-              alt="Coin"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/22dddd11cc9d3b24eebf151f9a8ae34d9e6362ee?width=81"
-              style={{
-                width: "41px",
-                height: "40px",
-                transform: "rotate(-176.855deg)",
-                position: "absolute",
-                left: "123px",
-                top: "95px",
-              }}
-              alt="Coin"
-            />
-
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f131832b0454c049c758f6576cfcd51494813b79?width=82"
-              style={{
-                width: "41px",
-                height: "41px",
-                position: "absolute",
-                left: "88px",
-                top: "22px",
-              }}
-              alt="Coin"
-            />
-
-            {/* Central Robot Character */}
-            <div
-              style={{
-                width: "53px",
-                height: "83px",
-                position: "absolute",
-                left: "203px",
-                top: "25px",
-              }}
-            >
-              <svg
-                style={{
-                  width: "46px",
-                  height: "50px",
-                  fill: "#FFF",
-                  position: "absolute",
-                  left: "1px",
-                  top: "9px",
-                }}
-                width="47"
-                height="51"
-                viewBox="0 0 47 51"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.494203 38.4141L0.494205 16.7778L28.1356 0.0646973L46.3486 15.4922L42.9464 41.5353L23.6841 50.18L0.494203 38.4141Z"
-                  fill="white"
-                />
-              </svg>
-
-              <div
-                style={{
-                  width: "53px",
-                  height: "83px",
-                  filter: "drop-shadow(1.206px 1.206px 0 rgba(0, 0, 0, 0.10))",
-                  position: "absolute",
-                  left: "0px",
-                  top: "0px",
-                }}
-              >
-                <div
-                  style={{
-                    width: "53px",
-                    height: "83px",
-                    filter: "drop-shadow(2.62px 2.038px 0 rgba(0, 0, 0, 0.15))",
-                    position: "absolute",
-                    left: "0px",
-                    top: "0px",
-                  }}
-                >
-                  <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/316a64ea027b19ff89fe79dee42116bf51b081d2?width=104"
-                    style={{
-                      width: "52px",
-                      height: "41px",
-                      fill: "#FFF",
-                      strokeWidth: "2.395px",
-                      stroke: "#FFF",
-                      position: "absolute",
-                      left: "1px",
-                      top: "43px",
-                    }}
-                    alt="Robot Base"
-                  />
-
-                  <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/86d1bafbbdd68fbac74943d558071598af07ef18?width=84"
-                    style={{
-                      width: "42px",
-                      height: "59px",
-                      fill: "#FFF",
-                      strokeWidth: "6.032px",
-                      stroke: "#FFF",
-                      position: "absolute",
-                      left: "3px",
-                      top: "0px",
-                    }}
-                    alt="Robot Body"
-                  />
-
-                  <div
-                    style={{
-                      width: "8px",
-                      height: "3px",
-                      background: "#FFF",
-                      position: "absolute",
-                      left: "20px",
-                      top: "57px",
-                    }}
-                  ></div>
-
-                  <div
-                    style={{
-                      width: "8px",
-                      height: "7px",
-                      background: "#FFF",
-                      position: "absolute",
-                      left: "37px",
-                      top: "25px",
-                    }}
-                  ></div>
-
-                  <div
-                    style={{
-                      width: "8px",
-                      height: "6px",
-                      background: "#FFF",
-                      position: "absolute",
-                      left: "0px",
-                      top: "24px",
-                    }}
-                  ></div>
-
-                  <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/6a395efba28db59f3de61ed78aca23e663aeb987?width=104"
-                    style={{
-                      width: "52px",
-                      height: "41px",
-                      position: "absolute",
-                      left: "1px",
-                      top: "43px",
-                    }}
-                    alt="Robot Details"
-                  />
-                </div>
-
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/f0dbebb5b898f3be2147657170bb57f6f119a597?width=82"
-                  style={{
-                    width: "41px",
-                    height: "57px",
-                    position: "absolute",
-                    left: "3px",
-                    top: "0px",
-                  }}
-                  alt="Robot Top"
-                />
-              </div>
-            </div>
-
-            {/* Dollar Sign SVGs */}
-            <svg
-              style={{
-                width: "33px",
-                height: "48px",
-                transform: "rotate(11.66deg)",
-                fill: "#FFF",
-                opacity: "0.2",
-                position: "absolute",
-                left: "352px",
-                top: "130px",
-              }}
-              width="34"
-              height="48"
-              viewBox="0 0 34 48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.2"
-                d="M28.2521 22.9289C26.5672 21.6176 24.4281 20.5958 21.062 19.5123C17.7728 18.4842 15.8898 17.8327 15.413 17.5577C14.2106 16.8306 14.1022 16.1545 14.1619 15.592C14.3002 14.2117 15.9116 13.3665 17.9744 13.5836C21.1266 13.9016 21.8496 15.1497 22.0049 17.1823C22.0578 17.7455 22.5399 18.1943 23.0996 18.1859L32.4799 18.1435C32.7905 18.14 33.0944 18.0055 33.3015 17.7664C33.5075 17.5328 33.5981 17.2303 33.5665 16.9195C33.2229 14.1605 32.7698 12.6695 31.7743 11.0214C31.2688 10.1394 30.6459 9.33464 29.9046 8.61249C29.1052 7.81639 28.1721 7.12229 27.1171 6.52704C26.2326 6.03456 25.2687 5.59897 24.2187 5.25269L24.5452 2.11359C24.6008 1.51645 24.1701 0.982363 23.5675 0.925649L16.7993 0.216518L15.6127 0.0956267C15.3195 0.0689429 15.0407 0.163574 14.82 0.332163C14.6035 0.507272 14.4536 0.769378 14.4247 1.07335L14.2339 2.89926L14.087 4.26651C13.7566 4.31104 13.4273 4.35016 13.1163 4.40996C7.82407 5.36914 4.24379 8.5187 3.17947 13.1849C3.05411 13.6831 2.97089 14.1957 2.91675 14.7311C2.89453 15.0026 2.87231 15.2742 2.85978 15.5534C2.717 19.0854 4.05284 22.252 6.67467 24.5118C8.34134 25.9659 9.8112 26.6806 13.8059 27.9951C18.0811 29.4522 19.176 29.881 19.9858 30.3806C20.7009 30.793 21.079 31.6374 20.9736 32.5849C20.7587 34.6369 18.795 35.0319 17.3467 35.0317C16.9798 35.0349 16.6411 35.0101 16.3804 34.9901C15.541 34.9071 14.7824 34.7054 14.1456 34.405C13.9631 34.3335 13.7905 34.2415 13.6363 34.1421C13.0614 33.815 12.6126 33.3955 12.2983 32.9249C12.1418 32.6728 12.0135 32.4209 11.9231 32.1487C11.7378 31.654 11.6548 31.0733 11.653 30.1262C11.6392 29.5373 11.1757 29.0528 10.5685 29.0459L1.38163 28.9703C1.08401 28.9653 0.795386 29.0804 0.581924 29.2956C0.378157 29.5184 0.268165 29.8057 0.278202 30.112C0.382778 32.3088 0.520137 33.391 0.848902 34.5014C1.57215 37.3048 3.10077 39.5645 5.41683 41.2033C6.64543 42.0767 8.22433 42.8364 10.0327 43.4124L9.79078 45.8139C9.72438 46.4088 10.1552 46.9429 10.7577 46.9996L16.0472 47.5557L18.5135 47.8111L18.718 47.8307C19.3151 47.8863 19.8492 47.4555 19.9059 46.853L20.1412 44.6474C20.2668 44.6395 20.3893 44.6197 20.5171 44.601C21.3088 44.5333 22.078 44.4103 22.801 44.2383C24.8744 43.7758 26.6708 42.963 28.1575 41.7934C30.5971 39.8567 32.0806 36.9281 32.4587 33.3207C32.9128 28.9625 31.4935 25.4631 28.2521 22.9289ZM26.8139 40.0847C25.4359 41.1641 23.731 41.8887 21.7069 42.2487C20.9668 42.3946 20.1934 42.483 19.3652 42.5093C19.2851 42.5153 19.2049 42.5213 19.1194 42.5262C18.5706 42.5369 18.1297 42.9531 18.0733 43.4994L17.8584 45.5514L17.5436 45.5202L15.034 45.256L12.067 44.9424L12.2937 42.7238C12.3456 42.1991 12.012 41.7133 11.4998 41.5738C9.55907 41.038 7.8978 40.2951 6.68001 39.4239C4.7907 38.093 3.53775 36.2453 2.94259 33.9134C2.72321 33.1468 2.59889 32.4111 2.5179 31.1377L9.51947 31.2075C9.62088 32.3273 9.89619 33.1505 10.4513 34.0653C10.7365 34.513 11.0869 34.9178 11.4993 35.2677C12.144 35.8572 12.9466 36.3102 13.8603 36.634C14.5515 36.8894 15.3168 37.0586 16.1346 37.1372C17.0789 37.2306 17.9373 37.2218 18.7055 37.1041C21.2624 36.7019 22.8909 35.1727 23.1327 32.7994C23.3245 30.9962 22.5379 29.3462 21.1111 28.5051C20.1362 27.9039 19.024 27.4771 14.494 25.9168C10.5619 24.6264 9.40651 23.9992 8.08534 22.8643C5.78438 20.8793 4.75329 18.1475 5.08019 14.9521C5.09134 14.8981 5.09168 14.8418 5.10284 14.7877C5.21824 13.7916 5.46413 12.873 5.83829 12.043C6.8507 9.67653 8.81055 7.96207 11.5383 7.05977C12.4483 6.74601 13.4454 6.52913 14.5242 6.40799C14.7398 6.37358 14.9564 6.36192 15.1686 6.34373C15.6895 6.30469 16.1066 5.89484 16.1585 5.3702L16.2319 4.68658L16.4788 2.37069L16.8931 2.4111L22.2713 2.97428L22.0093 5.47301L21.9622 5.91975C21.908 6.4552 22.2417 6.94107 22.7539 7.08058C24.1716 7.47456 25.4142 8.0071 26.4796 8.66087C27.9536 9.57366 29.108 10.7248 29.9069 12.1238C30.5906 13.2623 30.9577 14.2961 31.2321 15.97L24.0525 15.9987C23.5089 13.1985 21.6612 11.7747 18.2019 11.4159C14.8876 11.0645 12.2798 12.7241 12.005 15.3667C11.8422 17.0294 12.6023 18.3978 14.3117 19.4268C14.9401 19.7856 16.9706 20.5052 20.4032 21.5854C23.5057 22.5807 25.4474 23.4942 26.9113 24.6472C29.5614 26.7156 30.6767 29.476 30.2964 33.0942C29.9847 36.1068 28.7772 38.5175 26.815 40.0793L26.8139 40.0847Z"
-                fill="white"
-              />
-            </svg>
-
-            <svg
-              style={{
-                width: "33px",
-                height: "48px",
-                transform: "rotate(11.66deg)",
-                fill: "#FFF",
-                opacity: "0.2",
-                position: "absolute",
-                left: "385px",
-                top: "137px",
-              }}
-              width="34"
-              height="49"
-              viewBox="0 0 34 49"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.2"
-                d="M28.4357 23.5642C26.7508 22.2529 24.6117 21.231 21.2456 20.1476C17.9564 19.1195 16.0734 18.4679 15.5966 18.193C14.3942 17.4658 14.2858 16.7898 14.3455 16.2273C14.4838 14.847 16.0952 14.0017 18.158 14.2189C21.3101 14.5369 22.0331 15.7849 22.1885 17.8175C22.2414 18.3807 22.7235 18.8296 23.2832 18.8211L32.6634 18.7788C32.9741 18.7752 33.278 18.6407 33.4851 18.4017C33.6911 18.1681 33.7817 17.8656 33.7501 17.5547C33.4065 14.7958 32.9534 13.3047 31.9579 11.6567C31.4524 10.7747 30.8295 9.9699 30.0881 9.24775C29.2888 8.45164 28.3557 7.75755 27.3007 7.16229C26.4162 6.66982 25.4522 6.23423 24.4023 5.88795L24.7288 2.74884C24.7844 2.1517 24.3536 1.61762 23.7511 1.5609L16.9829 0.851772L15.7963 0.730881C15.5031 0.704197 15.2243 0.798828 15.0036 0.967417C14.7871 1.14253 14.6372 1.40463 14.6083 1.70861L14.4175 3.53452L14.2706 4.90177C13.9402 4.94629 13.6109 4.98542 13.2999 5.04522C8.00767 6.00439 4.42738 9.15395 3.36306 13.8201C3.23771 14.3184 3.15449 14.8309 3.10035 15.3664C3.07813 15.6379 3.0559 15.9095 3.04337 16.1886C2.9006 19.7207 4.23643 22.8873 6.85827 25.147C8.52494 26.6011 9.99479 27.3158 13.9895 28.6304C18.2647 30.0874 19.3596 30.5162 20.1694 31.0158C20.8845 31.4282 21.2625 32.2726 21.1572 33.2202C20.9423 35.2722 18.9786 35.6672 17.5303 35.667C17.1634 35.6702 16.8247 35.6454 16.564 35.6254C15.7246 35.5423 14.966 35.3407 14.3292 35.0402C14.1467 34.9688 13.9741 34.8768 13.8199 34.7774C13.245 34.4502 12.7962 34.0307 12.4819 33.5602C12.3254 33.3081 12.1971 33.0562 12.1067 32.784C11.9214 32.2893 11.8384 31.7086 11.8366 30.7615C11.8228 30.1726 11.3593 29.6881 10.7521 29.6811L1.56523 29.6056C1.2676 29.6005 0.978979 29.7157 0.765518 29.9308C0.561751 30.1537 0.451759 30.4409 0.461796 30.7473C0.566372 32.9441 0.70373 34.0262 1.0325 35.1366C1.75575 37.9401 3.28437 40.1997 5.60043 41.8385C6.82902 42.7119 8.40793 43.4717 10.2163 44.0477L9.97438 46.4491C9.90797 47.044 10.3387 47.5781 10.9413 47.6348L16.2308 48.191L18.6971 48.4463L18.9015 48.466C19.4987 48.5216 20.0328 48.0908 20.0895 47.4882L20.3248 45.2827C20.4504 45.2748 20.5729 45.255 20.7007 45.2363C21.4923 45.1686 22.2616 45.0456 22.9846 44.8735C25.058 44.411 26.8544 43.5983 28.3411 42.4286C30.7807 40.492 32.2642 37.5634 32.6423 33.9559C33.0964 29.5977 31.6771 26.0984 28.4357 23.5642ZM26.9975 40.72C25.6195 41.7994 23.9146 42.5239 21.8905 42.8839C21.1504 43.0299 20.377 43.1182 19.5488 43.1446C19.4687 43.1506 19.3885 43.1566 19.303 43.1615C18.7542 43.1722 18.3133 43.5884 18.2569 44.1346L18.042 46.1866L17.7272 46.1555L15.2176 45.8912L12.2506 45.5776L12.4773 43.359C12.5292 42.8344 12.1956 42.3485 11.6834 42.209C9.74266 41.6733 8.08139 40.9304 6.86361 40.0592C4.9743 38.7282 3.72134 36.8805 3.12618 34.5487C2.9068 33.7821 2.78249 33.0464 2.7015 31.773L9.70307 31.8428C9.80447 32.9626 10.0798 33.7858 10.6349 34.7005C10.9201 35.1482 11.2705 35.553 11.6829 35.903C12.3276 36.4925 13.1302 36.9455 14.0439 37.2693C14.7351 37.5246 15.5004 37.6938 16.3182 37.7724C17.2625 37.8659 18.1209 37.857 18.8891 37.7394C21.446 37.3372 23.0745 35.808 23.3163 33.4347C23.5081 31.6315 22.7215 29.9815 21.2947 29.1404C20.3198 28.5391 19.2076 28.1124 14.6775 26.5521C10.7455 25.2617 9.5901 24.6344 8.26893 23.4996C5.96797 21.5145 4.93689 18.7828 5.26378 15.5874C5.27493 15.5333 5.27528 15.477 5.28643 15.423C5.40183 14.4268 5.64773 13.5083 6.02189 12.6782C7.03429 10.3118 8.99414 8.59733 11.7219 7.69502C12.6319 7.38127 13.629 7.16438 14.7078 7.04324C14.9234 7.00884 15.14 6.99717 15.3522 6.97898C15.8731 6.93995 16.2902 6.5301 16.3421 6.00546L16.4155 5.32183L16.6624 3.00594L17.0767 3.04635L22.4549 3.60954L22.1929 6.10826L22.1458 6.555C22.0916 7.09046 22.4253 7.57632 22.9375 7.71583C24.3552 8.10981 25.5978 8.64235 26.6632 9.29612C28.1372 10.2089 29.2916 11.36 30.0905 12.759C30.7742 13.8976 31.1413 14.9313 31.4157 16.6053L24.2361 16.634C23.6925 13.8338 21.8448 12.41 18.3855 12.0512C15.0712 11.6997 12.4634 13.3594 12.1886 16.002C12.0258 17.6646 12.7859 19.0331 14.4953 20.062C15.1237 20.4209 17.1542 21.1404 20.5868 22.2207C23.6893 23.2159 25.631 24.1294 27.0949 25.2824C29.745 27.3508 30.8603 30.1112 30.48 33.7295C30.1683 36.7421 28.9608 39.1528 26.9986 40.7146L26.9975 40.72Z"
-                fill="white"
-              />
-            </svg>
-
-            <svg
-              style={{
-                width: "33px",
-                height: "48px",
-                transform: "rotate(11.66deg)",
-                fill: "#FFF",
-                opacity: "0.2",
-                position: "absolute",
-                left: "418px",
-                top: "150px",
-              }}
-              width="35"
-              height="36"
-              viewBox="0 0 35 36"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                opacity="0.2"
-                d="M28.7892 22.9817C27.1043 21.6704 24.9652 20.6485 21.5991 19.5651C18.3099 18.5369 16.4269 17.8854 15.9501 17.6104C14.7477 16.8833 14.6393 16.2072 14.699 15.6448C14.8373 14.2645 16.4487 13.4192 18.5115 13.6364C21.6637 13.9544 22.3867 15.2024 22.542 17.235C22.5949 17.7982 23.0771 18.2471 23.6367 18.2386L33.017 18.1962C33.3276 18.1927 33.6315 18.0582 33.8386 17.8192C34.0446 17.5856 34.1352 17.283 34.1036 16.9722C33.76 14.2132 33.3069 12.7222 32.3114 11.0741C31.8059 10.1921 31.183 9.38738 30.4417 8.66523C29.6423 7.86912 28.7092 7.17503 27.6542 6.57977C26.7697 6.0873 25.8058 5.65171 24.7558 5.30543L25.0823 2.16632C25.1379 1.56918 24.7072 1.0351 24.1046 0.978383L17.3364 0.269252L16.1498 0.148361C15.8566 0.121677 15.5779 0.216309 15.3571 0.384897C15.1406 0.560006 14.9908 0.822112 14.9618 1.12609L14.771 2.952L14.6241 4.31925C14.2937 4.36377 13.9644 4.4029 13.6534 4.4627C8.36118 5.42188 4.78089 8.57143 3.71657 13.2376C3.59122 13.7358 3.508 14.2484 3.45386 14.7838C3.43164 15.0554 3.40942 15.3269 3.39689 15.6061C3.25411 19.1382 4.58995 22.3047 7.21178 24.5645C8.87845 26.0186 10.3483 26.7333 14.343 28.0479C18.6182 29.5049 19.7131 29.9337 20.5229 30.4333C21.2381 30.8457 21.6161 31.6901 21.5107 32.6377C21.2958 34.6896 19.3321 35.0846 17.8838 35.0845C17.5169 35.0876 17.1782 35.0628 16.9175 35.0429C16.0781 34.9598 15.3195 34.7582 14.6827 34.4577C14.5002 34.3862 14.3276 34.2943 14.1734 34.1948C13.5985 33.8677 13.1497 33.4482 12.8354 32.9776C12.6789 32.7256 12.5506 32.4737 12.4602 32.2014C12.2749 31.7067 12.1919 31.1261 12.1901 30.179C12.1764 29.5901 11.7128 29.1056 11.1056 29.0986L1.91874 29.0231C1.62111 29.018 1.3325 29.1331 1.11903 29.3483C0.915266 29.5711 0.805274 29.8584 0.815311 30.1648C0.919888 32.3616 1.05725 33.4437 1.38601 34.5541C2.10926 37.3576 3.63788 39.6172 5.95394 41.256C7.18254 42.1294 8.76144 42.8891 10.5698 43.4652L10.3279 45.8666C10.2615 46.4615 10.6923 46.9956 11.2948 47.0523L16.5843 47.6085L19.0506 47.8638L19.2551 47.8835C19.8522 47.939 20.3863 47.5083 20.443 46.9057L20.6783 44.7002C20.804 44.6923 20.9264 44.6725 21.0542 44.6537C21.8459 44.5861 22.6151 44.463 23.3381 44.291C25.4115 43.8285 27.2079 43.0158 28.6946 41.8461C31.1343 39.9094 32.6177 36.9809 32.9958 33.3734C33.4499 29.0152 32.0306 25.5159 28.7892 22.9817ZM27.351 40.1375C25.973 41.2169 24.2682 41.9414 22.244 42.3014C21.5039 42.4473 20.7305 42.5357 19.9023 42.562C19.8222 42.568 19.7421 42.574 19.6565 42.5789C19.1077 42.5897 18.6668 43.0059 18.6104 43.5521L18.3955 45.6041L18.0807 45.573L15.5712 45.3087L12.6041 44.9951L12.8308 42.7765C12.8827 42.2519 12.5491 41.766 12.0369 41.6265C10.0962 41.0908 8.43491 40.3478 7.21712 39.4767C5.32781 38.1457 4.07486 36.298 3.4797 33.9661C3.26032 33.1996 3.136 32.4639 3.05501 31.1905L10.0566 31.2602C10.158 32.3801 10.4333 33.2033 10.9884 34.118C11.2736 34.5657 11.624 34.9705 12.0364 35.3205C12.6812 35.91 13.4837 36.363 14.3974 36.6868C15.0886 36.9421 15.8539 37.1113 16.6717 37.1899C17.6161 37.2833 18.4744 37.2745 19.2426 37.1569C21.7995 36.7547 23.4281 35.2255 23.6698 32.8522C23.8616 31.049 23.075 29.3989 21.6482 28.5579C20.6734 27.9566 19.5611 27.5299 15.0311 25.9696C11.099 24.6792 9.94362 24.0519 8.62245 22.9171C6.32149 20.932 5.2904 18.2003 5.6173 15.0049C5.62845 14.9508 5.62879 14.8945 5.63995 14.8405C5.75535 13.8443 6.00124 12.9258 6.3754 12.0957C7.38781 9.72926 9.34766 8.01481 12.0754 7.1125C12.9854 6.79875 13.9825 6.58186 15.0613 6.46072C15.2769 6.42632 15.4935 6.41465 15.7058 6.39646C16.2266 6.35743 16.6437 5.94758 16.6956 5.42294L16.769 4.73931L17.0159 2.42342L17.4302 2.46383L22.8084 3.02702L22.5464 5.52574L22.4993 5.97248C22.4451 6.50794 22.7788 6.9938 23.291 7.13331C24.7087 7.52729 25.9513 8.05983 27.0167 8.71361C28.4907 9.6264 29.6451 10.7775 30.4441 12.1765C31.1277 13.315 31.4948 14.3488 31.7692 16.0228L24.5896 16.0515C24.046 13.2513 22.1984 11.8275 18.7391 11.4687C15.4248 11.1172 12.8169 12.7769 12.5421 15.4195C12.3793 17.0821 13.1395 18.4505 14.8488 19.4795C15.4773 19.8384 17.5078 20.5579 20.9403 21.6382C24.0428 22.6334 25.9845 23.5469 27.4484 24.6999C30.0985 26.7683 31.2138 29.5287 30.8335 33.147C30.5218 36.1595 29.3143 38.5702 27.3521 40.1321L27.351 40.1375Z"
-                fill="white"
-              />
-            </svg>
-          </div>
-        </div>
-
-        {/* Bottom Left Section - Orange with decorations */}
-        <div
-          style={{
-            width: "230px",
-            height: "94px",
             background: "#E96036",
-            borderRadius: "0 0 0 16px",
             position: "relative",
-            overflow: "hidden",
+            borderRadius: "16px 16px 0 0",
           }}
         >
-          {/* Decorative elements for left section */}
-          <div
-            style={{
-              position: "absolute",
-              left: "10px",
-              top: "10px",
-              color: "#FFF",
-              fontSize: "16px",
-            }}
-          >
-            ₪
-          </div>
+          {/* Simple decorative elements for red theme */}
           <div
             style={{
               position: "absolute",
               left: "30px",
-              top: "25px",
-              color: "#FFC547",
-              fontSize: "14px",
+              top: "30px",
+              color: "#FFF",
+              fontSize: "24px",
             }}
           >
             ★
@@ -875,21 +96,10 @@ export default function GiftDesign() {
           <div
             style={{
               position: "absolute",
-              left: "50px",
-              top: "40px",
-              color: "#FFF",
-              fontSize: "18px",
-            }}
-          >
-            $
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              right: "10px",
-              top: "15px",
+              right: "30px",
+              top: "30px",
               color: "#FFC547",
-              fontSize: "12px",
+              fontSize: "20px",
             }}
           >
             ✦
@@ -897,83 +107,61 @@ export default function GiftDesign() {
           <div
             style={{
               position: "absolute",
-              right: "30px",
-              bottom: "15px",
+              left: "50px",
+              bottom: "30px",
               color: "#FFF",
-              fontSize: "14px",
+              fontSize: "18px",
             }}
           >
             ★
           </div>
+          <div
+            style={{
+              position: "absolute",
+              right: "50px",
+              bottom: "30px",
+              color: "#FFC547",
+              fontSize: "22px",
+            }}
+          >
+            ✦
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%, -50%)",
+              color: "#FFF",
+              fontSize: "32px",
+              fontWeight: "bold",
+            }}
+          >
+            🎁
+          </div>
         </div>
 
-        {/* Bottom Right Section - Light Coral/Pink */}
+        {/* Bottom Left Section */}
         <div
           style={{
             width: "230px",
             height: "94px",
-            background: "linear-gradient(135deg, #FFB6B6 0%, #FFA8A8 100%)",
+            background: "#FF6B6B",
+            borderRadius: "0 0 0 16px",
+            position: "relative",
+          }}
+        ></div>
+
+        {/* Bottom Right Section */}
+        <div
+          style={{
+            width: "230px",
+            height: "94px",
+            background: "#FFB6B6",
             borderRadius: "0 0 16px 0",
             position: "relative",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "10px",
           }}
-        >
-          {/* Three coins in the center */}
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              background: "#FFC547",
-              border: "2px solid #FFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#E96036",
-            }}
-          >
-            ₪
-          </div>
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              background: "#FFC547",
-              border: "2px solid #FFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#E96036",
-            }}
-          >
-            ₪
-          </div>
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              background: "#FFC547",
-              border: "2px solid #FFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#E96036",
-            }}
-          >
-            ₪
-          </div>
-        </div>
+        ></div>
       </div>
 
       {/* Card Title and Eye Icon */}
@@ -1073,17 +261,17 @@ export default function GiftDesign() {
     </div>
   );
 
-  // Turquoise Card Component (keeping existing for now)
+  // Turquoise Card Component - EXACT Figma Design Implementation
   const TurquoiseCard = () => (
     <div
       onClick={() => setSelectedCard("turquoise")}
       style={{
-        width: "462px",
-        height: "427px",
         display: "flex",
+        width: "462px",
         flexDirection: "column",
         alignItems: "center",
         gap: "30px",
+        height: "427px",
         cursor: "pointer",
         transition: "transform 0.3s ease",
         transform:
@@ -1095,6 +283,7 @@ export default function GiftDesign() {
         borderRadius: "16px",
         padding: "20px",
         position: "relative",
+        boxShadow: "0 8px 32px rgba(0, 0, 0, 0.1)",
       }}
       onMouseEnter={(e) => {
         if (selectedCard !== "turquoise") {
@@ -1107,230 +296,825 @@ export default function GiftDesign() {
         }
       }}
     >
-      {/* Main Card Design */}
+      {/* Main Card Container - Exact Figma Design */}
       <div
         style={{
           display: "flex",
           alignItems: "flex-end",
           alignContent: "flex-end",
-          width: "100%",
+          alignSelf: "stretch",
           flexWrap: "wrap",
           borderRadius: "16px",
           position: "relative",
         }}
       >
+        {/* Top Turquoise Section - EXACT Figma Implementation */}
         <div
           style={{
-            display: "flex",
             width: "460px",
             height: "188px",
-            justifyContent: "center",
-            alignItems: "center",
-            border: "3px solid #FFF",
-            background: "#FFF",
+            flexShrink: 0,
+            background: "#DBE3F3",
             position: "relative",
-            borderRadius: "16px",
-            overflow: "hidden",
+            borderRadius: "16px 16px 0 0",
           }}
         >
-          {/* Turquoise Background */}
+          {/* Background Pattern Image */}
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/a3080e7faa91956b38e2710d4a9eea43ee07502f?width=1020"
+            style={{
+              width: "510px",
+              height: "322px",
+              flexShrink: 0,
+              position: "absolute",
+              left: "-28px",
+              top: "-63px",
+            }}
+            alt="Background Pattern"
+          />
+
+          {/* Decorative Currency Elements */}
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/322137aed798f9f74d9cba85b27071b0a236f7d0?width=42"
+            style={{
+              width: "21px",
+              height: "34px",
+              transform: "rotate(19.423deg)",
+              flexShrink: 0,
+              filter: "drop-shadow(3.081px 3.081px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "344px",
+              top: "14px",
+            }}
+            alt="Group 108307"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/f75cd35a5095a03cb1fa8a9e84fbbcf1d0ef8843?width=42"
+            style={{
+              width: "21px",
+              height: "34px",
+              transform: "rotate(-0.058deg)",
+              flexShrink: 0,
+              filter: "drop-shadow(3.081px 3.081px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "70px",
+              top: "147px",
+            }}
+            alt="Group 108376"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/f0dc58bff506bf85a93d8b5476c4f4c8106df9c6?width=57"
+            style={{
+              width: "28px",
+              height: "25px",
+              transform: "rotate(12.955deg)",
+              flexShrink: 0,
+              filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "23px",
+              top: "13px",
+            }}
+            alt="Group 108295"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/9bcf082230cc4e172d70ed93108b2b835f261b67?width=58"
+            style={{
+              width: "29px",
+              height: "32px",
+              transform: "rotate(21.992deg)",
+              flexShrink: 0,
+              filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "267px",
+              top: "24px",
+            }}
+            alt="Group 108298"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/16498605232f149e60c60f3a44614c4dff59bf02?width=58"
+            style={{
+              width: "29px",
+              height: "32px",
+              transform: "rotate(48.846deg)",
+              flexShrink: 0,
+              filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "430px",
+              top: "7px",
+            }}
+            alt="Group 108375"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/14da2baef3177151b18dd969ed516d42cebcca08?width=58"
+            style={{
+              width: "29px",
+              height: "30px",
+              transform: "rotate(-13.296deg)",
+              flexShrink: 0,
+              filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "7px",
+              top: "87px",
+            }}
+            alt="Group 108301"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/b0f18e7efaab981c6e1d566a2ac0851eb5c1778f?width=58"
+            style={{
+              width: "29px",
+              height: "30px",
+              transform: "rotate(-13.296deg)",
+              flexShrink: 0,
+              filter: "drop-shadow(2.623px 2.623px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "423px",
+              top: "134px",
+            }}
+            alt="Group 108374"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/377822d9d4fb8049e2bd88b7b485631497aca97a?width=58"
+            style={{
+              width: "29px",
+              height: "36px",
+              transform: "rotate(-33.253deg)",
+              flexShrink: 0,
+              filter: "drop-shadow(2.878px 2.878px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "397px",
+              top: "64px",
+            }}
+            alt="Group 108292"
+          />
+
+          {/* Star SVGs - Exact from Figma */}
+          <svg
+            style={{
+              width: "11px",
+              height: "13px",
+              flexShrink: 0,
+              fill: "#E96036",
+              strokeWidth: "2.156px",
+              stroke: "#FFF",
+              filter: "drop-shadow(2.395px 2.395px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "393px",
+              top: "26px",
+            }}
+            width="28"
+            height="32"
+            viewBox="0 0 28 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_224_73147)">
+              <path
+                d="M12.0792 13.255L13.6392 8.354L14.9149 12.8907L18.746 11.6109L15.9021 15.159L18.5307 18.3496L14.9149 17.4273L13.3589 21.8245L11.937 17.2851L8.81953 18.703L11.0215 15.5842L7.75781 11.5459L12.0792 13.255Z"
+                fill="#E96036"
+              />
+              <path
+                d="M14.6768 8.06201L15.6455 11.5093L18.4043 10.5884L21.877 9.4292L19.5869 12.2847L17.291 15.1489L19.3623 17.6646L21.459 20.2085L18.2646 19.394L15.6016 18.7144L14.375 22.1841L13.2969 25.2319L12.3301 22.147L11.2725 18.771L9.26562 19.6841L5.64453 21.3315L7.93848 18.0815L9.6709 15.6274L6.91992 12.2231L4.34375 9.03662L8.1543 10.5435L11.4014 11.8276L12.6123 8.02686L13.7031 4.59912L14.6768 8.06201Z"
+                stroke="white"
+                strokeWidth="2.15585"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_224_73147"
+                x="0.929688"
+                y="0.844727"
+                width="26.4735"
+                height="30.1896"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="2.39539" dy="2.39539" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_224_73147"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_224_73147"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <svg
+            style={{
+              width: "11px",
+              height: "13px",
+              flexShrink: 0,
+              fill: "#E96036",
+              strokeWidth: "2.156px",
+              stroke: "#FFF",
+              filter: "drop-shadow(2.395px 2.395px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "24px",
+              top: "147px",
+            }}
+            width="27"
+            height="31"
+            viewBox="0 0 27 31"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_224_73148)">
+              <path
+                d="M11.378 12.4017L12.9381 7.50073L14.2137 12.0374L18.0448 10.7576L15.201 14.3057L17.8295 17.4963L14.2137 16.5741L12.6577 20.9712L11.2358 16.4319L8.11836 17.8497L10.3203 14.731L7.05664 10.6926L11.378 12.4017Z"
+                fill="#E96036"
+              />
+              <path
+                d="M13.9756 7.20874L14.9443 10.656L17.7031 9.73511L21.1758 8.57593L18.8857 11.4314L16.5898 14.2957L18.6611 16.8113L20.7578 19.3552L17.5635 18.5408L14.9004 17.8611L13.6738 21.3308L12.5957 24.3787L11.6289 21.2937L10.5713 17.9177L8.56445 18.8308L4.94336 20.4783L7.2373 17.2283L8.96973 14.7742L6.21875 11.3699L3.64258 8.18335L7.45312 9.69019L10.7002 10.9744L11.9111 7.17358L13.002 3.74585L13.9756 7.20874Z"
+                stroke="white"
+                strokeWidth="2.15585"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_224_73148"
+                x="0.228516"
+                y="-0.00854492"
+                width="26.4735"
+                height="30.1896"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="2.39539" dy="2.39539" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_224_73148"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_224_73148"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <svg
+            style={{
+              width: "26px",
+              height: "32px",
+              flexShrink: 0,
+              fill: "#E96036",
+              strokeWidth: "2.156px",
+              stroke: "#FFF",
+              filter: "drop-shadow(2.395px 2.395px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "357px",
+              top: "144px",
+            }}
+            width="43"
+            height="50"
+            viewBox="0 0 43 50"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_224_73149)">
+              <path
+                d="M17.8097 19.274L21.5571 7.50171L24.6213 18.399L33.8238 15.325L26.9927 23.8476L33.3066 31.5115L24.6213 29.2962L20.8837 39.8585L17.4682 28.9547L9.97997 32.3605L15.2692 24.869L7.42969 15.1688L17.8097 19.274Z"
+                fill="#E96036"
+              />
+              <path
+                d="M22.5947 7.20972L25.3525 17.0183L33.4824 14.3025L36.9541 13.1423L34.665 15.9988L28.3809 23.8386L34.1387 30.8259L36.2354 33.3708L33.04 32.5564L25.3086 30.5837L21.9004 40.2185L20.8213 43.2654L19.8555 40.1804L16.8037 30.4402L10.4258 33.3416L6.80469 34.989L9.09961 31.739L13.918 24.9128L6.5918 15.8464L4.01562 12.6599L7.82617 14.1667L17.1318 17.8464L20.5303 7.17456L21.6211 3.74683L22.5947 7.20972Z"
+                stroke="white"
+                strokeWidth="2.15585"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_224_73149"
+                x="0.601562"
+                y="-0.00756836"
+                width="41.8778"
+                height="49.0758"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="2.39539" dy="2.39539" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_224_73149"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_224_73149"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          {/* Yellow Star SVGs */}
+          <svg
+            style={{
+              width: "15px",
+              height: "16px",
+              flexShrink: 0,
+              fill: "#FFC547",
+              strokeWidth: "2.8px",
+              stroke: "#FFF",
+              filter: "drop-shadow(3.111px 3.111px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "394px",
+              top: "126px",
+            }}
+            width="25"
+            height="26"
+            viewBox="0 0 25 26"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_224_73150)">
+              <path
+                d="M10.7992 3.69544C10.764 3.58111 10.5987 3.58815 10.5776 3.70599C10.3032 5.16059 9.44488 9.58594 9.2004 9.58594C8.90842 9.58594 2.6679 11.73 3.25361 11.8285C3.83932 11.9253 9.2004 12.8029 9.2004 12.8029C9.2004 12.8029 11.2477 19.8227 11.0525 19.5307L12.6126 13.1934L18.4011 11.3607C18.5084 11.3255 18.5049 11.1725 18.3958 11.1408L12.7094 9.39071L10.7992 3.69544Z"
+                fill="#FFC547"
+              />
+              <path
+                d="M9.20215 3.44653C9.50965 1.79155 11.6705 1.88406 12.125 3.25122L12.127 3.25024L13.8086 8.26392L18.7852 9.79614H18.7861C18.7884 9.7968 18.7907 9.79743 18.793 9.7981L18.8076 9.80298H18.8066C20.1793 10.221 20.2842 12.2162 18.8369 12.6907L18.8301 12.6936L18.8232 12.6956L13.7832 14.2913L12.4561 19.6848C12.4449 19.783 12.4206 19.9118 12.3672 20.0481C12.3111 20.1911 12.1283 20.5886 11.6514 20.8098C11.1128 21.0594 10.6302 20.896 10.4033 20.7756C10.1929 20.6639 10.0636 20.5253 10.0156 20.4719C9.95497 20.4044 9.91225 20.3441 9.88867 20.3088L9.5459 19.7952L9.62305 19.4778C9.59033 19.3456 9.54884 19.172 9.49316 18.9631C9.3317 18.3574 9.09592 17.5165 8.85254 16.6584C8.60973 15.8024 8.3604 14.9367 8.17188 14.2844C8.14739 14.1997 8.12385 14.1183 8.10156 14.0413C7.59268 13.9579 6.91552 13.8474 6.2207 13.7336C4.80801 13.5023 3.31946 13.2588 3.02539 13.2102L3.02148 13.2092C2.96506 13.1997 2.46687 13.1308 2.11035 12.6692C1.88616 12.3787 1.7889 12.0207 1.82129 11.6721C1.84977 11.3663 1.96941 11.1443 2.04395 11.0286C2.18458 10.8104 2.35332 10.6792 2.40723 10.6379C2.48584 10.5778 2.56196 10.5309 2.61719 10.4983C2.82046 10.3782 3.094 10.2556 3.34863 10.1477C3.89242 9.91737 4.65605 9.62914 5.42383 9.35278C6.19705 9.07447 6.99862 8.79897 7.62891 8.59204C7.81604 8.53061 7.9913 8.47602 8.14746 8.427C8.25258 8.0314 8.37985 7.49366 8.50977 6.89478C8.78511 5.62549 9.06563 4.17028 9.20215 3.44653ZM18.0059 12.4856L17.9951 12.4817L17.9902 12.4797L18.0059 12.4856Z"
+                stroke="white"
+                strokeWidth="2.80004"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_224_73150"
+                x="0.414062"
+                y="0.816162"
+                width="23.9783"
+                height="24.6361"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="3.11115" dy="3.11115" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_224_73150"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_224_73150"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <svg
+            style={{
+              width: "34px",
+              height: "35px",
+              flexShrink: 0,
+              fill: "#FFC547",
+              strokeWidth: "2.8px",
+              stroke: "#FFF",
+              filter: "drop-shadow(3.111px 3.111px 0 rgba(0, 0, 0, 0.10))",
+              position: "absolute",
+              left: "65px",
+              top: "83px",
+            }}
+            width="43"
+            height="45"
+            viewBox="0 0 43 45"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_224_73151)">
+              <path
+                d="M19.9918 3.38116C19.9146 3.12995 19.5512 3.1454 19.5049 3.40435C18.9019 6.60064 17.0159 16.3248 16.4786 16.3248C15.8371 16.3248 2.12434 21.0361 3.41136 21.2525C4.69837 21.4651 16.4786 23.3937 16.4786 23.3937C16.4786 23.3937 20.9774 38.8186 20.5484 38.177L23.9766 24.2517L36.696 20.2245C36.9318 20.1472 36.924 19.8109 36.6844 19.7414L24.1891 15.8958L19.9918 3.38116Z"
+                fill="#FFC547"
+              />
+              <path
+                d="M18.1289 3.14551C18.4613 1.34867 20.8206 1.43302 21.3174 2.93652L21.3193 2.93555L25.2881 14.7686L37.0742 18.3965C37.0766 18.3972 37.0797 18.3977 37.082 18.3984L37.0967 18.4033H37.0957C38.5985 18.8594 38.7075 21.0381 37.1318 21.5547L37.125 21.5566L37.1182 21.5596L25.1475 25.3496L21.9727 38.248C21.9669 38.3522 21.9489 38.5212 21.8779 38.7021C21.8212 38.8466 21.637 39.2442 21.1592 39.4658C20.6197 39.7159 20.1363 39.5527 19.9082 39.4316C19.6964 39.3191 19.5649 39.1799 19.5156 39.125C19.4535 39.0559 19.4102 38.9931 19.3848 38.9551L19.041 38.4424L19.1357 38.0557C19.1343 38.0494 19.1333 38.0427 19.1318 38.0361C19.056 37.7028 18.9205 37.1741 18.7402 36.498C18.3818 35.1536 17.8623 33.2948 17.3271 31.4082C16.7925 29.5233 16.2448 27.6175 15.8301 26.1826C15.6518 25.5658 15.498 25.0362 15.3809 24.6328C15.1038 24.5874 14.7696 24.5326 14.3916 24.4707C13.2671 24.2866 11.7542 24.0385 10.2012 23.7842C7.09666 23.2757 3.82916 22.7404 3.18359 22.6338L3.17871 22.6328C3.09868 22.6194 2.58774 22.5442 2.22559 22.0752C1.99812 21.7805 1.89965 21.4174 1.93262 21.0635C1.96161 20.7525 2.08351 20.5253 2.16211 20.4033C2.31095 20.1723 2.49562 20.0266 2.57129 19.9688C2.67148 19.8921 2.7747 19.8264 2.86426 19.7734C3.20537 19.5718 3.71511 19.339 4.27344 19.1025C5.42458 18.6149 7.06822 17.9953 8.74805 17.3906C10.4333 16.784 12.1798 16.1838 13.5488 15.7344C14.2322 15.51 14.8288 15.32 15.2803 15.1855C15.3659 15.16 15.4487 15.1385 15.5264 15.1162C15.588 14.9252 15.6619 14.6828 15.7422 14.3877C15.9941 13.4625 16.2929 12.1761 16.5986 10.7666C17.2086 7.95492 17.8281 4.73912 18.1289 3.14453V3.14551Z"
+                stroke="white"
+                strokeWidth="2.80004"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_224_73151"
+                x="0.525391"
+                y="0.404053"
+                width="42.2557"
+                height="43.7051"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="3.11115" dy="3.11115" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_224_73151"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_224_73151"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          {/* Lightning Bolt */}
+          <svg
+            style={{
+              width: "25px",
+              height: "30px",
+              transform: "rotate(-8.311deg)",
+              flexShrink: 0,
+              position: "absolute",
+              left: "154px",
+              top: "23px",
+            }}
+            width="29"
+            height="34"
+            viewBox="0 0 29 34"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.2"
+              d="M26.1531 12.8031C25.5457 11.4728 24.4629 10.5996 22.8682 10.1704C23.2824 8.2987 22.9936 7.23803 22.612 6.44239C22.014 5.19153 20.8905 4.3243 19.5353 4.06545C18.2533 3.81895 16.37 4.0041 15.0168 4.20178C8.62593 5.13539 7.13744 7.26557 6.5711 8.79035C6.56278 8.81233 5.74529 11.066 5.08043 13.4957C4.7271 14.7887 4.28857 16.3986 4.26847 17.9036C4.22682 20.9668 5.97398 22.1236 7.02011 22.5407C7.55676 22.7553 8.25159 22.963 9.72483 22.9554C8.88561 27.3188 8.80046 29.5946 10.3175 31.2765C11.2451 32.3039 12.614 32.7984 13.983 32.5984C14.4958 32.5235 14.9902 32.3543 15.4557 32.0972C16.0426 31.7715 17.5983 30.9074 22.1857 23.7561C23.3526 21.936 24.3893 20.1879 25.1005 18.8334C26.2122 16.7145 27.0608 14.8 26.1534 12.8053L26.1531 12.8031Z"
+              fill="#1B1919"
+            />
+            <path
+              d="M23.9363 11.1541C23.3289 9.82387 22.2462 8.9507 20.6514 8.52148C21.0656 6.64978 20.7768 5.58907 20.3952 4.79343C19.7972 3.54258 18.6737 2.67535 17.3185 2.41649C16.0365 2.17 14.1532 2.35517 12.8 2.55285C6.40913 3.48647 4.92064 5.61662 4.3543 7.14139C4.34598 7.16338 3.52849 9.41704 2.86363 11.8468C2.5103 13.1397 2.07177 14.7497 2.05167 16.2546C2.01002 19.3179 3.75718 20.4747 4.80331 20.8917C5.33996 21.1064 6.03479 21.314 7.50803 21.3065C6.6688 25.6698 6.58366 27.9457 8.10066 29.6276C9.02829 30.6549 10.3972 31.1494 11.7662 30.9494C12.279 30.8745 12.7734 30.7054 13.2389 30.4482C13.8258 30.1225 15.3815 29.2584 19.9689 22.1072C21.1358 20.287 22.1725 18.5389 22.8837 17.1845C23.9954 15.0655 24.844 13.1511 23.9366 11.1564L23.9363 11.1541Z"
+              fill="white"
+            />
+            <path
+              d="M8.0215 8.49059C7.85119 8.95154 5.08606 16.7941 6.2502 17.2609C7.41433 17.7276 12.4978 16.8627 12.4978 16.8627C12.4978 16.8627 9.68772 27.9512 11.3437 27.031C12.9975 26.1111 20.9149 13.9419 20.382 12.7738C19.8491 11.6057 14.8896 12.3718 14.8896 12.3718C14.8896 12.3718 17.9898 6.52215 16.5818 6.25022C15.1716 5.97863 8.6288 6.85138 8.0215 8.49059Z"
+              fill="#FFC547"
+            />
+            <g style={{ mixBlendMode: "overlay" }} opacity="0.5">
+              <path
+                d="M9.19809 9.84144C8.72688 11.0224 8.25598 12.2056 7.78478 13.3865C7.31869 14.5552 9.14577 15.2481 9.61378 14.0769C10.085 12.8959 10.5559 11.7127 11.0271 10.5318C11.4932 9.36312 9.6661 8.6702 9.19809 9.84144Z"
+                fill="white"
+              />
+            </g>
+          </svg>
+
+          {/* Coin Images */}
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/1be2e3867d6fb46450fc86b7896af58c2354745f?width=80"
+            style={{
+              width: "40px",
+              height: "40px",
+              transform: "rotate(21.656deg)",
+              flexShrink: 0,
+              position: "absolute",
+              left: "325px",
+              top: "68px",
+            }}
+            alt="Group 108385"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/22dddd11cc9d3b24eebf151f9a8ae34d9e6362ee?width=81"
+            style={{
+              width: "41px",
+              height: "40px",
+              transform: "rotate(-176.855deg)",
+              flexShrink: 0,
+              position: "absolute",
+              left: "123px",
+              top: "95px",
+            }}
+            alt="Group 108407"
+          />
+
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/f131832b0454c049c758f6576cfcd51494813b79?width=82"
+            style={{
+              width: "41px",
+              height: "41px",
+              flexShrink: 0,
+              position: "absolute",
+              left: "88px",
+              top: "22px",
+            }}
+            alt="Group 108408"
+          />
+
+          {/* Central Robot Character */}
           <div
             style={{
-              width: "460px",
-              height: "188px",
-              background: "#20B2AA",
+              width: "53px",
+              height: "83px",
+              flexShrink: 0,
               position: "absolute",
-              left: "0px",
-              top: "0px",
-              overflow: "hidden",
+              left: "203px",
+              top: "25px",
             }}
           >
-            {/* Similar decorative pattern but with turquoise theme */}
-            <div
+            <svg
               style={{
+                width: "46px",
+                height: "50px",
+                flexShrink: 0,
+                fill: "#FFF",
                 position: "absolute",
-                width: "100%",
-                height: "100%",
-                background: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3Ccircle cx='10' cy='10' r='2'/%3E%3Ccircle cx='50' cy='50' r='3'/%3E%3Cpath d='M20 20 L25 15 L20 10 L15 15 Z'/%3E%3Cpath d='M40 40 L45 35 L40 30 L35 35 Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                opacity: 0.2,
+                left: "1px",
+                top: "9px",
               }}
-            />
+              width="47"
+              height="51"
+              viewBox="0 0 47 51"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.494203 38.4141L0.494205 16.7778L28.1356 0.0646973L46.3486 15.4922L42.9464 41.5353L23.6841 50.18L0.494203 38.4141Z"
+                fill="white"
+              />
+            </svg>
 
-            {/* Coins */}
             <div
               style={{
+                width: "53px",
+                height: "83px",
+                flexShrink: 0,
+                filter: "drop-shadow(1.206px 1.206px 0 rgba(0, 0, 0, 0.10))",
                 position: "absolute",
-                right: "50px",
-                top: "30px",
-                display: "flex",
-                gap: "10px",
-                alignItems: "center",
+                left: "0px",
+                top: "0px",
               }}
             >
               <div
                 style={{
-                  width: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  background: "#FFC547",
-                  border: "3px solid #FFF",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "20px",
-                  boxShadow: "2px 2px 4px rgba(0,0,0,0.2)",
+                  width: "53px",
+                  height: "83px",
+                  flexShrink: 0,
+                  filter: "drop-shadow(2.62px 2.038px 0 rgba(0, 0, 0, 0.15))",
+                  position: "absolute",
+                  left: "0px",
+                  top: "0px",
                 }}
               >
-                ₪
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/316a64ea027b19ff89fe79dee42116bf51b081d2?width=104"
+                  style={{
+                    width: "52px",
+                    height: "41px",
+                    flexShrink: 0,
+                    fill: "#FFF",
+                    strokeWidth: "2.395px",
+                    stroke: "#FFF",
+                    position: "absolute",
+                    left: "1px",
+                    top: "43px",
+                  }}
+                  alt="Vector"
+                />
+
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/ccc819a976b5fe21dab95be112e37a5197cc6916?width=84"
+                  style={{
+                    width: "42px",
+                    height: "59px",
+                    flexShrink: 0,
+                    fill: "#FFF",
+                    strokeWidth: "6.032px",
+                    stroke: "#FFF",
+                    position: "absolute",
+                    left: "3px",
+                    top: "0px",
+                  }}
+                  alt="Union"
+                />
+
+                <div
+                  style={{
+                    width: "8px",
+                    height: "3px",
+                    flexShrink: 0,
+                    background: "#FFF",
+                    position: "absolute",
+                    left: "20px",
+                    top: "57px",
+                  }}
+                ></div>
+
+                <div
+                  style={{
+                    width: "8px",
+                    height: "7px",
+                    flexShrink: 0,
+                    background: "#FFF",
+                    position: "absolute",
+                    left: "37px",
+                    top: "25px",
+                  }}
+                ></div>
+
+                <div
+                  style={{
+                    width: "8px",
+                    height: "6px",
+                    flexShrink: 0,
+                    background: "#FFF",
+                    position: "absolute",
+                    left: "0px",
+                    top: "24px",
+                  }}
+                ></div>
+
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/6a395efba28db59f3de61ed78aca23e663aeb987?width=104"
+                  style={{
+                    width: "52px",
+                    height: "41px",
+                    flexShrink: 0,
+                    position: "absolute",
+                    left: "1px",
+                    top: "43px",
+                  }}
+                  alt="Group 108277"
+                />
               </div>
-              <div
+
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/f0dbebb5b898f3be2147657170bb57f6f119a597?width=82"
                 style={{
-                  width: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  background: "#FFC547",
-                  border: "3px solid #FFF",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "20px",
-                  boxShadow: "2px 2px 4px rgba(0,0,0,0.2)",
+                  width: "41px",
+                  height: "57px",
+                  flexShrink: 0,
+                  position: "absolute",
+                  left: "3px",
+                  top: "0px",
                 }}
-              >
-                ₪
-              </div>
-              <div
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  background: "#FFC547",
-                  border: "3px solid #FFF",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "20px",
-                  boxShadow: "2px 2px 4px rgba(0,0,0,0.2)",
-                }}
-              >
-                ₪
-              </div>
-            </div>
-
-            {/* Stars for turquoise theme */}
-            <div
-              style={{
-                position: "absolute",
-                left: "30px",
-                top: "20px",
-                color: "#FFF",
-                fontSize: "24px",
-              }}
-            >
-              ✦
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                right: "80px",
-                bottom: "20px",
-                color: "#FFF",
-                fontSize: "20px",
-              }}
-            >
-              ✦
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                left: "200px",
-                bottom: "30px",
-                color: "#FFF",
-                fontSize: "18px",
-              }}
-            >
-              ★
-            </div>
-
-            {/* Dollar signs */}
-            <div
-              style={{
-                position: "absolute",
-                left: "20px",
-                bottom: "20px",
-                color: "#FFF",
-                fontSize: "30px",
-                fontWeight: "bold",
-              }}
-            >
-              $
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                right: "20px",
-                top: "50px",
-                color: "#FFF",
-                fontSize: "25px",
-                fontWeight: "bold",
-              }}
-            >
-              $
+                alt="Group 108355"
+              />
             </div>
           </div>
 
-          {/* Phone Mockup - Left Section */}
-          <div
+          {/* Additional transparency overlays from Figma */}
+          <svg
             style={{
-              display: "flex",
-              width: "206px",
-              height: "148px",
-              padding: "1px 0 1.157px 0.385px",
-              justifyContent: "center",
-              alignItems: "center",
-              border: "3px solid #FFF",
-              background: "#FFF",
+              width: "33px",
+              height: "48px",
+              transform: "rotate(11.66deg)",
+              flexShrink: 0,
+              fill: "#FFF",
+              opacity: "0.2",
               position: "absolute",
-              left: "0",
-              top: "20px",
-              borderRadius: "16px",
+              left: "352px",
+              top: "133px",
             }}
+            width="34"
+            height="49"
+            viewBox="0 0 34 49"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f88b01d8cc722e69ae5f5c928bcd4d9c68ef8eaf?width=411"
-              style={{ width: "206px", height: "146px" }}
-              alt="iPhone Mockup"
+            <path
+              opacity="0.2"
+              d="M28.0314 23.7087C26.3465 22.3974 24.2074 21.3756 20.8413 20.2921C17.5521 19.264 15.6691 18.6124 15.1923 18.3375C13.9899 17.6104 13.8815 16.9343 13.9412 16.3718C14.0795 14.9915 15.6909 14.1463 17.7537 14.3634C20.9059 14.6814 21.6289 15.9295 21.7842 17.9621C21.8371 18.5252 22.3192 18.9741 22.8789 18.9656L32.2591 18.9233C32.5698 18.9198 32.8737 18.7853 33.0808 18.5462C33.2868 18.3126 33.3774 18.0101 33.3458 17.6992C33.0022 14.9403 32.5491 13.4492 31.5536 11.8012C31.0481 10.9192 30.4252 10.1144 29.6838 9.39228C28.8845 8.59617 27.9514 7.90208 26.8964 7.30682C26.0119 6.81435 25.048 6.37876 23.998 6.03248L24.3245 2.89337C24.3801 2.29623 23.9494 1.76215 23.3468 1.70543L16.5786 0.996303L15.392 0.875412C15.0988 0.848728 14.82 0.94336 14.5993 1.11195C14.3828 1.28706 14.2329 1.54916 14.204 1.85314L14.0132 3.67905L13.8663 5.0463C13.5359 5.09083 13.2066 5.12995 12.8956 5.18975C7.60337 6.14893 4.02308 9.29849 2.95876 13.9647C2.83341 14.4629 2.75019 14.9754 2.69605 15.5109C2.67383 15.7824 2.65161 16.054 2.63908 16.3332C2.4963 19.8652 3.83213 23.0318 6.45397 25.2916C8.12064 26.7457 9.5905 27.4603 13.5852 28.7749C17.8604 30.2319 18.9553 30.6608 19.7651 31.1603C20.4802 31.5728 20.8583 32.4172 20.7529 33.3647C20.538 35.4167 18.5743 35.8117 17.126 35.8115C16.7591 35.8147 16.4204 35.7899 16.1597 35.7699C15.3203 35.6868 14.5617 35.4852 13.9249 35.1848C13.7424 35.1133 13.5698 35.0213 13.4156 34.9219C12.8407 34.5947 12.3919 34.1753 12.0776 33.7047C11.9211 33.4526 11.7928 33.2007 11.7024 32.9285C11.5171 32.4338 11.4341 31.8531 11.4323 30.906C11.4185 30.3171 10.955 29.8326 10.3478 29.8257L1.16093 29.7501C0.863302 29.7451 0.574683 29.8602 0.361221 30.0754C0.157454 30.2982 0.0474617 30.5854 0.0574988 30.8918C0.162075 33.0886 0.299433 34.1708 0.628199 35.2811C1.35145 38.0846 2.88007 40.3442 5.19613 41.983C6.42473 42.8564 8.00363 43.6162 9.81204 44.1922L9.57008 46.5937C9.50367 47.1886 9.93445 47.7227 10.537 47.7794L15.8265 48.3355L18.2928 48.5909L18.4973 48.6105C19.0944 48.6661 19.6285 48.2353 19.6852 47.6328L19.9205 45.4272C20.0461 45.4193 20.1686 45.3995 20.2964 45.3808C21.088 45.3131 21.8573 45.1901 22.5803 45.0181C24.6537 44.5555 26.4501 43.7428 27.9368 42.5732C30.3764 40.6365 31.8599 37.7079 32.238 34.1005C32.6921 29.7423 31.2728 26.2429 28.0314 23.7087ZM26.5932 40.8645C25.2152 41.9439 23.5103 42.6685 21.4862 43.0284C20.7461 43.1744 19.9727 43.2628 19.1445 43.2891C19.0644 43.2951 18.9842 43.3011 18.8987 43.306C18.3499 43.3167 17.909 43.7329 17.8526 44.2792L17.6377 46.3312L17.3229 46.3L14.8133 46.0357L11.8463 45.7222L12.073 43.5036C12.1249 42.9789 11.7913 42.493 11.2791 42.3535C9.33837 41.8178 7.6771 41.0749 6.45931 40.2037C4.57 38.8728 3.31704 37.025 2.72188 34.6932C2.50251 33.9266 2.37819 33.1909 2.2972 31.9175L9.29877 31.9873C9.40018 33.1071 9.67549 33.9303 10.2306 34.8451C10.5158 35.2928 10.8662 35.6976 11.2786 36.0475C11.9233 36.637 12.7259 37.09 13.6396 37.4138C14.3308 37.6692 15.0961 37.8384 15.9139 37.9169C16.8582 38.0104 17.7166 38.0015 18.4848 37.8839C21.0417 37.4817 22.6702 35.9525 22.912 33.5792C23.1038 31.776 22.3172 30.126 20.8904 29.2849C19.9155 28.6837 18.8033 28.2569 14.2733 26.6966C10.3412 25.4062 9.1858 24.779 7.86463 23.6441C5.56367 21.6591 4.53259 18.9273 4.85948 15.7319C4.87064 15.6779 4.87098 15.6216 4.88213 15.5675C4.99753 14.5713 5.24343 13.6528 5.61759 12.8227C6.62999 10.4563 8.58984 8.74186 11.3176 7.83955C12.2276 7.5258 13.2247 7.30891 14.3035 7.18777C14.5191 7.15337 14.7357 7.1417 14.9479 7.12351C15.4688 7.08448 15.8859 6.67463 15.9378 6.14999L16.0112 5.46636L16.2581 3.15047L16.6724 3.19088L22.0506 3.75407L21.7886 6.25279L21.7415 6.69953C21.6873 7.23499 22.021 7.72085 22.5332 7.86036C23.9509 8.25434 25.1935 8.78688 26.2589 9.44066C27.7329 10.3534 28.8873 11.5046 29.6862 12.9036C30.3699 14.0421 30.737 15.0758 31.0114 16.7498L23.8318 16.7785C23.2882 13.9783 21.4405 12.5545 17.9812 12.1957C14.6669 11.8443 12.0591 13.5039 11.7843 16.1465C11.6215 17.8092 12.3816 19.1776 14.091 20.2066C14.7194 20.5654 16.7499 21.285 20.1825 22.3652C23.285 23.3605 25.2267 24.2739 26.6906 25.427C29.3407 27.4953 30.456 30.2558 30.0757 33.874C29.764 36.8866 28.5565 39.2973 26.5943 40.8591L26.5932 40.8645Z"
+              fill="white"
             />
-          </div>
+          </svg>
 
-          {/* Customization Section - Right */}
-          <div
+          <svg
             style={{
-              display: "flex",
-              width: "256px",
-              justifyContent: "center",
-              alignItems: "center",
-              border: "3px solid #FFF",
-              background: "#FFF",
+              width: "33px",
+              height: "48px",
+              transform: "rotate(11.66deg)",
+              flexShrink: 0,
+              fill: "#FFF",
+              opacity: "0.2",
               position: "absolute",
-              right: "0",
-              top: "0",
-              borderRadius: "0 16px 16px 0",
+              left: "386px",
+              top: "140px",
             }}
+            width="34"
+            height="47"
+            viewBox="0 0 34 47"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/3a1fc7bb1694ebfbf91e2db67437cb4339960ebf?width=750"
-              style={{
-                display: "flex",
-                width: "240px",
-                height: "180px",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              alt="התאמה אישית"
+            <path
+              opacity="0.2"
+              d="M28.2149 23.344C26.5301 22.0327 24.391 21.0108 21.0249 19.9274C17.7357 18.8992 15.8527 18.2477 15.3759 17.9727C14.1735 17.2456 14.0651 16.5696 14.1248 16.0071C14.2631 14.6268 15.8745 13.7815 17.9373 13.9987C21.0894 14.3167 21.8124 15.5647 21.9678 17.5973C22.0207 18.1605 22.5028 18.6094 23.0625 18.6009L32.4427 18.5585C32.7534 18.555 33.0573 18.4205 33.2644 18.1815C33.4704 17.9479 33.561 17.6453 33.5294 17.3345C33.1858 14.5756 32.7327 13.0845 31.7372 11.4364C31.2317 10.5545 30.6088 9.74968 29.8674 9.02753C29.0681 8.23143 28.135 7.53733 27.08 6.94208C26.1955 6.4496 25.2315 6.01401 24.1816 5.66773L24.5081 2.52863C24.5637 1.93148 24.1329 1.3974 23.5304 1.34069L16.7622 0.631557L15.5756 0.510666C15.2824 0.483982 15.0036 0.578613 14.7829 0.747202C14.5664 0.922311 14.4165 1.18442 14.3876 1.48839L14.1968 3.3143L14.0499 4.68155C13.7195 4.72608 13.3902 4.7652 13.0792 4.825C7.78696 5.78418 4.20668 8.93374 3.14236 13.5999C3.01701 14.0981 2.93379 14.6107 2.87965 15.1461C2.85742 15.4177 2.8352 15.6892 2.82267 15.9684C2.67989 19.5005 4.01573 22.667 6.63756 24.9268C8.30423 26.3809 9.77409 27.0956 13.7688 28.4102C18.044 29.8672 19.1389 30.296 19.9487 30.7956C20.6638 31.208 21.0418 32.0524 20.9365 33C20.7216 35.052 18.7579 35.4469 17.3096 35.4468C16.9427 35.4499 16.604 35.4251 16.3433 35.4052C15.5039 35.3221 14.7453 35.1205 14.1085 34.82C13.926 34.7485 13.7534 34.6566 13.5992 34.5571C13.0243 34.23 12.5755 33.8105 12.2612 33.3399C12.1047 33.0879 11.9764 32.836 11.886 32.5637C11.7007 32.069 11.6177 31.4884 11.6159 30.5413C11.6021 29.9524 11.1386 29.4679 10.5314 29.4609L1.34452 29.3854C1.0469 29.3803 0.758276 29.4954 0.544815 29.7106C0.341048 29.9334 0.231055 30.2207 0.241093 30.5271C0.345669 32.7239 0.483027 33.806 0.811793 34.9164C1.53504 37.7199 3.06366 39.9795 5.37972 41.6183C6.60832 42.4917 8.18722 43.2514 9.99563 43.8275L9.75367 46.2289C9.68727 46.8238 10.118 47.3579 10.7206 47.4146L16.0101 47.9708L18.4764 48.2261L18.6808 48.2458C19.278 48.3014 19.8121 47.8706 19.8688 47.268L20.1041 45.0625C20.2297 45.0546 20.3522 45.0348 20.48 45.0161C21.2716 44.9484 22.0409 44.8253 22.7639 44.6533C24.8373 44.1908 26.6336 43.3781 28.1204 42.2084C30.56 40.2717 32.0435 37.3432 32.4216 33.7357C32.8757 29.3775 31.4564 25.8782 28.2149 23.344ZM26.7768 40.4998C25.3988 41.5792 23.6939 42.3037 21.6698 42.6637C20.9297 42.8096 20.1563 42.898 19.3281 42.9243C19.248 42.9304 19.1678 42.9364 19.0823 42.9412C18.5335 42.952 18.0926 43.3682 18.0362 43.9144L17.8213 45.9664L17.5065 45.9353L14.9969 45.671L12.0298 45.3574L12.2566 43.1388C12.3085 42.6142 11.9749 42.1283 11.4627 41.9888C9.52196 41.4531 7.86069 40.7102 6.6429 39.839C4.75359 38.508 3.50064 36.6603 2.90548 34.3284C2.6861 33.5619 2.56178 32.8262 2.4808 31.5528L9.48236 31.6225C9.58377 32.7424 9.85908 33.5656 10.4142 34.4803C10.6994 34.928 11.0498 35.3328 11.4622 35.6828C12.1069 36.2723 12.9095 36.7253 13.8232 37.0491C14.5144 37.3044 15.2797 37.4736 16.0975 37.5522C17.0418 37.6456 17.9002 37.6368 18.6684 37.5192C21.2253 37.117 22.8538 35.5878 23.0956 33.2145C23.2874 31.4113 22.5008 29.7613 21.0739 28.9202C20.0991 28.3189 18.9869 27.8922 14.4568 26.3319C10.5248 25.0415 9.3694 24.4142 8.04823 23.2794C5.74727 21.2943 4.71618 18.5626 5.04308 15.3672C5.05423 15.3131 5.05457 15.2568 5.06573 15.2028C5.18113 14.2066 5.42702 13.2881 5.80118 12.458C6.81359 10.0916 8.77344 8.37711 11.5012 7.47481C12.4112 7.16105 13.4083 6.94416 14.4871 6.82303C14.7027 6.78862 14.9193 6.77696 15.1315 6.75877C15.6524 6.71973 16.0695 6.30988 16.1214 5.78524L16.1948 5.10162L16.4417 2.78573L16.856 2.82614L22.2342 3.38932L21.9722 5.88805L21.925 6.33479C21.8709 6.87024 22.2046 7.35611 22.7168 7.49561C24.1345 7.8896 25.377 8.42214 26.4425 9.07591C27.9165 9.9887 29.0709 11.1398 29.8698 12.5388C30.5535 13.6773 30.9206 14.7111 31.195 16.3851L24.0153 16.4138C23.4718 13.6136 21.6241 12.1898 18.1648 11.831C14.8505 11.4795 12.2427 13.1392 11.9679 15.7818C11.8051 17.4444 12.5652 18.8129 14.2746 19.8418C14.903 20.2007 16.9335 20.9202 20.3661 22.0005C23.4686 22.9957 25.4103 23.9092 26.8742 25.0622C29.5243 27.1306 30.6396 29.891 30.2593 33.5093C29.9476 36.5218 28.74 38.9325 26.7779 40.4944L26.7768 40.4998Z"
+              fill="white"
             />
-          </div>
+          </svg>
+
+          <svg
+            style={{
+              width: "33px",
+              height: "48px",
+              transform: "rotate(11.66deg)",
+              flexShrink: 0,
+              fill: "#FFF",
+              opacity: "0.2",
+              position: "absolute",
+              left: "419px",
+              top: "153px",
+            }}
+            width="34"
+            height="34"
+            viewBox="0 0 34 34"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.2"
+              d="M28.5685 23.7615C26.8836 22.4501 24.7445 21.4283 21.3784 20.3449C18.0892 19.3167 16.2062 18.6652 15.7294 18.3902C14.527 17.6631 14.4186 16.987 14.4783 16.4246C14.6166 15.0443 16.228 14.199 18.2908 14.4162C21.443 14.7341 22.166 15.9822 22.3213 18.0148C22.3742 18.578 22.8564 19.0269 23.416 19.0184L32.7963 18.976C33.1069 18.9725 33.4108 18.838 33.6179 18.599C33.8239 18.3653 33.9145 18.0628 33.8829 17.752C33.5393 14.993 33.0862 13.502 32.0907 11.8539C31.5852 10.9719 30.9623 10.1672 30.221 9.44501C29.4216 8.64891 28.4885 7.95481 27.4335 7.35956C26.549 6.86708 25.5851 6.43149 24.5351 6.08521L24.8616 2.94611C24.9172 2.34896 24.4865 1.81488 23.8839 1.75817L17.1157 1.04904L15.9291 0.928146C15.6359 0.901462 15.3572 0.996094 15.1364 1.16468C14.9199 1.33979 14.7701 1.6019 14.7411 1.90587L14.5503 3.73178L14.4034 5.09903C14.073 5.14356 13.7437 5.18268 13.4327 5.24248C8.14048 6.20166 4.56019 9.35122 3.49587 14.0174C3.37052 14.5156 3.2873 15.0282 3.23316 15.5636C3.21094 15.8352 3.18871 16.1067 3.17619 16.3859C3.03341 19.918 4.36924 23.0845 6.99108 25.3443C8.65775 26.7984 10.1276 27.5131 14.1223 28.8277C18.3975 30.2847 19.4924 30.7135 20.3022 31.2131C21.0174 31.6255 21.3954 32.4699 21.29 33.4174C21.0751 35.4694 19.1114 35.8644 17.6631 35.8643C17.2962 35.8674 16.9575 35.8426 16.6968 35.8226C15.8574 35.7396 15.0988 35.538 14.462 35.2375C14.2795 35.166 14.1069 35.0741 13.9527 34.9746C13.3778 34.6475 12.929 34.228 12.6147 33.7574C12.4582 33.5054 12.3299 33.2535 12.2395 32.9812C12.0542 32.4865 11.9712 31.9058 11.9694 30.9587C11.9557 30.3698 11.4921 29.8854 10.8849 29.8784L1.69804 29.8029C1.40041 29.7978 1.11179 29.9129 0.89833 30.1281C0.694563 30.3509 0.584571 30.6382 0.594608 30.9445C0.699184 33.1414 0.836543 34.2235 1.16531 35.3339C1.88856 38.1374 3.41718 40.397 5.73324 42.0358C6.96184 42.9092 8.54074 43.6689 10.3491 44.245L10.1072 46.6464C10.0408 47.2413 10.4716 47.7754 11.0741 47.8321L16.3636 48.3883L18.8299 48.6436L19.0344 48.6632C19.6315 48.7188 20.1656 48.2881 20.2223 47.6855L20.4576 45.4799C20.5833 45.4721 20.7057 45.4522 20.8335 45.4335C21.6252 45.3658 22.3944 45.2428 23.1174 45.0708C25.1908 44.6083 26.9872 43.7955 28.4739 42.6259C30.9135 40.6892 32.397 37.7607 32.7751 34.1532C33.2292 29.795 31.8099 26.2956 28.5685 23.7615ZM27.1303 40.9173C25.7523 41.9966 24.0475 42.7212 22.0233 43.0812C21.2832 43.2271 20.5098 43.3155 19.6816 43.3418C19.6015 43.3478 19.5214 43.3538 19.4358 43.3587C18.887 43.3694 18.4461 43.7856 18.3897 44.3319L18.1748 46.3839L17.86 46.3527L15.3505 46.0885L12.3834 45.7749L12.6101 43.5563C12.662 43.0316 12.3284 42.5458 11.8162 42.4063C9.87548 41.8706 8.21421 41.1276 6.99642 40.2565C5.10711 38.9255 3.85415 37.0778 3.25899 34.7459C3.03962 33.9793 2.9153 33.2436 2.83431 31.9703L9.83588 32.04C9.93728 33.1598 10.2126 33.9831 10.7677 34.8978C11.0529 35.3455 11.4033 35.7503 11.8157 36.1003C12.4604 36.6898 13.263 37.1428 14.1767 37.4666C14.8679 37.7219 15.6332 37.8911 16.451 37.9697C17.3953 38.0631 18.2537 38.0543 19.0219 37.9367C21.5788 37.5345 23.2074 36.0052 23.4491 33.6319C23.6409 31.8288 22.8543 30.1787 21.4275 29.3377C20.4527 28.7364 19.3404 28.3096 14.8104 26.7493C10.8783 25.459 9.72291 24.8317 8.40174 23.6969C6.10078 21.7118 5.0697 18.98 5.39659 15.7846C5.40775 15.7306 5.40809 15.6743 5.41924 15.6203C5.53464 14.6241 5.78054 13.7056 6.1547 12.8755C7.1671 10.509 9.12695 8.79459 11.8547 7.89229C12.7647 7.57853 13.7618 7.36165 14.8406 7.24051C15.0562 7.2061 15.2728 7.19444 15.4851 7.17625C16.0059 7.13721 16.423 6.72736 16.4749 6.20272L16.5483 5.5191L16.7952 3.20321L17.2095 3.24362L22.5877 3.8068L22.3257 6.30553L22.2786 6.75227C22.2244 7.28772 22.5581 7.77359 23.0703 7.91309C24.488 8.30708 25.7306 8.83962 26.796 9.49339C28.27 10.4062 29.4244 11.5573 30.2233 12.9563C30.907 14.0948 31.2741 15.1286 31.5485 16.8026L24.3689 16.8313C23.8253 14.031 21.9777 12.6073 18.5184 12.2484C15.204 11.897 12.5962 13.5566 12.3214 16.1992C12.1586 17.8619 12.9188 19.2303 14.6281 20.2593C15.2566 20.6182 17.2871 21.3377 20.7196 22.4179C23.8221 23.4132 25.7638 24.3267 27.2277 25.4797C29.8778 27.5481 30.9931 30.3085 30.6128 33.9268C30.3011 36.9393 29.0936 39.35 27.1314 40.9118L27.1303 40.9173Z"
+              fill="white"
+            />
+          </svg>
         </div>
+
+        {/* Bottom sections - SIMPLE clean design */}
+        <div
+          style={{
+            width: "230px",
+            height: "94px",
+            background: "#DBE3F3",
+            borderRadius: "0 0 0 16px",
+            position: "relative",
+          }}
+        ></div>
+
+        <div
+          style={{
+            width: "230px",
+            height: "94px",
+            background: "#DBE3F3",
+            borderRadius: "0 0 16px 0",
+            position: "relative",
+          }}
+        ></div>
       </div>
 
       {/* Card Title and Eye Icon */}
@@ -1346,19 +1130,37 @@ export default function GiftDesign() {
           style={{
             color: "#486284",
             textAlign: "center",
-            fontFamily: "Poppins, -apple-system, Roboto, Helvetica, sans-serif",
+            fontFamily: "Poppins",
             fontSize: "30px",
+            fontStyle: "normal",
             fontWeight: "800",
             lineHeight: "normal",
+            position: "relative",
           }}
         >
-          שייר פור יו - תכלת
+          <span
+            style={{
+              fontFamily:
+                "Poppins, -apple-system, Roboto, Helvetica, sans-serif",
+              fontWeight: "700",
+              fontSize: "30px",
+              color: "rgba(72,98,132,1)",
+            }}
+          >
+            שייר פור יו - תכלת
+          </span>
         </div>
+
         <svg
+          style={{
+            width: "61px",
+            height: "61px",
+            aspectRatio: "1/1",
+            position: "relative",
+          }}
           width="61"
           height="62"
           viewBox="0 0 61 62"
-          fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -1412,7 +1214,7 @@ export default function GiftDesign() {
     </div>
   );
 
-  // Yellow Card Component (keeping existing for now)
+  // Yellow Card Component - Different color scheme
   const YellowCard = () => (
     <div
       onClick={() => setSelectedCard("yellow")}
@@ -1466,234 +1268,92 @@ export default function GiftDesign() {
             justifyContent: "center",
             alignItems: "center",
             border: "3px solid #FFF",
-            background: "#FFF",
+            background: "#FFC547",
             position: "relative",
-            borderRadius: "16px",
+            borderRadius: "16px 16px 0 0",
             overflow: "hidden",
           }}
         >
-          {/* Yellow Background */}
+          {/* Simple decorative elements for yellow theme */}
           <div
             style={{
-              width: "460px",
-              height: "188px",
-              background: "#FFC547",
               position: "absolute",
-              left: "0px",
-              top: "0px",
-              overflow: "hidden",
+              left: "30px",
+              top: "30px",
+              color: "#E96036",
+              fontSize: "24px",
             }}
           >
-            {/* Similar decorative pattern but with yellow theme */}
-            <div
-              style={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                background: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.15'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3Ccircle cx='10' cy='10' r='2'/%3E%3Ccircle cx='50' cy='50' r='3'/%3E%3Cpath d='M20 20 L25 15 L20 10 L15 15 Z'/%3E%3Cpath d='M40 40 L45 35 L40 30 L35 35 Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                opacity: 0.3,
-              }}
-            />
-
-            {/* Coins */}
-            <div
-              style={{
-                position: "absolute",
-                right: "50px",
-                top: "30px",
-                display: "flex",
-                gap: "10px",
-                alignItems: "center",
-              }}
-            >
-              <div
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  background: "#E96036",
-                  border: "3px solid #FFF",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "20px",
-                  boxShadow: "2px 2px 4px rgba(0,0,0,0.2)",
-                }}
-              >
-                ₪
-              </div>
-              <div
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  background: "#E96036",
-                  border: "3px solid #FFF",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "20px",
-                  boxShadow: "2px 2px 4px rgba(0,0,0,0.2)",
-                }}
-              >
-                ₪
-              </div>
-              <div
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  background: "#E96036",
-                  border: "3px solid #FFF",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "20px",
-                  boxShadow: "2px 2px 4px rgba(0,0,0,0.2)",
-                }}
-              >
-                ₪
-              </div>
-            </div>
-
-            {/* Stars for yellow theme */}
-            <div
-              style={{
-                position: "absolute",
-                left: "30px",
-                top: "20px",
-                color: "#E96036",
-                fontSize: "24px",
-              }}
-            >
-              ✦
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                right: "80px",
-                bottom: "20px",
-                color: "#E96036",
-                fontSize: "20px",
-              }}
-            >
-              ✦
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                left: "200px",
-                bottom: "30px",
-                color: "#E96036",
-                fontSize: "18px",
-              }}
-            >
-              ★
-            </div>
-
-            {/* Dollar signs */}
-            <div
-              style={{
-                position: "absolute",
-                left: "20px",
-                bottom: "20px",
-                color: "#E96036",
-                fontSize: "30px",
-                fontWeight: "bold",
-              }}
-            >
-              $
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                right: "20px",
-                top: "50px",
-                color: "#E96036",
-                fontSize: "25px",
-                fontWeight: "bold",
-              }}
-            >
-              $
-            </div>
-
-            {/* Additional yellow-themed decorations */}
-            <div
-              style={{
-                position: "absolute",
-                left: "150px",
-                top: "40px",
-                color: "#E96036",
-                fontSize: "16px",
-              }}
-            >
-              💰
-            </div>
-            <div
-              style={{
-                position: "absolute",
-                right: "150px",
-                bottom: "40px",
-                color: "#E96036",
-                fontSize: "16px",
-              }}
-            >
-              💎
-            </div>
+            ★
           </div>
-
-          {/* Phone Mockup - Left Section */}
           <div
             style={{
-              display: "flex",
-              width: "206px",
-              height: "148px",
-              padding: "1px 0 1.157px 0.385px",
-              justifyContent: "center",
-              alignItems: "center",
-              border: "3px solid #FFF",
-              background: "#FFF",
               position: "absolute",
-              left: "0",
-              top: "20px",
-              borderRadius: "16px",
+              right: "30px",
+              top: "30px",
+              color: "#E96036",
+              fontSize: "20px",
             }}
           >
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/f88b01d8cc722e69ae5f5c928bcd4d9c68ef8eaf?width=411"
-              style={{ width: "206px", height: "146px" }}
-              alt="iPhone Mockup"
-            />
+            ✦
           </div>
-
-          {/* Customization Section - Right */}
           <div
             style={{
-              display: "flex",
-              width: "256px",
-              justifyContent: "center",
-              alignItems: "center",
-              border: "3px solid #FFF",
-              background: "#FFF",
               position: "absolute",
-              right: "0",
-              top: "0",
-              borderRadius: "0 16px 16px 0",
+              left: "50px",
+              bottom: "30px",
+              color: "#E96036",
+              fontSize: "18px",
             }}
           >
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/3a1fc7bb1694ebfbf91e2db67437cb4339960ebf?width=750"
-              style={{
-                display: "flex",
-                width: "240px",
-                height: "180px",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              alt="התאמה אישית"
-            />
+            ★
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              right: "50px",
+              bottom: "30px",
+              color: "#E96036",
+              fontSize: "22px",
+            }}
+          >
+            ✦
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              transform: "translate(-50%, -50%)",
+              color: "#E96036",
+              fontSize: "32px",
+              fontWeight: "bold",
+            }}
+          >
+            🎁
           </div>
         </div>
+
+        {/* Bottom sections for yellow card */}
+        <div
+          style={{
+            width: "230px",
+            height: "94px",
+            background: "#FFD700",
+            borderRadius: "0 0 0 16px",
+            position: "relative",
+          }}
+        ></div>
+
+        <div
+          style={{
+            width: "230px",
+            height: "94px",
+            background: "#FFF2B3",
+            borderRadius: "0 0 16px 0",
+            position: "relative",
+          }}
+        ></div>
       </div>
 
       {/* Card Title and Eye Icon */}

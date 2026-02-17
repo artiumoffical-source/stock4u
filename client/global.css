@@ -1,6 +1,8 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   :root {
@@ -71,7 +73,7 @@
   .animate-scroll {
     animation: scroll 30s linear infinite;
   }
-  
+
   @keyframes scroll {
     0% {
       transform: translateX(100%);
@@ -80,4 +82,40 @@
       transform: translateX(-100%);
     }
   }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .hebrew-font {
+    font-family: 'Heebo', 'Greycliff Hebrew CF', 'Assistant', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .english-font {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* Custom colors for Stock4U brand */
+  .text-stock4u-red { color: #E96036; }
+  .text-stock4u-blue { color: #4C7EFB; }
+  .text-stock4u-yellow { color: #FFC547; }
+  .text-stock4u-dark-grey { color: #486284; }
+  .text-stock4u-grey { color: #8CA2C0; }
+
+  .bg-stock4u-red { background-color: #E96036; }
+  .bg-stock4u-blue { background-color: #4C7EFB; }
+  .bg-stock4u-yellow { background-color: #FFC547; }
+  .bg-stock4u-dark-grey { background-color: #486284; }
+  .bg-stock4u-grey { background-color: #8CA2C0; }
+
+  .border-stock4u-light-blue { border-color: #DBE3F3; }
 }

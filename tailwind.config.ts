@@ -62,6 +62,7 @@ export default {
           "dark-grey": "#486284",
           "nostalgic-blue": "#689EDA",
           "pop-yellow": "#FFC547",
+          "pop-red": "#E96036",
           "happy-blue": "#4C7EFB",
           grey: "#8CA2C0",
           black: "#1B1919",

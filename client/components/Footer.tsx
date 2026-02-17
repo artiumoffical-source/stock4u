@@ -2,6 +2,105 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
+    <>
+      <style>
+        {`
+          @keyframes kalinka-dance {
+            0%, 20% {
+              transform: translateY(0px) scaleY(1);
+            }
+            5% {
+              transform: translateY(-8px) scaleY(1.02);
+            }
+            10% {
+              transform: translateY(-12px) scaleY(1.04);
+            }
+            15% {
+              transform: translateY(-6px) scaleY(1.01);
+            }
+            25%, 45% {
+              transform: translateY(-2px) scaleY(1.005);
+            }
+            30% {
+              transform: translateY(-10px) scaleY(1.03);
+            }
+            35% {
+              transform: translateY(-15px) scaleY(1.05);
+            }
+            40% {
+              transform: translateY(-8px) scaleY(1.02);
+            }
+            50%, 70% {
+              transform: translateY(-1px) scaleY(1.002);
+            }
+            55% {
+              transform: translateY(-12px) scaleY(1.04);
+            }
+            60% {
+              transform: translateY(-18px) scaleY(1.06);
+            }
+            65% {
+              transform: translateY(-10px) scaleY(1.03);
+            }
+            75%, 100% {
+              transform: translateY(0px) scaleY(1);
+            }
+            80% {
+              transform: translateY(-6px) scaleY(1.01);
+            }
+            85% {
+              transform: translateY(-3px) scaleY(1.005);
+            }
+            90% {
+              transform: translateY(-1px) scaleY(1.002);
+            }
+          }
+
+          @keyframes kalinka-wiggle {
+            0%, 100% {
+              transform: rotate(0deg);
+            }
+            25% {
+              transform: rotate(-2deg);
+            }
+            75% {
+              transform: rotate(2deg);
+            }
+          }
+
+          .kalinka-dancer {
+            animation: kalinka-dance 2.5s ease-in-out infinite, kalinka-wiggle 1.2s ease-in-out infinite;
+            transform-origin: center bottom;
+          }
+
+          .kalinka-dancer:hover {
+            animation-duration: 1.2s, 0.8s;
+            animation-timing-function: ease-out, ease-in-out;
+          }
+
+          .kalinka-dancer img:last-child {
+            animation: kalinka-dance 2.5s ease-in-out infinite;
+            animation-delay: 0.1s;
+            transform-origin: center bottom;
+          }
+
+          /* Sync the white background with the dance */
+          .kalinka-dancer svg {
+            animation: kalinka-dance 2.5s ease-in-out infinite, kalinka-wiggle 1.2s ease-in-out infinite;
+            transform-origin: center bottom;
+          }
+
+          .kalinka-dancer > div {
+            animation: kalinka-dance 2.5s ease-in-out infinite, kalinka-wiggle 1.2s ease-in-out infinite;
+            transform-origin: center bottom;
+          }
+
+          /* Make sure all nested elements dance together */
+          .kalinka-dancer * {
+            animation-fill-mode: both;
+          }
+        `}
+      </style>
     <footer
       style={{
         width: "100%",
@@ -11,7 +110,7 @@ export default function Footer() {
         direction: "rtl",
       }}
     >
-      {/* Logo Section - positioned on left as per Figma design */}
+      {/* Logo Section - positioned exactly as in Figma */}
       <div
         style={{
           position: "absolute",
@@ -21,7 +120,7 @@ export default function Footer() {
           height: "338px",
         }}
       >
-        {/* Stock4U Text */}
+        {/* Stock4U Logo - Positioned exactly as in Figma */}
         <div
           style={{
             position: "absolute",
@@ -41,8 +140,9 @@ export default function Footer() {
           Stock4U
         </div>
 
-        {/* Logo Complex 3D Element */}
+        {/* Logo Complex 3D Element with Kalinka Dance Animation */}
         <div
+          className="kalinka-dancer"
           style={{
             position: "absolute",
             left: "24px",
@@ -51,24 +151,6 @@ export default function Footer() {
             height: "253px",
           }}
         >
-          {/* Background white shape */}
-          <svg
-            style={{
-              position: "absolute",
-              left: "2px",
-              top: "29px",
-              width: "139px",
-              height: "152px",
-              fill: "white",
-            }}
-            viewBox="0 0 140 153"
-          >
-            <path
-              d="M0.377141 116.586L0.377148 50.984L84.1864 0.309326L139.409 47.0859L129.093 126.049L70.6894 152.26L0.377141 116.586Z"
-              fill="white"
-            />
-          </svg>
-
           {/* Main logo structure with drop shadows */}
           <div
             style={{
@@ -90,67 +172,6 @@ export default function Footer() {
                 filter: "drop-shadow(7.945px 6.179px 0 rgba(0, 0, 0, 0.15))",
               }}
             >
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/ce260fd9ede1e926cc1f66f1ad0c990ef4064702?width=315"
-                style={{
-                  position: "absolute",
-                  left: "2px",
-                  top: "129px",
-                  width: "158px",
-                  height: "123px",
-                  fill: "#FFF",
-                  strokeWidth: "7.263px",
-                  stroke: "#FFF",
-                }}
-                alt="Vector"
-              />
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/78aebfd0d90189bdc28ee3d9c1322717866a52a3?width=255"
-                style={{
-                  position: "absolute",
-                  left: "8px",
-                  top: "0px",
-                  width: "127px",
-                  height: "178px",
-                  fill: "#FFF",
-                  strokeWidth: "18.289px",
-                  stroke: "#FFF",
-                }}
-                alt="Union"
-              />
-
-              {/* White accent elements */}
-              <div
-                style={{
-                  position: "absolute",
-                  left: "62px",
-                  top: "173px",
-                  width: "24px",
-                  height: "10px",
-                  background: "#FFF",
-                }}
-              ></div>
-              <div
-                style={{
-                  position: "absolute",
-                  left: "113px",
-                  top: "77px",
-                  width: "24px",
-                  height: "22px",
-                  background: "#FFF",
-                }}
-              ></div>
-              <div
-                style={{
-                  position: "absolute",
-                  left: "0px",
-                  top: "73px",
-                  width: "24px",
-                  height: "18px",
-                  background: "#FFF",
-                }}
-              ></div>
-
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/f969c07e858b8f0f5fa3c353bca4357f94d553ca?width=315"
                 style={{
@@ -178,7 +199,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Content Sections - positioned to match Figma design */}
+      {/* Content Sections - positioned exactly as in Figma */}
       <div
         style={{
           position: "absolute",
@@ -191,22 +212,23 @@ export default function Footer() {
           gap: "3px",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "60px", justifyContent: "center" }}>
           {/* אנחנו ברשתות */}
           <div
             style={{
               display: "flex",
-              width: "281px",
+              width: "250px",
               flexDirection: "column",
-              alignItems: "flex-end",
+              alignItems: "center",
               gap: "20px",
+              textAlign: "center",
             }}
           >
             <div
               style={{
                 alignSelf: "stretch",
                 color: "#4C7EFB",
-                textAlign: "right",
+                textAlign: "center",
                 fontFamily:
                   "Greycliff Hebrew CF, -apple-system, Roboto, Helvetica, sans-serif",
                 fontSize: "24px",
@@ -222,22 +244,23 @@ export default function Footer() {
                 height: "105px",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                alignItems: "flex-end",
+                alignItems: "center",
                 alignSelf: "stretch",
               }}
             >
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "flex-end",
+                  justifyContent: "center",
                   alignItems: "center",
                   alignSelf: "stretch",
+                  gap: "8px",
                 }}
               >
                 <div
                   style={{
                     color: "#4C7EFB",
-                    textAlign: "right",
+                    textAlign: "center",
                     fontFamily:
                       "Poppins, -apple-system, Roboto, Helvetica, sans-serif",
                     fontSize: "18px",
@@ -268,15 +291,16 @@ export default function Footer() {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "flex-end",
+                  justifyContent: "center",
                   alignItems: "center",
                   alignSelf: "stretch",
+                  gap: "8px",
                 }}
               >
                 <div
                   style={{
                     color: "#4C7EFB",
-                    textAlign: "right",
+                    textAlign: "center",
                     fontFamily:
                       "Poppins, -apple-system, Roboto, Helvetica, sans-serif",
                     fontSize: "18px",
@@ -308,15 +332,16 @@ export default function Footer() {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: "flex-end",
+                  justifyContent: "center",
                   alignItems: "center",
                   alignSelf: "stretch",
+                  gap: "8px",
                 }}
               >
                 <div
                   style={{
                     color: "#4C7EFB",
-                    textAlign: "right",
+                    textAlign: "center",
                     fontFamily:
                       "Poppins, -apple-system, Roboto, Helvetica, sans-serif",
                     fontSize: "18px",
@@ -355,17 +380,18 @@ export default function Footer() {
           <div
             style={{
               display: "flex",
-              width: "281px",
+              width: "250px",
               flexDirection: "column",
-              alignItems: "flex-end",
+              alignItems: "center",
               gap: "20px",
+              textAlign: "center",
             }}
           >
             <div
               style={{
                 alignSelf: "stretch",
                 color: "#4C7EFB",
-                textAlign: "right",
+                textAlign: "center",
                 fontFamily:
                   "Greycliff Hebrew CF, -apple-system, Roboto, Helvetica, sans-serif",
                 fontSize: "24px",
@@ -700,5 +726,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

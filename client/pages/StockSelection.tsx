@@ -45,9 +45,9 @@ export default function StockSelection() {
       company: "NVIDIA Corporation",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <rect width="24" height="24" rx="4" fill="#76B900" />
-          <path d="M12 4L20 12L12 20L4 12Z" fill="#FFF" />
-          <path d="M12 8L16 12L12 16L8 12Z" fill="#76B900" />
+          <circle cx="12" cy="12" r="12" fill="#76B900" />
+          <path d="M7 9h10v1.5H7V9zm0 3h10v1.5H7v-1.5zm0 3h10v1.5H7V15z" fill="#FFF" />
+          <path d="M8.5 10.5l6 3-6 3v-6z" fill="#FFF" />
         </svg>
       ),
       description:
@@ -58,10 +58,11 @@ export default function StockSelection() {
       company: "Microsoft Corporation",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <rect x="2" y="2" width="9" height="9" fill="#F25022" />
-          <rect x="13" y="2" width="9" height="9" fill="#7FBA00" />
-          <rect x="2" y="13" width="9" height="9" fill="#00A4EF" />
-          <rect x="13" y="13" width="9" height="9" fill="#FFB900" />
+          <circle cx="12" cy="12" r="12" fill="#FFF" />
+          <rect x="6" y="6" width="5" height="5" rx="0.5" fill="#F25022" />
+          <rect x="13" y="6" width="5" height="5" rx="0.5" fill="#7FBA00" />
+          <rect x="6" y="13" width="5" height="5" rx="0.5" fill="#00A4EF" />
+          <rect x="13" y="13" width="5" height="5" rx="0.5" fill="#FFB900" />
         </svg>
       ),
       description:
@@ -72,52 +73,42 @@ export default function StockSelection() {
       company: "Alphabet Inc. (Google)",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <circle cx="12" cy="12" r="11" fill="#4285F4" />
-          <circle cx="12" cy="12" r="8" fill="#FFF" />
-          <circle cx="12" cy="8" r="2" fill="#EA4335" />
-          <circle cx="8" cy="16" r="2" fill="#FBBC05" />
-          <circle cx="16" cy="16" r="2" fill="#34A853" />
-          <text
-            x="12"
-            y="15"
-            textAnchor="middle"
-            fontSize="6"
-            fill="#4285F4"
-            fontWeight="bold"
-            fontFamily="sans-serif"
-          >
-            G
-          </text>
+          <circle cx="12" cy="12" r="12" fill="#FFF" />
+          <circle cx="12" cy="12" r="10" fill="#FFF" stroke="#E0E0E0" strokeWidth="0.5" />
+          <path d="M19.5 12.2c0-.7-.06-1.35-.17-2H12v3.8h4.2c-.2 1.2-.9 2.25-1.85 2.95v2.45h3c1.85-1.7 2.9-4.2 2.9-7.2z" fill="#4285F4"/>
+          <path d="M12 20c2.6 0 4.8-.85 6.4-2.35l-3-2.45c-.85.6-1.95.95-3.4.95-2.6 0-4.8-1.7-5.6-4H3.5v2.5C5.1 17.4 8.3 20 12 20z" fill="#34A853"/>
+          <path d="M6.4 13.15c-.2-.6-.3-1.2-.3-1.85s.1-1.25.3-1.85V6.95H3.5C2.7 8.5 2.25 10.2 2.25 12s.45 3.5 1.25 5.05l2.9-2.25z" fill="#FBBC05"/>
+          <path d="M12 6.75c1.4 0 2.65.5 3.65 1.45l2.7-2.7C16.75 3.85 14.55 3 12 3 8.3 3 5.1 5.6 3.5 9.15l2.9 2.25C7.2 8.45 9.4 6.75 12 6.75z" fill="#EA4335"/>
         </svg>
       ),
       description:
-        "אלפבית היא החברה האם של גוגל, המובילה בתחום החיפוש, פרסום דיגיטלי וטכנולוגיות חדשניות. החברה מפתחת מוצרים כמו Android, YouTube, Google Cloud ומשקיעה בטכנולוגיות עתיד כמו רכב אוטונומי.",
+        "אלפבית היא החברה האם של גוגל, המובילה בתחום החיפוש, פרסום דיג��טלי וטכנולוגיות ��דשניות. החברה מפתחת מוצרים כמו Android, YouTube, Google Cloud ומשקיעה בטכנולוגיות עתיד כמו רכב אוטונומי.",
     },
     {
       symbol: "AMZN",
       company: "Amazon.com Inc.",
       logo: (
         <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none">
-          <rect x="2" y="2" width="20" height="20" rx="3" fill="#232F3E" />
-          <path
-            d="M5 16c4 2 10 2 14 0"
-            stroke="#FF9900"
-            strokeWidth="2"
-            fill="none"
-            strokeLinecap="round"
-          />
-          <circle cx="18" cy="15" r="1" fill="#FF9900" />
+          <circle cx="12" cy="12" r="12" fill="#232F3E" />
           <text
             x="12"
-            y="10"
+            y="14"
             textAnchor="middle"
-            fontSize="4"
-            fill="#FFF"
+            fontSize="8"
+            fill="#FFFFFF"
             fontWeight="bold"
-            fontFamily="sans-serif"
+            fontFamily="Arial"
+            dominantBaseline="middle"
           >
             amazon
           </text>
+          <path
+            d="M5 16.5C8 15.2 16 15.2 19 16.5"
+            stroke="#FF9900"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <circle cx="18.5" cy="16.2" r="0.8" fill="#FF9900" />
         </svg>
       ),
       description:
@@ -171,7 +162,7 @@ export default function StockSelection() {
         </svg>
       ),
       description:
-        'תעודת סל העוקבת אחרי מדד נאסד"ק 100, המתמקדת בחברות הטכנולוגיה הג��ולות והחדשניות ביותר. כוללת את המובילות כמו אפל, מיקרוסופט, גוגל ואמזון. ��תאימה למשקיעים המעוניינים בחשיפה לסקט��ר הטכנולוגיה.',
+        'תעודת סל העוקבת אחרי מדד נאסד"ק 100, המתמקדת בחברות הטכנולוגיה הג��ולות והחדשניות ביותר. כוללת את ��מובילות כמו אפל, מיקרוסופט, גוגל ואמזון. ��תאימה למשקיעים המעוניינים בחשיפה לסקט��ר הטכנולוגיה.',
     },
   ];
 
